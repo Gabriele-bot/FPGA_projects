@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2020.1"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="" PART="xc7z020clg400-1" ARCH="zynq" PACKAGE="clg400" DEVICE="7z020" SPEED="-1" LUT="53200" FF="106400" BRAM="140" DSP="220"/>
+	<HIERARCHY Name="base_wrapper"/>
+	<File Type="HW_HANDOFF" Name="base.hwh" src_db="base.hwdef" DESIGN_HIERARCHY="base_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl" src_db="base_ps7_0_0.hwdef">
+	</File>
+	<File Type="BIT" Name="base_wrapper.bit" src_db="temp.hdf">
+	</File>
+	<USEDRESOURCES LUT="2189" FF="4839" BRAM="1" DSP="0"/>
+</Project>
+

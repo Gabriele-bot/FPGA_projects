@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Jan  1 00:02:57 2021
+# Process ID: 1356
+# Current directory: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.runs/base_audio_codec_ctrl_0_0_synth_1
+# Command line: vivado.exe -log base_audio_codec_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_audio_codec_ctrl_0_0.tcl
+# Log file: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.runs/base_audio_codec_ctrl_0_0_synth_1/base_audio_codec_ctrl_0_0.vds
+# Journal file: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.runs/base_audio_codec_ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_audio_codec_ctrl_0_0.tcl -notrace

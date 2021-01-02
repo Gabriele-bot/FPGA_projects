@@ -1,0 +1,742 @@
+
+*** Running vivado
+    with args -log base_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_wrapper.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source base_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/Pynq_file/PYNQ-master/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado_2020.1/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.cache/ip 
+Command: synth_design -top base_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1085.590 ; gain = 3.879
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_wrapper' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/hdl/base_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [G:/Vivado_2020.1/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [G:/Vivado_2020.1/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
+INFO: [Synth 8-6157] synthesizing module 'base' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:449]
+INFO: [Synth 8-6157] synthesizing module 'Audio_controller_imp_1JZ8N5Y' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:12]
+INFO: [Synth 8-6157] synthesizing module 'base_audio_codec_ctrl_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_audio_codec_ctrl_0_0' (2#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_mux_vector_0_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_mux_vector_0_1' (3#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_clk_wiz_10MHz_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'base_clk_wiz_10MHz_0' (4#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'base_clk_wiz_10MHz_0' is unconnected for instance 'clk_wiz_10MHz' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:364]
+WARNING: [Synth 8-7023] instance 'clk_wiz_10MHz' of module 'base_clk_wiz_10MHz_0' has 4 connections declared, but only 3 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:364]
+INFO: [Synth 8-6157] synthesizing module 'base_clk_wiz_10MHz_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'base_clk_wiz_10MHz_1' (5#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'i2s_audio_stream_imp_13BF0RV' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2354]
+INFO: [Synth 8-6157] synthesizing module 'base_i2s_receiver_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_i2s_receiver_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_i2s_receiver_0_0' (6#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_i2s_receiver_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_i2s_transmitter_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_i2s_transmitter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_i2s_transmitter_0_0' (7#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_i2s_transmitter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'i2s_audio_stream_imp_13BF0RV' (8#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2354]
+INFO: [Synth 8-6157] synthesizing module 'base_bclk_mux_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_bclk_mux_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_bclk_mux_0' (9#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_bclk_mux_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_axi_gpio_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_axi_gpio_0_0' (10#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_mux_vector_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_mux_vector_0_0' (11#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_controller_imp_1JZ8N5Y' (12#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:12]
+INFO: [Synth 8-6157] synthesizing module 'base_btns_gpio_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_btns_gpio_0' (13#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_concat_interrupts_0' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_concat_interrupts_0/synth/base_concat_interrupts_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 6 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 4 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 15 - type: integer 
+	Parameter NUM_PORTS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (14#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_concat_interrupts_0' (15#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_concat_interrupts_0/synth/base_concat_interrupts_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_ps7_0_0' (16#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'GPIO_O' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+WARNING: [Synth 8-7071] port 'FCLK_CLK1' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+WARNING: [Synth 8-7023] instance 'ps7_0' of module 'base_ps7_0_0' has 77 connections declared, but only 72 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_axi_periph_2' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1182]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DE2YVW' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2593]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DE2YVW' (17#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2593]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1C31QAY' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2725]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1C31QAY' (18#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2725]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1M1FQ9D' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2857]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1M1FQ9D' (19#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2857]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_L4H1ON' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_L4H1ON' (20#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2982]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_BMW16V' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3107]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_BMW16V' (21#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3107]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1E6Q06P' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3239]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1E6Q06P' (22#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3239]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1JMSMUI' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3371]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1JMSMUI' (23#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3371]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1WI8JL5' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3503]
+INFO: [Synth 8-6157] synthesizing module 'base_auto_pc_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_auto_pc_0' (24#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1WI8JL5' (25#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3503]
+INFO: [Synth 8-6157] synthesizing module 'base_xbar_11' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_xbar_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_xbar_11' (26#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_xbar_11_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'base_xbar_11' is unconnected for instance 'xbar' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'base_xbar_11' is unconnected for instance 'xbar' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'base_xbar_11' has 40 connections declared, but only 38 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+INFO: [Synth 8-6155] done synthesizing module 'base_ps7_0_axi_periph_2' (27#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1182]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_100M_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_100M_1' (28#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_100M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'base_rst_ps7_0_100M_1' has 10 connections declared, but only 5 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_fclk0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_fclk0_0' (29#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_fclk0' of module 'base_rst_ps7_0_fclk0_0' has 10 connections declared, but only 6 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_fclk0_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_fclk0_1' (30#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_fclk1' of module 'base_rst_ps7_0_fclk0_1' has 10 connections declared, but only 6 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+INFO: [Synth 8-6157] synthesizing module 'base_switches_gpio_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_switches_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_switches_gpio_0' (31#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_switches_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_system_interrupts_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_system_interrupts_0' (32#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-13720-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_xlconcat_0_1' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_xlconcat_0_1/synth/base_xlconcat_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' (32#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_xlconcat_0_1' (33#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_xlconcat_0_1/synth/base_xlconcat_0_1.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'base' (34#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:449]
+INFO: [Synth 8-6155] done synthesizing module 'base_wrapper' (35#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/hdl/base_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1146.219 ; gain = 64.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1146.219 ; gain = 64.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1146.219 ; gain = 64.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1147.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0_in_context.xdc] for cell 'base_i/Audio_controller/audio_codec_ctrl_0'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0_in_context.xdc] for cell 'base_i/Audio_controller/audio_codec_ctrl_0'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0/base_btns_gpio_0_in_context.xdc] for cell 'base_i/btns_gpio'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_btns_gpio_0/base_btns_gpio_0/base_btns_gpio_0_in_context.xdc] for cell 'base_i/btns_gpio'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_in_context.xdc] for cell 'base_i/Audio_controller/clk_wiz_10MHz'
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_in_context.xdc:4]
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0_in_context.xdc] for cell 'base_i/Audio_controller/clk_wiz_10MHz'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc] for cell 'base_i/ps7_0'
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:4]
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc:6]
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc] for cell 'base_i/ps7_0'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0/base_proc_sys_reset_pixelclk_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk0'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0/base_proc_sys_reset_pixelclk_0_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk0'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0/base_switches_gpio_0_in_context.xdc] for cell 'base_i/switches_gpio'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_switches_gpio_0/base_switches_gpio_0/base_switches_gpio_0_in_context.xdc] for cell 'base_i/switches_gpio'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0/base_system_interrupts_0_in_context.xdc] for cell 'base_i/system_interrupts'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_system_interrupts_0/base_system_interrupts_0/base_system_interrupts_0_in_context.xdc] for cell 'base_i/system_interrupts'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_mux_vector_0_0/base_mux_vector_0_0/base_mux_vector_0_0_in_context.xdc] for cell 'base_i/Audio_controller/out_mux'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_mux_vector_0_0/base_mux_vector_0_0/base_mux_vector_0_0_in_context.xdc] for cell 'base_i/Audio_controller/out_mux'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0/base_axi_gpio_0_0_in_context.xdc] for cell 'base_i/Audio_controller/mux_sel'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0/base_axi_gpio_0_0_in_context.xdc] for cell 'base_i/Audio_controller/mux_sel'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_100M_1/base_rst_ps7_0_100M_1/base_proc_sys_reset_pixelclk_0_in_context.xdc] for cell 'base_i/rst_ps7_0_100M'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_100M_1/base_rst_ps7_0_100M_1/base_proc_sys_reset_pixelclk_0_in_context.xdc] for cell 'base_i/rst_ps7_0_100M'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0/base_i2s_receiver_0_0_in_context.xdc] for cell 'base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0/base_i2s_receiver_0_0_in_context.xdc] for cell 'base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0_in_context.xdc] for cell 'base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0_in_context.xdc] for cell 'base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1/base_mux_vector_0_1_in_context.xdc] for cell 'base_i/Audio_controller/bclk_mux'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1/base_mux_vector_0_1_in_context.xdc] for cell 'base_i/Audio_controller/bclk_mux'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0/base_mux_vector_0_1_in_context.xdc] for cell 'base_i/Audio_controller/lrclk_mux'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0/base_mux_vector_0_1_in_context.xdc] for cell 'base_i/Audio_controller/lrclk_mux'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11/base_xbar_11_in_context.xdc] for cell 'base_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11/base_xbar_11_in_context.xdc] for cell 'base_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_in_context.xdc] for cell 'base_i/Audio_controller/clk_wiz_24_576MHz'
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_in_context.xdc:4]
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_in_context.xdc] for cell 'base_i/Audio_controller/clk_wiz_24_576MHz'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk1'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_in_context.xdc] for cell 'base_i/rst_ps7_0_fclk1'
+Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0/base_auto_pc_21_in_context.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0/base_auto_pc_21_in_context.xdc] for cell 'base_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/vivado/constraints/base.xdc]
+Finished Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/vivado/constraints/base.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/vivado/constraints/base.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/base_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/base_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1210.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1210.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1210.766 ; gain = 129.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1210.766 ; gain = 129.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 263).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 264).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 265).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0/base_ps7_0_0_in_context.xdc, line 266).
+Applied set_property DONT_TOUCH = true for base_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/audio_codec_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/btns_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/clk_wiz_10MHz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/concat_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/rst_ps7_0_fclk0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/switches_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/system_interrupts. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/out_mux. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/mux_sel. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/bclk_mux. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/lrclk_mux. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/Audio_controller/clk_wiz_24_576MHz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/rst_ps7_0_fclk1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1210.766 ; gain = 129.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1210.766 ; gain = 129.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1210.766 ; gain = 129.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1229.359 ; gain = 147.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1229.582 ; gain = 147.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1249.195 ; gain = 167.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------+----------+
+|      |BlackBox name             |Instances |
++------+--------------------------+----------+
+|1     |base_xbar_11              |         1|
+|2     |base_auto_pc_0            |         1|
+|3     |base_btns_gpio_0          |         1|
+|4     |base_ps7_0_0              |         1|
+|5     |base_rst_ps7_0_100M_1     |         1|
+|6     |base_rst_ps7_0_fclk0_0    |         1|
+|7     |base_rst_ps7_0_fclk0_1    |         1|
+|8     |base_switches_gpio_0      |         1|
+|9     |base_system_interrupts_0  |         1|
+|10    |base_audio_codec_ctrl_0_0 |         1|
+|11    |base_mux_vector_0_1       |         1|
+|12    |base_clk_wiz_10MHz_0      |         1|
+|13    |base_clk_wiz_10MHz_1      |         1|
+|14    |base_bclk_mux_0           |         1|
+|15    |base_axi_gpio_0_0         |         1|
+|16    |base_mux_vector_0_0       |         1|
+|17    |base_i2s_receiver_0_0     |         1|
+|18    |base_i2s_transmitter_0_0  |         1|
++------+--------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |base_audio_codec_ctrl_0 |     1|
+|2     |base_auto_pc            |     1|
+|3     |base_axi_gpio_0         |     1|
+|4     |base_bclk_mux           |     1|
+|5     |base_btns_gpio          |     1|
+|6     |base_clk_wiz_10MHz      |     2|
+|8     |base_i2s_receiver_0     |     1|
+|9     |base_i2s_transmitter_0  |     1|
+|10    |base_mux_vector_0       |     2|
+|12    |base_ps7_0              |     1|
+|13    |base_rst_ps7_0_100M     |     1|
+|14    |base_rst_ps7_0_fclk0    |     2|
+|16    |base_switches_gpio      |     1|
+|17    |base_system_interrupts  |     1|
+|18    |base_xbar               |     1|
+|19    |IBUF                    |     7|
+|20    |IOBUF                   |     2|
+|21    |OBUF                    |     6|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1254.953 ; gain = 108.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1254.953 ; gain = 173.242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1254.953 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1274.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1274.285 ; gain = 192.574
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/base_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_synth.rpt -pb base_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  1 23:43:51 2021...

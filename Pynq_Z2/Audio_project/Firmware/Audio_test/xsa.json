@@ -1,0 +1,83 @@
+{
+    "versionMajor": "0",
+    "versionMinor": "0",
+    "usesPR": "false",
+    "platformState": "pre_synth",
+    "topModuleName": "base_wrapper",
+    "acceleratorBinaryFormat": "xclbin2",
+    "acceleratorBinaryContent": "bitstream",
+    "validAcceleratorBinaryContentValues": "dcp,bitstream",
+    "dcpFunctionStripped": "false",
+    "dcpEncrypted": "false",
+    "defaultOutputType": "hw_export",
+    "designIntent": {
+        "dataCenter": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "embedded": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "externalHost": {
+            "value": "false",
+            "explicit": "false"
+        },
+        "serverManaged": {
+            "value": "false",
+            "explicit": "false"
+        }
+    },
+    "devices": [
+        {
+            "name": "fpga0",
+            "type": "8",
+            "fpgaPart": "zynq:xc7z020:clg400:-1",
+            "part": {
+                "architecture": "zynq",
+                "device": "xc7z020",
+                "package": "clg400",
+                "speedGrade": "-1"
+            },
+            "core": {
+                "name": "OCL_REGION_0",
+                "type": "clc_region",
+                "numComputeUnits": "60",
+                "availableResources": {
+                    "bramCount": "139",
+                    "dspCount": "220",
+                    "lutCount": "51011",
+                    "registerCount": "101561"
+                }
+            }
+        }
+    ],
+    "files": [
+        {
+            "name": "base_wrapper.bit",
+            "type": "FULL_BIT"
+        }
+    ],
+    "vendor": "xilinx",
+    "description": "Vivado generated Hardware Platform",
+    "uniqueName": "xilinx:::0.0",
+    "fpgaPart": "zynq",
+    "fpgaDevice": "xc7z020",
+    "unifiedPlatform": "true",
+    "expandablePlatform": "false",
+    "softwareEmulation": "true",
+    "hardwareEmulation": "false",
+    "usesNIFD": "false",
+    "generatedName": "Vivado",
+    "generatedVersion": "2020.1",
+    "generatedChangeList": "2902540",
+    "generatedIpChangeList": "2902112",
+    "generatedTimestamp": "Sat Jan  2 00:07:10 2021",
+    "resources": [
+        {
+            "type": "REG",
+            "count": "101561"
+        }
+    ]
+}
+
