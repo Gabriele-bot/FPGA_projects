@@ -292,19 +292,19 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
  ] $clk_wiz_10MHz
 
-  # Create instance: clk_wiz_24_576MHz, and set properties
-  set clk_wiz_24_576MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_24_576MHz ]
+  # Create instance: clk_wiz_12_288MHz, and set properties
+  set clk_wiz_12_288MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_12_288MHz ]
   set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {448.322} \
-   CONFIG.CLKOUT1_PHASE_ERROR {335.207} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {24.57399} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {34.250} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {27.875} \
+   CONFIG.CLKOUT1_JITTER {360.948} \
+   CONFIG.CLKOUT1_PHASE_ERROR {301.601} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12.288} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} \
    CONFIG.MMCM_DIVCLK_DIVIDE {5} \
    CONFIG.RESET_PORT {resetn} \
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
    CONFIG.USE_LOCKED {false} \
- ] $clk_wiz_24_576MHz
+ ] $clk_wiz_12_288MHz
 
   # Create instance: i2s_audio_stream
   create_hier_cell_i2s_audio_stream $hier_obj i2s_audio_stream
@@ -347,7 +347,7 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
   connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins bclk_mux/sel] [get_bd_pins lrclk_mux/sel] [get_bd_pins mux_sel/gpio_io_o] [get_bd_pins out_mux/sel]
   connect_bd_net -net bclk_mux_y [get_bd_pins bclk] [get_bd_pins bclk_mux/y]
   connect_bd_net -net clk_wiz_10MHz_clk_out1 [get_bd_pins audio_clk_10MHz] [get_bd_pins clk_wiz_10MHz/clk_out1]
-  connect_bd_net -net clk_wiz_18_432MHz_clk_out1 [get_bd_pins aud_mclk] [get_bd_pins clk_wiz_24_576MHz/clk_out1] [get_bd_pins i2s_audio_stream/aud_mclk]
+  connect_bd_net -net clk_wiz_18_432MHz_clk_out1 [get_bd_pins aud_mclk] [get_bd_pins clk_wiz_12_288MHz/clk_out1] [get_bd_pins i2s_audio_stream/aud_mclk]
   connect_bd_net -net i2s_receiver_0_irq [get_bd_pins irq] [get_bd_pins i2s_audio_stream/irq]
   connect_bd_net -net i2s_receiver_0_lrclk_out [get_bd_pins i2s_audio_stream/lrclk_in] [get_bd_pins lrclk_mux/b]
   connect_bd_net -net i2s_receiver_0_sclk_out [get_bd_pins bclk_mux/b] [get_bd_pins i2s_audio_stream/sclk_in]
@@ -355,8 +355,8 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
   connect_bd_net -net i2s_transmitter_0_sdata_0_out [get_bd_pins i2s_audio_stream/sdata_0_out] [get_bd_pins out_mux/b]
   connect_bd_net -net lrclk_mux_y [get_bd_pins lrclk] [get_bd_pins lrclk_mux/y]
   connect_bd_net -net mux_vector_0_y [get_bd_pins sdata_o] [get_bd_pins out_mux/y]
-  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins clk_in1] [get_bd_pins audio_codec_ctrl_0/s_axi_aclk] [get_bd_pins clk_wiz_10MHz/clk_in1] [get_bd_pins clk_wiz_24_576MHz/clk_in1] [get_bd_pins i2s_audio_stream/m_axis_aud_aclk] [get_bd_pins mux_sel/s_axi_aclk]
-  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins resetn] [get_bd_pins audio_codec_ctrl_0/s_axi_aresetn] [get_bd_pins clk_wiz_10MHz/resetn] [get_bd_pins clk_wiz_24_576MHz/resetn] [get_bd_pins i2s_audio_stream/s_axi_ctrl_aresetn] [get_bd_pins mux_sel/s_axi_aresetn]
+  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins clk_in1] [get_bd_pins audio_codec_ctrl_0/s_axi_aclk] [get_bd_pins clk_wiz_10MHz/clk_in1] [get_bd_pins clk_wiz_12_288MHz/clk_in1] [get_bd_pins i2s_audio_stream/m_axis_aud_aclk] [get_bd_pins mux_sel/s_axi_aclk]
+  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins resetn] [get_bd_pins audio_codec_ctrl_0/s_axi_aresetn] [get_bd_pins clk_wiz_10MHz/resetn] [get_bd_pins clk_wiz_12_288MHz/resetn] [get_bd_pins i2s_audio_stream/s_axi_ctrl_aresetn] [get_bd_pins mux_sel/s_axi_aresetn]
   connect_bd_net -net rst_ps7_0_fclk1_peripheral_reset [get_bd_pins aud_mrst] [get_bd_pins i2s_audio_stream/aud_mrst]
 
   # Restore current instance

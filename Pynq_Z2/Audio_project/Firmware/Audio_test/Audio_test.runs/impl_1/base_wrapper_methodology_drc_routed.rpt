@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Jan  1 23:46:07 2021
+| Date         : Sat Jan  2 17:02:09 2021
 | Host         : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
 | Design       : base_wrapper
@@ -41,7 +41,7 @@ Related violations: <none>
 
 TIMING-4#2 Critical Warning
 Invalid primary clock redefinition on a clock tree  
-Invalid clock redefinition on a clock tree. The primary clock base_i/Audio_controller/clk_wiz_24_576MHz/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
+Invalid clock redefinition on a clock tree. The primary clock base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
 Related violations: <none>
 
 TIMING-27#1 Critical Warning
@@ -51,7 +51,7 @@ Related violations: <none>
 
 TIMING-27#2 Critical Warning
 Invalid primary clock on hierarchical pin  
-A primary clock base_i/Audio_controller/clk_wiz_24_576MHz/inst/clk_in1 is created on an inappropriate internal pin base_i/Audio_controller/clk_wiz_24_576MHz/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+A primary clock base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_in1 is created on an inappropriate internal pin base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
 Related violations: <none>
 
 TIMING-18#1 Warning

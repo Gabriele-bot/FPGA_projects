@@ -42,22 +42,22 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_axi_gpio_0
 # IP: bd/base/ip/base_rst_ps7_0_100M_1/base_rst_ps7_0_100M_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_rst_ps7_0_100M_1 || ORIG_REF_NAME==base_rst_ps7_0_100M_1} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_i2s_receiver_0_0 || ORIG_REF_NAME==base_i2s_receiver_0_0} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_i2s_transmitter_0_0 || ORIG_REF_NAME==base_i2s_transmitter_0_0} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_mux_vector_0_1 || ORIG_REF_NAME==base_mux_vector_0_1} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_bclk_mux_0 || ORIG_REF_NAME==base_bclk_mux_0} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_xbar_11 || ORIG_REF_NAME==base_xbar_11} -quiet] -quiet
 
-# IP: g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_ps7_0_axi_periph_2/base_ps7_0_axi_periph_2.xci
+# IP: G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_ps7_0_axi_periph_2/base_ps7_0_axi_periph_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==base_ps7_0_axi_periph_2 || ORIG_REF_NAME==base_ps7_0_axi_periph_2} -quiet] -quiet
 
 # IP: bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1.xci

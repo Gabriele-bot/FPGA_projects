@@ -1,59 +1,76 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.637975",
-   "Default View_TopLeft":"-672,0",
+   "Default View_ScaleFactor":"1.19253",
+   "Default View_TopLeft":"486,383",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port S_AXI -pg 1 -lvl 0 -x -110 -y 200 -defaultsOSRD
-preplace port S_AXI1 -pg 1 -lvl 0 -x -110 -y 60 -defaultsOSRD
-preplace port s_axi_ctrl -pg 1 -lvl 0 -x -110 -y 560 -defaultsOSRD
-preplace port s_axi_ctrl1 -pg 1 -lvl 0 -x -110 -y 580 -defaultsOSRD
-preplace port sdata_i -pg 1 -lvl 0 -x -110 -y 220 -defaultsOSRD
-preplace port clk_in1 -pg 1 -lvl 0 -x -110 -y 80 -defaultsOSRD
-preplace port resetn -pg 1 -lvl 0 -x -110 -y 240 -defaultsOSRD
-preplace port aud_mclk -pg 1 -lvl 3 -x 640 -y 710 -defaultsOSRD
-preplace port audio_clk_10MHz -pg 1 -lvl 3 -x 640 -y 500 -defaultsOSRD
-preplace port aud_mrst -pg 1 -lvl 0 -x -110 -y 660 -defaultsOSRD
-preplace port irq -pg 1 -lvl 3 -x 640 -y 580 -defaultsOSRD
-preplace port irq1 -pg 1 -lvl 3 -x 640 -y 640 -defaultsOSRD
-preplace portBus bclk -pg 1 -lvl 3 -x 640 -y 80 -defaultsOSRD
-preplace portBus codec_addr -pg 1 -lvl 3 -x 640 -y 160 -defaultsOSRD
-preplace portBus lrclk -pg 1 -lvl 3 -x 640 -y 240 -defaultsOSRD
-preplace portBus sdata_o -pg 1 -lvl 3 -x 640 -y 380 -defaultsOSRD
-preplace inst bclk_mux -pg 1 -lvl 2 -x 510 -y 80 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -130 -y 200 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x -130 -y 60 -defaultsOSRD
+preplace port s_axi_ctrl -pg 1 -lvl 0 -x -130 -y 560 -defaultsOSRD
+preplace port s_axi_ctrl1 -pg 1 -lvl 0 -x -130 -y 580 -defaultsOSRD
+preplace port sdata_i -pg 1 -lvl 0 -x -130 -y 220 -defaultsOSRD
+preplace port clk_in1 -pg 1 -lvl 0 -x -130 -y 80 -defaultsOSRD
+preplace port resetn -pg 1 -lvl 0 -x -130 -y 240 -defaultsOSRD
+preplace port aud_mclk -pg 1 -lvl 3 -x 1230 -y 710 -defaultsOSRD
+preplace port audio_clk_10MHz -pg 1 -lvl 3 -x 1230 -y 500 -defaultsOSRD
+preplace port aud_mrst -pg 1 -lvl 0 -x -130 -y 660 -defaultsOSRD
+preplace port irq -pg 1 -lvl 3 -x 1230 -y 580 -defaultsOSRD
+preplace port irq1 -pg 1 -lvl 3 -x 1230 -y 640 -defaultsOSRD
+preplace portBus bclk -pg 1 -lvl 3 -x 1230 -y 80 -defaultsOSRD
+preplace portBus codec_addr -pg 1 -lvl 3 -x 1230 -y 160 -defaultsOSRD
+preplace portBus lrclk -pg 1 -lvl 3 -x 1230 -y 240 -defaultsOSRD
+preplace portBus sdata_o -pg 1 -lvl 3 -x 1230 -y 380 -defaultsOSRD
+preplace inst bclk_mux -pg 1 -lvl 2 -x 1110 -y 80 -defaultsOSRD
 preplace inst audio_codec_ctrl_0 -pg 1 -lvl 1 -x 180 -y 230 -defaultsOSRD
-preplace inst lrclk_mux -pg 1 -lvl 2 -x 510 -y 240 -defaultsOSRD
+preplace inst lrclk_mux -pg 1 -lvl 2 -x 1110 -y 240 -defaultsOSRD
 preplace inst mux_sel -pg 1 -lvl 1 -x 180 -y 80 -defaultsOSRD
-preplace inst out_mux -pg 1 -lvl 2 -x 510 -y 380 -defaultsOSRD
-preplace inst clk_wiz_10MHz -pg 1 -lvl 2 -x 510 -y 510 -defaultsOSRD
-preplace inst i2s_audio_stream -pg 1 -lvl 1 -x 180 -y 640 -defaultsOSRD
-preplace inst clk_wiz_24_576MHz -pg 1 -lvl 2 -x 510 -y 710 -defaultsOSRD
-preplace netloc audio_codec_ctrl_0_bclk 1 1 1 320 60n
-preplace netloc i2s_receiver_0_sclk_out 1 1 1 340 80n
-preplace netloc axi_gpio_0_gpio_io_o 1 1 1 360 90n
+preplace inst out_mux -pg 1 -lvl 2 -x 1110 -y 380 -defaultsOSRD
+preplace inst clk_wiz_10MHz -pg 1 -lvl 2 -x 1110 -y 510 -defaultsOSRD
+preplace inst i2s_audio_stream -pg 1 -lvl 1 -x 180 -y 658 -defaultsOSRD
+preplace inst i2s_audio_stream|i2s_receiver_0 -pg 1 -lvl 1 -x 290 -y 748 -defaultsOSRD
+preplace inst i2s_audio_stream|i2s_transmitter_0 -pg 1 -lvl 2 -x 650 -y 788 -defaultsOSRD
+preplace inst clk_wiz_12_288MHz -pg 1 -lvl 2 -x 1110 -y 710 -defaultsOSRD
+preplace netloc audio_codec_ctrl_0_bclk 1 1 1 930 60n
+preplace netloc i2s_receiver_0_sclk_out 1 1 1 950 80n
+preplace netloc axi_gpio_0_gpio_io_o 1 1 1 980 90n
 preplace netloc audio_codec_ctrl_0_lrclk 1 1 1 N 220
-preplace netloc audio_codec_ctrl_0_sdata_o 1 1 1 350 240n
-preplace netloc i2s_receiver_0_lrclk_out 1 1 1 370 240n
-preplace netloc i2s_transmitter_0_sdata_0_out 1 1 1 400 380n
+preplace netloc audio_codec_ctrl_0_sdata_o 1 1 1 960 240n
+preplace netloc i2s_receiver_0_lrclk_out 1 1 1 970 240n
+preplace netloc i2s_transmitter_0_sdata_0_out 1 1 1 1000 380n
 preplace netloc bclk_mux_y 1 2 1 NJ 80
-preplace netloc Net 1 0 1 -80 220n
-preplace netloc audio_codec_ctrl_0_codec_address 1 1 2 330J 160 NJ
-preplace netloc ps7_0_FCLK_CLK0 1 0 2 -40 520 320
-preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 2 -70 500 380
+preplace netloc Net 1 0 1 -100 220n
+preplace netloc audio_codec_ctrl_0_codec_address 1 1 2 940J 160 NJ
+preplace netloc ps7_0_FCLK_CLK0 1 0 2 -60 518 930
+preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 2 -90 500 980
 preplace netloc lrclk_mux_y 1 2 1 NJ 240
-preplace netloc clk_wiz_18_432MHz_clk_out1 1 0 3 -50 780 NJ 780 610
+preplace netloc clk_wiz_18_432MHz_clk_out1 1 0 3 -70 1028 NJ 1028 1210
 preplace netloc mux_vector_0_y 1 2 1 NJ 380
 preplace netloc clk_wiz_10MHz_clk_out1 1 2 1 NJ 500
-preplace netloc rst_ps7_0_fclk1_peripheral_reset 1 0 1 -90J 660n
-preplace netloc i2s_receiver_0_irq 1 1 2 390J 580 NJ
-preplace netloc i2s_transmitter_0_irq 1 1 2 410J 640 NJ
-preplace netloc ps7_0_axi_periph_M00_AXI 1 0 1 NJ 200
+preplace netloc rst_ps7_0_fclk1_peripheral_reset 1 0 1 -110J 660n
+preplace netloc i2s_receiver_0_irq 1 1 2 990J 580 NJ
+preplace netloc i2s_transmitter_0_irq 1 1 2 1010J 640 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 1 -70J 560n
 preplace netloc ps7_0_axi_periph_M04_AXI 1 0 1 NJ 60
-preplace netloc ps7_0_axi_periph_M02_AXI 1 0 1 -50J 560n
-preplace netloc ps7_0_axi_periph_M03_AXI 1 0 1 -60J 580n
-levelinfo -pg 1 -110 180 510 640
-pagesize -pg 1 -db -bbox -sgen -230 0 810 1070
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 1 NJ 200
+preplace netloc ps7_0_axi_periph_M03_AXI 1 0 1 -80J 580n
+preplace netloc i2s_audio_stream|ps7_0_FCLK_CLK0 1 0 2 130 588 490
+preplace netloc i2s_audio_stream|rst_ps7_0_fclk0_peripheral_aresetn 1 0 2 140 618 460
+preplace netloc i2s_audio_stream|clk_wiz_18_432MHz_clk_out1 1 0 2 100 578 510
+preplace netloc i2s_audio_stream|rst_ps7_0_fclk1_peripheral_reset 1 0 2 120 598 480
+preplace netloc i2s_audio_stream|i2s_receiver_0_irq 1 1 2 470 638 NJ
+preplace netloc i2s_audio_stream|i2s_receiver_0_lrclk_out 1 1 2 450 938 NJ
+preplace netloc i2s_audio_stream|i2s_receiver_0_sclk_out 1 1 2 440 958 NJ
+preplace netloc i2s_audio_stream|Net 1 0 1 N 818
+preplace netloc i2s_audio_stream|i2s_transmitter_0_irq 1 2 1 800 778n
+preplace netloc i2s_audio_stream|i2s_transmitter_0_sdata_0_out 1 2 1 790 798n
+preplace netloc i2s_audio_stream|i2s_receiver_0_m_axis_aud 1 1 1 N 718
+preplace netloc i2s_audio_stream|ps7_0_axi_periph_M03_AXI 1 0 2 NJ 608 500
+preplace netloc i2s_audio_stream|ps7_0_axi_periph_M02_AXI 1 0 1 110 588n
+levelinfo -pg 1 -130 180 1110 1230
+levelinfo -hier i2s_audio_stream * 290 650 *
+pagesize -pg 1 -db -bbox -sgen -250 0 1400 1070
+pagesize -hier i2s_audio_stream -db -bbox -sgen 70 568 830 1008
 "
 }
-
+0
