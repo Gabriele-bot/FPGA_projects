@@ -1,0 +1,12 @@
+
+{ 
+    crc :  9514237972362196422  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 8606a5548bd647a294814e8b703ce3cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_14 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Axi_aud_demux_wrapper_tb_behav xil_defaultlib.Axi_aud_demux_wrapper_tb xil_defaultlib.glbl" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "20:09:33" , 
+    linkCmd : "G:\\Vivado_2020.1\\Vivado\\2020.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/Axi_aud_demux_wrapper_tb_behav/xsimk.exe\"   \"xsim.dir/Axi_aud_demux_wrapper_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/Axi_aud_demux_wrapper_tb_behav/obj/xsim_1.win64.obj\" -L\"G:\\Vivado_2020.1\\Vivado\\2020.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

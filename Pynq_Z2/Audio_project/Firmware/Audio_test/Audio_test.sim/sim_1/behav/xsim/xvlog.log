@@ -1,0 +1,2 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sim_1/imports/new/Axi_aud_demux_wrapper_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Axi_aud_demux_wrapper_tb

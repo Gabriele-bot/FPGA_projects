@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.runs/base_rst_ps7_0_fclk0_0_synth_1'
+HD_PWD='G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/base_rst_ps7_0_fclk0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

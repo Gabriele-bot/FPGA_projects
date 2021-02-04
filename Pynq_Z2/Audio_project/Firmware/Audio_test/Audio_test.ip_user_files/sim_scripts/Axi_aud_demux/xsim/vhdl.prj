@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/Axi_aud_demux/ip/Axi_aud_demux_fir_compiler_0_0/sim/Axi_aud_demux_fir_compiler_0_0.vhd" \
+"../../../bd/Axi_aud_demux/ip/Axi_aud_demux_fir_compiler_0_1/sim/Axi_aud_demux_fir_compiler_0_1.vhd" \
+
+nosort

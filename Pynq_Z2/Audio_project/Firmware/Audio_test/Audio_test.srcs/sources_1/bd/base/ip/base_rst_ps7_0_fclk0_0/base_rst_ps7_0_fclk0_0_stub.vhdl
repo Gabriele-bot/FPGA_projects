@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri Jan  1 00:10:14 2021
+-- Date        : Sat Jan 16 14:53:14 2021
 -- Host        : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top base_rst_ps7_0_fclk0_0 -prefix
---               base_rst_ps7_0_fclk0_0_ base_proc_sys_reset_pixelclk_0_stub.vhdl
--- Design      : base_proc_sys_reset_pixelclk_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_stub.vhdl
+-- Design      : base_rst_ps7_0_fclk0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------

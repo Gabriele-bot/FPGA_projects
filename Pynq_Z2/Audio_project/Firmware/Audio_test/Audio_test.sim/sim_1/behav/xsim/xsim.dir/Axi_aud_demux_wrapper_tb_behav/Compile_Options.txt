@@ -1,0 +1,1 @@
+-wto "8606a5548bd647a294814e8b703ce3cf" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xbip_utils_v3_0_10" -L "axi_utils_v2_0_6" -L "fir_compiler_v7_2_14" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "Axi_aud_demux_wrapper_tb_behav" "xil_defaultlib.Axi_aud_demux_wrapper_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

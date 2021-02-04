@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "base_xbar_11_synth_1" START { ROLLUP_AUTO }
+set_msg_config -id {Common 17-41} -limit 10000000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -90,7 +91,7 @@ set_property ip_output_repo g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet {{g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci}}
+read_ip -quiet {{G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci}}
 set_property used_in_implementation false [get_files -all {{g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }

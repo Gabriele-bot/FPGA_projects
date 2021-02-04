@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri Jan  1 23:45:14 2021
+| Date         : Sat Jan 16 16:41:38 2021
 | Host         : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file base_wrapper_utilization_placed.rpt -pb base_wrapper_utilization_placed.pb
 | Design       : base_wrapper
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 2164 |     0 |     53200 |  4.07 |
-|   LUT as Logic             | 2101 |     0 |     53200 |  3.95 |
-|   LUT as Memory            |   63 |     0 |     17400 |  0.36 |
+| Slice LUTs                 | 2838 |     0 |     53200 |  5.33 |
+|   LUT as Logic             | 2245 |     0 |     53200 |  4.22 |
+|   LUT as Memory            |  593 |     0 |     17400 |  3.41 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |   63 |     0 |           |       |
-| Slice Registers            | 4817 |     0 |    106400 |  4.53 |
-|   Register as Flip Flop    | 4817 |     0 |    106400 |  4.53 |
+|     LUT as Shift Register  |  593 |     0 |           |       |
+| Slice Registers            | 6878 |     0 |    106400 |  6.46 |
+|   Register as Flip Flop    | 6878 |     0 |    106400 |  6.46 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |   24 |     0 |     26600 |  0.09 |
 | F8 Muxes                   |   12 |     0 |     13300 |  0.09 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 2     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 68    |          Yes |         Set |            - |
-| 4747  |          Yes |       Reset |            - |
+| 80    |          Yes |         Set |            - |
+| 6796  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -69,25 +69,25 @@ Table of Contents
 +--------------------------------------------+------+-------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Available | Util% |
 +--------------------------------------------+------+-------+-----------+-------+
-| Slice                                      | 1232 |     0 |     13300 |  9.26 |
-|   SLICEL                                   |  815 |     0 |           |       |
-|   SLICEM                                   |  417 |     0 |           |       |
-| LUT as Logic                               | 2101 |     0 |     53200 |  3.95 |
+| Slice                                      | 1794 |     0 |     13300 | 13.49 |
+|   SLICEL                                   | 1175 |     0 |           |       |
+|   SLICEM                                   |  619 |     0 |           |       |
+| LUT as Logic                               | 2245 |     0 |     53200 |  4.22 |
 |   using O5 output only                     |    0 |       |           |       |
-|   using O6 output only                     | 1617 |       |           |       |
-|   using O5 and O6                          |  484 |       |           |       |
-| LUT as Memory                              |   63 |     0 |     17400 |  0.36 |
+|   using O6 output only                     | 1704 |       |           |       |
+|   using O5 and O6                          |  541 |       |           |       |
+| LUT as Memory                              |  593 |     0 |     17400 |  3.41 |
 |   LUT as Distributed RAM                   |    0 |     0 |           |       |
-|   LUT as Shift Register                    |   63 |     0 |           |       |
-|     using O5 output only                   |    0 |       |           |       |
+|   LUT as Shift Register                    |  593 |     0 |           |       |
+|     using O5 output only                   |    2 |       |           |       |
 |     using O6 output only                   |   59 |       |           |       |
-|     using O5 and O6                        |    4 |       |           |       |
-| Slice Registers                            | 4817 |     0 |    106400 |  4.53 |
-|   Register driven from within the Slice    | 1532 |       |           |       |
-|   Register driven from outside the Slice   | 3285 |       |           |       |
-|     LUT in front of the register is unused | 2904 |       |           |       |
-|     LUT in front of the register is used   |  381 |       |           |       |
-| Unique Control Sets                        |  131 |       |     13300 |  0.98 |
+|     using O5 and O6                        |  532 |       |           |       |
+| Slice Registers                            | 6878 |     0 |    106400 |  6.46 |
+|   Register driven from within the Slice    | 2685 |       |           |       |
+|   Register driven from outside the Slice   | 4193 |       |           |       |
+|     LUT in front of the register is unused | 3831 |       |           |       |
+|     LUT in front of the register is used   |  362 |       |           |       |
+| Unique Control Sets                        |  169 |       |     13300 |  1.27 |
 +--------------------------------------------+------+-------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
 
@@ -98,10 +98,10 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |    1 |     0 |       140 |  0.71 |
+| Block RAM Tile    |    2 |     0 |       140 |  1.43 |
 |   RAMB36/FIFO*    |    0 |     0 |       140 |  0.00 |
-|   RAMB18          |    2 |     0 |       280 |  0.71 |
-|     RAMB18E1 only |    2 |       |           |       |
+|   RAMB18          |    4 |     0 |       280 |  1.43 |
+|     RAMB18E1 only |    4 |       |           |       |
 +-------------------+------+-------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
 
@@ -109,11 +109,12 @@ Table of Contents
 4. DSP
 ------
 
-+-----------+------+-------+-----------+-------+
-| Site Type | Used | Fixed | Available | Util% |
-+-----------+------+-------+-----------+-------+
-| DSPs      |    0 |     0 |       220 |  0.00 |
-+-----------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   24 |     0 |       220 | 10.91 |
+|   DSP48E1 only |   24 |       |           |       |
++----------------+------+-------+-----------+-------+
 
 
 5. IO and GT Specific
@@ -180,24 +181,25 @@ Table of Contents
 +------------+------+----------------------+
 |  Ref Name  | Used |  Functional Category |
 +------------+------+----------------------+
-| FDRE       | 4747 |         Flop & Latch |
-| LUT6       |  851 |                  LUT |
-| LUT5       |  581 |                  LUT |
-| LUT3       |  517 |                  LUT |
-| LUT4       |  299 |                  LUT |
-| LUT2       |  295 |                  LUT |
+| FDRE       | 6796 |         Flop & Latch |
+| SRL16E     | 1078 |   Distributed Memory |
+| LUT6       |  895 |                  LUT |
+| LUT5       |  620 |                  LUT |
+| LUT3       |  541 |                  LUT |
+| LUT4       |  368 |                  LUT |
+| LUT2       |  316 |                  LUT |
 | BIBUF      |  130 |                   IO |
-| FDSE       |   68 |         Flop & Latch |
+| FDSE       |   80 |         Flop & Latch |
 | CARRY4     |   58 |           CarryLogic |
 | SRLC32E    |   47 |   Distributed Memory |
-| LUT1       |   42 |                  LUT |
+| LUT1       |   46 |                  LUT |
 | MUXF7      |   24 |                MuxFx |
-| SRL16E     |   20 |   Distributed Memory |
+| DSP48E1    |   24 |     Block Arithmetic |
 | MUXF8      |   12 |                MuxFx |
 | IBUF       |    9 |                   IO |
 | OBUF       |    6 |                   IO |
 | BUFG       |    5 |                Clock |
-| RAMB18E1   |    2 |         Block Memory |
+| RAMB18E1   |    4 |         Block Memory |
 | OBUFT      |    2 |                   IO |
 | MMCME2_ADV |    2 |                Clock |
 | FDPE       |    2 |         Flop & Latch |
@@ -216,26 +218,30 @@ Table of Contents
 10. Instantiated Netlists
 -------------------------
 
-+---------------------------+------+
-|          Ref Name         | Used |
-+---------------------------+------+
-| base_xbar_11              |    1 |
-| base_system_interrupts_0  |    1 |
-| base_switches_gpio_0      |    1 |
-| base_rst_ps7_0_fclk0_1    |    1 |
-| base_rst_ps7_0_fclk0_0    |    1 |
-| base_ps7_0_0              |    1 |
-| base_mux_vector_0_1       |    1 |
-| base_mux_vector_0_0       |    1 |
-| base_i2s_transmitter_0_0  |    1 |
-| base_i2s_receiver_0_0     |    1 |
-| base_clk_wiz_10MHz_1      |    1 |
-| base_clk_wiz_10MHz_0      |    1 |
-| base_btns_gpio_0          |    1 |
-| base_bclk_mux_0           |    1 |
-| base_axi_gpio_0_0         |    1 |
-| base_auto_pc_0            |    1 |
-| base_audio_codec_ctrl_0_0 |    1 |
-+---------------------------+------+
++-----------------------------------------+------+
+|                 Ref Name                | Used |
++-----------------------------------------+------+
+| base_xbar_11                            |    1 |
+| base_system_interrupts_0                |    1 |
+| base_switches_gpio_0                    |    1 |
+| base_rst_ps7_0_fclk0_1                  |    1 |
+| base_rst_ps7_0_fclk0_0                  |    1 |
+| base_ps7_0_0                            |    1 |
+| base_mux_vector_0_1                     |    1 |
+| base_mux_vector_0_0                     |    1 |
+| base_i2s_transmitter_0_0                |    1 |
+| base_i2s_receiver_0_0                   |    1 |
+| base_fir_compiler_0_2                   |    1 |
+| base_fir_compiler_0_1                   |    1 |
+| base_clk_wiz_10MHz_1                    |    1 |
+| base_clk_wiz_10MHz_0                    |    1 |
+| base_btns_gpio_0                        |    1 |
+| base_bclk_mux_0                         |    1 |
+| base_axi_gpio_0_0                       |    1 |
+| base_auto_pc_0                          |    1 |
+| base_audio_codec_ctrl_0_0               |    1 |
+| base_LR_Stream2AXI_interf_0_0           |    1 |
+| base_AXI_aud_interface_0_upgraded_ipi_0 |    1 |
++-----------------------------------------+------+
 
 

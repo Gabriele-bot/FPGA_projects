@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/Axi_aud_demux/ip/Axi_aud_demux_AXI_aud_interface_0_0/sim/Axi_aud_demux_AXI_aud_interface_0_0.v" \
+"../../../bd/Axi_aud_demux/ip/Axi_aud_demux_LR_Stream2AXI_interf_0_0/sim/Axi_aud_demux_LR_Stream2AXI_interf_0_0.v" \
+"../../../bd/Axi_aud_demux/sim/Axi_aud_demux.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

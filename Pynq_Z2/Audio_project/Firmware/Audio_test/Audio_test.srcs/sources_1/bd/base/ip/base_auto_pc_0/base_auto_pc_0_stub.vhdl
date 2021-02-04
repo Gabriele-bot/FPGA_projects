@@ -1,11 +1,11 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri Jan  1 19:47:50 2021
+-- Date        : Sat Jan 16 14:55:38 2021
 -- Host        : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top base_auto_pc_0 -prefix
---               base_auto_pc_0_ base_auto_pc_21_stub.vhdl
--- Design      : base_auto_pc_21
+--               base_auto_pc_0_ base_auto_pc_0_stub.vhdl
+-- Design      : base_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
 -- --------------------------------------------------------------------------------

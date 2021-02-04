@@ -22,22 +22,22 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4980
+INFO: [Synth 8-7075] Helper process launched with PID 15096
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1073.883 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.770 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'base_xbar_11' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/synth/base_xbar_11.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 8 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 448'b0000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_M_AXI_ADDR_WIDTH bound to: 224'b00000000000000000000000000010000000000000000000000000000000011010000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000011110000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 256'b0000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000011010000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000011110000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -46,16 +46,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [g:
 	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
 	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
 	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
-	Parameter C_M_AXI_WRITE_ISSUING bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
-	Parameter C_M_AXI_READ_ISSUING bound to: 224'b00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 256'b0000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
 	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
 	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
@@ -65,28 +65,28 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' [g:
 	Parameter P_AXILITE bound to: 2 - type: integer 
 	Parameter P_AXILITE_SIZE bound to: 3'b010 
 	Parameter P_INCR bound to: 2'b01 
-	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 7'b1111111 
-	Parameter P_M_AXI_SUPPORTS_READ bound to: 7'b1111111 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 8'b11111111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 8'b11111111 
 	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
 	Parameter C_DEBUG bound to: 1 - type: integer 
 	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
-	Parameter P_M_AXI_ERR_MODE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_M_AXI_ERR_MODE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
-	Parameter C_NUM_MASTER_SLOTS bound to: 7 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 8 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 448'b0000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 448'b0000000000000000000000000000000001000001100000001111111111111111000000000000000000000000000000000100000100100000000111111111111100000000000000000000000000000000010000010010011011111111111111110000000000000000000000000000000001000000000000001111111111111111000000000000000000000000000000000111111111111111111111111111111100000000000000000000000000000000010000010010000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000001100000001111111111111111000000000000000000000000000000000100000100100000000111111111111100000000000000000000000000000000010000010010011011111111111111110000000000000000000000000000000001000000000000001111111111111111000000000000000000000000000000000111111111111111111111111111111100000000000000000000000000000000010000010010000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -97,11 +97,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [g
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
 	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
-	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 7'b1111111 
-	Parameter C_M_AXI_SUPPORTS_READ bound to: 7'b1111111 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 8'b11111111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 8'b11111111 
 	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
-	Parameter C_M_AXI_SECURE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter C_M_AXI_ERR_MODE bound to: 224'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_SECURE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_R_REGISTER bound to: 1 - type: integer 
 	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
 	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
@@ -109,9 +109,9 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [g
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE bound to: 8 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 9 - type: integer 
 	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 3 - type: integer 
-	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 4 - type: integer 
 	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
 	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
 	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
@@ -121,8 +121,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [g
 	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
 	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
 	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
-	Parameter P_M_SECURE_MASK bound to: 7'b0000000 
-	Parameter P_M_AXILITE_MASK bound to: 7'b0000000 
+	Parameter P_M_SECURE_MASK bound to: 8'b00000000 
+	Parameter P_M_AXILITE_MASK bound to: 8'b00000000 
 	Parameter P_FIXED bound to: 2'b00 
 	Parameter P_BYPASS bound to: 0 - type: integer 
 	Parameter P_LIGHTWT bound to: 7 - type: integer 
@@ -131,16 +131,16 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' [g
 	Parameter P_DECERR bound to: 2'b11 
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_addr_decoder' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_NUM_TARGETS bound to: 7 - type: integer 
+	Parameter C_NUM_TARGETS bound to: 8 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 3 - type: integer 
 	Parameter C_NUM_RANGES bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 448'b0000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 448'b0000000000000000000000000000000001000001100000001111111111111111000000000000000000000000000000000100000100100000000111111111111100000000000000000000000000000000010000010010011011111111111111110000000000000000000000000000000001000000000000001111111111111111000000000000000000000000000000000111111111111111111111111111111100000000000000000000000000000000010000010010000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
-	Parameter C_TARGET_QUAL bound to: 8'b01111111 
+	Parameter C_BASE_ADDR bound to: 512'b11111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001000001100000000000000000000000000000000000000000000000000000000100000100100000000000000000000000000000000000000000000000000000010000010010011000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000010000010010000100000000000000000000000000000000000000000000000001000011110000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000001100000001111111111111111000000000000000000000000000000000100000100100000000111111111111100000000000000000000000000000000010000010010011011111111111111110000000000000000000000000000000001000000000000001111111111111111000000000000000000000000000000000111111111111111111111111111111100000000000000000000000000000000010000010010000111111111111111110000000000000000000000000000000001000011110000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 9'b011111111 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
@@ -236,8 +236,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_22_splitter__paramet
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_splitter__parameterized0' (6#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 8 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
@@ -248,8 +248,8 @@ INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__par
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 8 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
@@ -259,26 +259,26 @@ INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_21_axic_regist
 INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_21_axic_register_slice' (8#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/2ef9/hdl/axi_register_slice_v2_1_vl_rfs.v:1498]
 INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_RATIO bound to: 8 - type: integer 
-	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
+	Parameter C_RATIO bound to: 9 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 4 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_crossbar_sasd' (9#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_22_axi_crossbar' (10#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ipshared/b68e/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'base_xbar_11' (11#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/synth/base_xbar_11.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1244.277 ; gain = 170.395
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1251.766 ; gain = 169.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1244.277 ; gain = 170.395
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1251.766 ; gain = 169.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1244.277 ; gain = 170.395
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1251.766 ; gain = 169.996
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1244.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1251.766 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -289,30 +289,30 @@ Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test
 Finished Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/base_xbar_11_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1297.820 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.461 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1297.887 ; gain = 0.066
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1269.215 ; gain = 10.754
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/base_xbar_11_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -321,16 +321,19 @@ Detailed RTL Component Info :
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               36 Bit    Registers := 2     
-	                8 Bit    Registers := 1     
-	                3 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 14    
 +---Muxes : 
 	   2 Input   64 Bit        Muxes := 1     
 	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 64    
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 71    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -347,25 +350,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1269.215 ; gain = 187.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 1271.191 ; gain = 189.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -383,37 +386,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -430,35 +433,35 @@ Report Cell Usage:
 |      |Cell |Count |
 +------+-----+------+
 |1     |LUT1 |     1|
-|2     |LUT2 |    20|
-|3     |LUT3 |    49|
-|4     |LUT4 |    55|
-|5     |LUT5 |    78|
-|6     |LUT6 |   107|
-|7     |FDRE |   136|
+|2     |LUT2 |    16|
+|3     |LUT3 |    10|
+|4     |LUT4 |   103|
+|5     |LUT5 |    96|
+|6     |LUT6 |   119|
+|7     |FDRE |   137|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:45 . Memory (MB): peak = 1297.887 ; gain = 170.395
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1297.887 ; gain = 224.004
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1281.031 ; gain = 181.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1281.031 ; gain = 199.262
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1297.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1289.043 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1297.887 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1289.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 57 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1297.887 ; gain = 224.004
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:01 . Memory (MB): peak = 1289.043 ; gain = 207.273
 INFO: [Common 17-1381] The checkpoint 'G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/base_xbar_11_synth_1/base_xbar_11.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_xbar_11, cache-ID = 0d0b846fb4f3b759
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_xbar_11, cache-ID = 1e8539e0aed9d791
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 INFO: [Common 17-1381] The checkpoint 'G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/base_xbar_11_synth_1/base_xbar_11.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file base_xbar_11_utilization_synth.rpt -pb base_xbar_11_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  1 19:46:55 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 16 14:54:30 2021...

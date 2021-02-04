@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  1 23:40:42 2021" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jan 16 16:37:11 2021" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="base" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -33,6 +33,71 @@
     <PORT DIR="O" LEFT="0" NAME="sdata_o" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_out_mux_y">
       <CONNECTIONS>
         <CONNECTION INSTANCE="Audio_controller_out_mux" PORT="y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_MIO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="MIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="ps7_0_DDR_VRN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="ps7_0_DDR_VRP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="ps7_0_PS_SRSTB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_SRSTB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="ps7_0_PS_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="ps7_0_PS_PORB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_PORB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="btns_4bits_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_gpio_io_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="btns_gpio" PORT="gpio_io_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="IIC_1_sda_i" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_1_sda_o" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_1_sda_t" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_T"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="IIC_1_scl_i" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_I">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_I"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_1_scl_o" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_O">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_O"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IIC_1_scl_t" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_T">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_T"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="1" NAME="sws_2bits_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="switches_gpio_gpio_io_i">
@@ -113,71 +178,6 @@
     <PORT DIR="IO" LEFT="3" NAME="DDR_dqs_p" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_DDR_DQS">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ps7_0" PORT="DDR_DQS"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="3" NAME="btns_4bits_tri_i" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_gpio_io_i">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="btns_gpio" PORT="gpio_io_i"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="IIC_1_sda_i" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_1_sda_o" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_1_sda_t" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SDA_T"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="IIC_1_scl_i" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_I">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_I"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_1_scl_o" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_O">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_O"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="IIC_1_scl_t" SIGIS="undef" SIGNAME="ps7_0_I2C1_SCL_T">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="I2C1_SCL_T"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_MIO">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="MIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="ps7_0_DDR_VRN">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRN"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="ps7_0_DDR_VRP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRP"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="ps7_0_PS_SRSTB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_SRSTB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="ps7_0_PS_CLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_CLK"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="ps7_0_PS_PORB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -298,7 +298,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="codec_addr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -398,7 +398,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1065,7 +1065,7 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1079,7 +1079,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="5" FULLNAME="/Audio_controller/clk_wiz_24_576MHz" HWVERSION="6.0" INSTANCE="Audio_controller_clk_wiz_24_576MHz" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
+    <MODULE COREREVISION="5" FULLNAME="/Audio_controller/clk_wiz_12_288MHz" HWVERSION="6.0" INSTANCE="Audio_controller_clk_wiz_12_288MHz" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v6_0;d=pg065-clk-wiz.pdf"/>
       </DOCUMENTS>
@@ -1156,14 +1156,14 @@
         <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1__24.57399______0.000______50.0______448.322____335.207"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1__12.28800______0.000______50.0______360.948____301.601"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="no_CLK_OUT2_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="no_CLK_OUT3_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="no_CLK_OUT4_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
-        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="24.57399"/>
+        <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="12.288"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -1184,7 +1184,7 @@
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="24.57399"/>
+        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="12.28800"/>
         <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="100.000"/>
@@ -1216,7 +1216,7 @@
         <PARAMETER NAME="C_CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="C_MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="34.250"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="48.000"/>
         <PARAMETER NAME="C_MMCM_CLKIN1_PERIOD" VALUE="10.000"/>
         <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.000"/>
         <PARAMETER NAME="C_MMCM_CLKOUT4_CASCADE" VALUE="FALSE"/>
@@ -1226,7 +1226,7 @@
         <PARAMETER NAME="C_MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_STARTUP_WAIT" VALUE="FALSE"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="27.875"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="78.125"/>
         <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
@@ -1358,12 +1358,12 @@
         <PARAMETER NAME="C_FILTER_1" VALUE="0000"/>
         <PARAMETER NAME="C_FILTER_2" VALUE="0000"/>
         <PARAMETER NAME="C_DIVIDE1_AUTO" VALUE="1"/>
-        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="0.24573989999999998"/>
-        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="0.24573989999999998"/>
-        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="0.24573989999999998"/>
-        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="0.24573989999999998"/>
-        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="0.24573989999999998"/>
-        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="0.24573989999999998"/>
+        <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="0.12288"/>
+        <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="0.12288"/>
+        <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="0.12288"/>
+        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="0.12288"/>
+        <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="0.12288"/>
+        <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="0.12288"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_MMCMBUFGCEDIV" VALUE="false"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV1" VALUE="false"/>
@@ -1384,7 +1384,7 @@
         <PARAMETER NAME="C_CLKOUT5_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT6_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT7_MATCHED_ROUTING" VALUE="false"/>
-        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="24.57399"/>
+        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="12.28800"/>
         <PARAMETER NAME="C_CLKOUT1_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT2_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT3_ACTUAL_FREQ" VALUE="100.000"/>
@@ -1475,7 +1475,7 @@
         <PARAMETER NAME="PSEN_PORT" VALUE="psen"/>
         <PARAMETER NAME="PSINCDEC_PORT" VALUE="psincdec"/>
         <PARAMETER NAME="PSDONE_PORT" VALUE="psdone"/>
-        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="24.57399"/>
+        <PARAMETER NAME="CLKOUT1_REQUESTED_OUT_FREQ" VALUE="12.288"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT1_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT2_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -1547,7 +1547,7 @@
         <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="5"/>
         <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="34.250"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="48.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="10.000"/>
@@ -1558,7 +1558,7 @@
         <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="27.875"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="78.125"/>
         <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
@@ -1636,8 +1636,8 @@
         <PARAMETER NAME="CDDCREQ_PORT" VALUE="cddcreq"/>
         <PARAMETER NAME="ENABLE_CLKOUTPHY" VALUE="false"/>
         <PARAMETER NAME="CLKOUTPHY_REQUESTED_FREQ" VALUE="600.000"/>
-        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="448.322"/>
-        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="335.207"/>
+        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="360.948"/>
+        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="301.601"/>
         <PARAMETER NAME="CLKOUT2_JITTER" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT3_JITTER" VALUE="0.0"/>
@@ -1662,12 +1662,12 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="clk_in1" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="24573991" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_24_576MHz_clk_out1">
+        <PORT CLKFREQUENCY="12288000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_12_288MHz_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_fclk1" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="aud_mclk"/>
@@ -1676,6 +1676,700 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Audio_controller/i2s_audio_stream/AXI_aud_interface_0_upgraded_ipi" HWVERSION="1.0" INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_aud_interface" VLNV="xilinx.com:module_ref:AXI_aud_interface:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="AXIS_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="AUDIO_DATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="N_AUDIO_CH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_AXI_aud_interface_0_upgraded_ipi_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_aud_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_aud_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axis_aud_tid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_aud_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_aud_tready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_s_axis_aud_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="L_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" PORT="s_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="R_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" PORT="s_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="L_Data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" PORT="s_axis_data_tvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="L_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="R_Data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" PORT="s_axis_data_tvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="R_data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="L_C_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_C_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="L_C_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="R_C_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_C_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="R_C_Data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="s_axis_aud" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="3"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TID" PHYSICAL="s_axis_aud_tid"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_aud_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_aud_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_aud_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Audio_controller/i2s_audio_stream/LR_Stream2AXI_interf_0" HWVERSION="1.0" INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="LR_Stream2AXI_interface" VLNV="xilinx.com:module_ref:LR_Stream2AXI_interface:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="AXIS_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="AUDIO_DATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="N_AUDIO_CH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_LR_Stream2AXI_interf_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="L_C_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_C_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="L_C_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="R_C_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_C_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="R_C_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="L_data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="L_Data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="R_data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="R_Data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_aud_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_l_tdata_fir" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_0_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_r_tdata_fir" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_1_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" PORT="m_axis_data_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_l_tvalid_fir" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_0_m_axis_data_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" PORT="m_axis_data_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_r_tvalid_fir" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_1_m_axis_data_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" PORT="m_axis_data_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="m_axis_aud_aclk" SIGIS="clk"/>
+        <PORT DIR="O" NAME="m_axis_aud_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_aud_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axis_aud_tid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_aud_tready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="m_axis_aud_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="m_axis_aud" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="3"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_LR_Stream2AXI_interf_0_0_m_axis_aud_aclk"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TID" PHYSICAL="m_axis_aud_tid"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_aud_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_aud_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_aud_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="s_axis_l_fir" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_l_tdata_fir"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_l_tvalid_fir"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="s_axis_r_fir" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_r_tdata_fir"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_r_tvalid_fir"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="14" FULLNAME="/Audio_controller/i2s_audio_stream/fir_compiler_0" HWVERSION="7.2" INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir_compiler" VLNV="xilinx.com:ip:fir_compiler:7.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=fir_compiler;v=v7_2;d=pg149-fir-compiler.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_COMPONENT_NAME" VALUE="base_fir_compiler_0_1"/>
+        <PARAMETER NAME="C_COEF_FILE" VALUE="base_fir_compiler_0_1.mif"/>
+        <PARAMETER NAME="C_COEF_FILE_LINES" VALUE="12"/>
+        <PARAMETER NAME="C_FILTER_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_INTERP_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_DECIM_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_ZERO_PACKING_FACTOR" VALUE="1"/>
+        <PARAMETER NAME="C_SYMMETRY" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_FILTS" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_TAPS" VALUE="23"/>
+        <PARAMETER NAME="C_NUM_CHANNELS" VALUE="1"/>
+        <PARAMETER NAME="C_CHANNEL_PATTERN" VALUE="fixed"/>
+        <PARAMETER NAME="C_ROUND_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_COEF_RELOAD" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_RELOAD_SLOTS" VALUE="1"/>
+        <PARAMETER NAME="C_COL_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_COL_PIPE_LEN" VALUE="4"/>
+        <PARAMETER NAME="C_COL_CONFIG" VALUE="12"/>
+        <PARAMETER NAME="C_OPTIMIZATION" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_IP_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_PX_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_COEF_PATH_WIDTHS" VALUE="16"/>
+        <PARAMETER NAME="C_COEF_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_DATA_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_PX_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_PATH_SIGN" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_PATH_SIGN" VALUE="0"/>
+        <PARAMETER NAME="C_ACCUM_PATH_WIDTHS" VALUE="41"/>
+        <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_OUTPUT_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_ACCUM_OP_PATH_WIDTHS" VALUE="41"/>
+        <PARAMETER NAME="C_EXT_MULT_CNFG" VALUE="none"/>
+        <PARAMETER NAME="C_DATA_PATH_PSAMP_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_OP_PATH_PSAMP_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_MADDS" VALUE="12"/>
+        <PARAMETER NAME="C_OPT_MADDS" VALUE="none"/>
+        <PARAMETER NAME="C_OVERSAMPLING_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_INPUT_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_OUTPUT_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_DATA_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_MEMTYPE" VALUE="2"/>
+        <PARAMETER NAME="C_IPBUFF_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_OPBUFF_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_DATAPATH_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_ARRANGEMENT" VALUE="1"/>
+        <PARAMETER NAME="C_DATA_MEM_PACKING" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_MEM_PACKING" VALUE="0"/>
+        <PARAMETER NAME="C_FILTS_PACKED" VALUE="0"/>
+        <PARAMETER NAME="C_LATENCY" VALUE="18"/>
+        <PARAMETER NAME="C_HAS_ARESETn" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_HAS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_S_DATA_HAS_FIFO" VALUE="1"/>
+        <PARAMETER NAME="C_S_DATA_HAS_TUSER" VALUE="0"/>
+        <PARAMETER NAME="C_S_DATA_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_S_DATA_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_DATA_HAS_TREADY" VALUE="0"/>
+        <PARAMETER NAME="C_M_DATA_HAS_TUSER" VALUE="0"/>
+        <PARAMETER NAME="C_M_DATA_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_M_DATA_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_CONFIG_CHANNEL" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_SYNC_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_PACKET_SIZE" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_TDATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_RELOAD_TDATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_fir_compiler_0_1"/>
+        <PARAMETER NAME="GUI_Behaviour" VALUE="Coregen"/>
+        <PARAMETER NAME="CoefficientSource" VALUE="Vector"/>
+        <PARAMETER NAME="CoefficientVector" VALUE="1659,2866,1001,-223,386,-1726,-2732,996,1144,954,12497,21889,12497,954,1144,996,-2732,-1726,386,-223,1001,2866,1659"/>
+        <PARAMETER NAME="Coefficient_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Coefficient_Sets" VALUE="1"/>
+        <PARAMETER NAME="Coefficient_Reload" VALUE="false"/>
+        <PARAMETER NAME="Filter_Type" VALUE="Single_Rate"/>
+        <PARAMETER NAME="Rate_Change_Type" VALUE="Integer"/>
+        <PARAMETER NAME="Interpolation_Rate" VALUE="1"/>
+        <PARAMETER NAME="Decimation_Rate" VALUE="1"/>
+        <PARAMETER NAME="Zero_Pack_Factor" VALUE="1"/>
+        <PARAMETER NAME="Channel_Sequence" VALUE="Basic"/>
+        <PARAMETER NAME="Number_Channels" VALUE="1"/>
+        <PARAMETER NAME="Select_Pattern" VALUE="All"/>
+        <PARAMETER NAME="Pattern_List" VALUE="P4-0,P4-1,P4-2,P4-3,P4-4"/>
+        <PARAMETER NAME="Number_Paths" VALUE="1"/>
+        <PARAMETER NAME="RateSpecification" VALUE="Frequency_Specification"/>
+        <PARAMETER NAME="HardwareOversamplingRate" VALUE="1"/>
+        <PARAMETER NAME="SamplePeriod" VALUE="1"/>
+        <PARAMETER NAME="Sample_Frequency" VALUE="100"/>
+        <PARAMETER NAME="Clock_Frequency" VALUE="100"/>
+        <PARAMETER NAME="Coefficient_Sign" VALUE="Signed"/>
+        <PARAMETER NAME="Quantization" VALUE="Integer_Coefficients"/>
+        <PARAMETER NAME="Coefficient_Width" VALUE="16"/>
+        <PARAMETER NAME="BestPrecision" VALUE="false"/>
+        <PARAMETER NAME="Coefficient_Fractional_Bits" VALUE="0"/>
+        <PARAMETER NAME="Coefficient_Structure" VALUE="Inferred"/>
+        <PARAMETER NAME="Data_Sign" VALUE="Signed"/>
+        <PARAMETER NAME="Data_Width" VALUE="24"/>
+        <PARAMETER NAME="Data_Fractional_Bits" VALUE="0"/>
+        <PARAMETER NAME="Output_Rounding_Mode" VALUE="Truncate_LSBs"/>
+        <PARAMETER NAME="Output_Width" VALUE="24"/>
+        <PARAMETER NAME="Filter_Architecture" VALUE="Systolic_Multiply_Accumulate"/>
+        <PARAMETER NAME="Optimization_Goal" VALUE="Area"/>
+        <PARAMETER NAME="Optimization_Selection" VALUE="None"/>
+        <PARAMETER NAME="Data_Path_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Pre_Adder_Pipeline" VALUE="false"/>
+        <PARAMETER NAME="Coefficient_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Path_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Column_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Broadcast_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_LUT_Pipeline" VALUE="false"/>
+        <PARAMETER NAME="No_BRAM_Read_First_Mode" VALUE="false"/>
+        <PARAMETER NAME="Optimal_Column_Lengths" VALUE="false"/>
+        <PARAMETER NAME="Data_Path_Broadcast" VALUE="false"/>
+        <PARAMETER NAME="Disable_Half_Band_Centre_Tap" VALUE="false"/>
+        <PARAMETER NAME="No_SRL_Attributes" VALUE="false"/>
+        <PARAMETER NAME="Other" VALUE="false"/>
+        <PARAMETER NAME="Optimization_List" VALUE="None"/>
+        <PARAMETER NAME="Data_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Coefficient_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Input_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Output_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Preference_For_Other_Storage" VALUE="Automatic"/>
+        <PARAMETER NAME="Multi_Column_Support" VALUE="Automatic"/>
+        <PARAMETER NAME="Inter_Column_Pipe_Length" VALUE="4"/>
+        <PARAMETER NAME="ColumnConfig" VALUE="12"/>
+        <PARAMETER NAME="DATA_Has_TLAST" VALUE="Not_Required"/>
+        <PARAMETER NAME="M_DATA_Has_TREADY" VALUE="false"/>
+        <PARAMETER NAME="S_DATA_Has_FIFO" VALUE="true"/>
+        <PARAMETER NAME="S_DATA_Has_TUSER" VALUE="Not_Required"/>
+        <PARAMETER NAME="M_DATA_Has_TUSER" VALUE="Not_Required"/>
+        <PARAMETER NAME="DATA_TUSER_Width" VALUE="1"/>
+        <PARAMETER NAME="S_CONFIG_Sync_Mode" VALUE="On_Vector"/>
+        <PARAMETER NAME="S_CONFIG_Method" VALUE="Single"/>
+        <PARAMETER NAME="Num_Reload_Slots" VALUE="1"/>
+        <PARAMETER NAME="Has_ACLKEN" VALUE="false"/>
+        <PARAMETER NAME="Has_ARESETn" VALUE="false"/>
+        <PARAMETER NAME="Reset_Data_Vector" VALUE="true"/>
+        <PARAMETER NAME="Blank_Output" VALUE="false"/>
+        <PARAMETER NAME="Gen_MIF_from_Spec" VALUE="false"/>
+        <PARAMETER NAME="Gen_MIF_from_COE" VALUE="false"/>
+        <PARAMETER NAME="Reload_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Gen_MIF_Files" VALUE="false"/>
+        <PARAMETER NAME="DisplayReloadOrder" VALUE="false"/>
+        <PARAMETER NAME="Passband_Min" VALUE="0.0"/>
+        <PARAMETER NAME="Passband_Max" VALUE="0.5"/>
+        <PARAMETER NAME="Stopband_Min" VALUE="0.5"/>
+        <PARAMETER NAME="Stopband_Max" VALUE="1.0"/>
+        <PARAMETER NAME="Filter_Selection" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_data_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="L_Data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_data_tready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="L_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_0_m_axis_data_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_l_tvalid_fir"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_0_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_l_tdata_fir"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS_DATA" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_data_tdata"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_data_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_data_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS_DATA" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 0} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 24 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_data_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_data_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="14" FULLNAME="/Audio_controller/i2s_audio_stream/fir_compiler_1" HWVERSION="7.2" INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir_compiler" VLNV="xilinx.com:ip:fir_compiler:7.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=fir_compiler;v=v7_2;d=pg149-fir-compiler.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_COMPONENT_NAME" VALUE="base_fir_compiler_0_2"/>
+        <PARAMETER NAME="C_COEF_FILE" VALUE="base_fir_compiler_0_2.mif"/>
+        <PARAMETER NAME="C_COEF_FILE_LINES" VALUE="12"/>
+        <PARAMETER NAME="C_FILTER_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_INTERP_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_DECIM_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_ZERO_PACKING_FACTOR" VALUE="1"/>
+        <PARAMETER NAME="C_SYMMETRY" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_FILTS" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_TAPS" VALUE="23"/>
+        <PARAMETER NAME="C_NUM_CHANNELS" VALUE="1"/>
+        <PARAMETER NAME="C_CHANNEL_PATTERN" VALUE="fixed"/>
+        <PARAMETER NAME="C_ROUND_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_COEF_RELOAD" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_RELOAD_SLOTS" VALUE="1"/>
+        <PARAMETER NAME="C_COL_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_COL_PIPE_LEN" VALUE="4"/>
+        <PARAMETER NAME="C_COL_CONFIG" VALUE="12"/>
+        <PARAMETER NAME="C_OPTIMIZATION" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_IP_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_PX_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_DATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_COEF_PATH_WIDTHS" VALUE="16"/>
+        <PARAMETER NAME="C_COEF_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_DATA_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_PX_PATH_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_PATH_SIGN" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_PATH_SIGN" VALUE="0"/>
+        <PARAMETER NAME="C_ACCUM_PATH_WIDTHS" VALUE="41"/>
+        <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_OUTPUT_PATH_WIDTHS" VALUE="24"/>
+        <PARAMETER NAME="C_ACCUM_OP_PATH_WIDTHS" VALUE="41"/>
+        <PARAMETER NAME="C_EXT_MULT_CNFG" VALUE="none"/>
+        <PARAMETER NAME="C_DATA_PATH_PSAMP_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_OP_PATH_PSAMP_SRC" VALUE="0"/>
+        <PARAMETER NAME="C_NUM_MADDS" VALUE="12"/>
+        <PARAMETER NAME="C_OPT_MADDS" VALUE="none"/>
+        <PARAMETER NAME="C_OVERSAMPLING_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_INPUT_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_OUTPUT_RATE" VALUE="1"/>
+        <PARAMETER NAME="C_DATA_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_MEMTYPE" VALUE="2"/>
+        <PARAMETER NAME="C_IPBUFF_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_OPBUFF_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_DATAPATH_MEMTYPE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_ARRANGEMENT" VALUE="1"/>
+        <PARAMETER NAME="C_DATA_MEM_PACKING" VALUE="0"/>
+        <PARAMETER NAME="C_COEF_MEM_PACKING" VALUE="0"/>
+        <PARAMETER NAME="C_FILTS_PACKED" VALUE="0"/>
+        <PARAMETER NAME="C_LATENCY" VALUE="18"/>
+        <PARAMETER NAME="C_HAS_ARESETn" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_HAS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_S_DATA_HAS_FIFO" VALUE="1"/>
+        <PARAMETER NAME="C_S_DATA_HAS_TUSER" VALUE="0"/>
+        <PARAMETER NAME="C_S_DATA_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_S_DATA_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_DATA_HAS_TREADY" VALUE="0"/>
+        <PARAMETER NAME="C_M_DATA_HAS_TUSER" VALUE="0"/>
+        <PARAMETER NAME="C_M_DATA_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_M_DATA_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_CONFIG_CHANNEL" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_SYNC_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_PACKET_SIZE" VALUE="0"/>
+        <PARAMETER NAME="C_CONFIG_TDATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_RELOAD_TDATA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_fir_compiler_0_2"/>
+        <PARAMETER NAME="GUI_Behaviour" VALUE="Coregen"/>
+        <PARAMETER NAME="CoefficientSource" VALUE="Vector"/>
+        <PARAMETER NAME="CoefficientVector" VALUE="1659,2866,1001,-223,386,-1726,-2732,996,1144,954,12497,21889,12497,954,1144,996,-2732,-1726,386,-223,1001,2866,1659"/>
+        <PARAMETER NAME="Coefficient_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Coefficient_Sets" VALUE="1"/>
+        <PARAMETER NAME="Coefficient_Reload" VALUE="false"/>
+        <PARAMETER NAME="Filter_Type" VALUE="Single_Rate"/>
+        <PARAMETER NAME="Rate_Change_Type" VALUE="Integer"/>
+        <PARAMETER NAME="Interpolation_Rate" VALUE="1"/>
+        <PARAMETER NAME="Decimation_Rate" VALUE="1"/>
+        <PARAMETER NAME="Zero_Pack_Factor" VALUE="1"/>
+        <PARAMETER NAME="Channel_Sequence" VALUE="Basic"/>
+        <PARAMETER NAME="Number_Channels" VALUE="1"/>
+        <PARAMETER NAME="Select_Pattern" VALUE="All"/>
+        <PARAMETER NAME="Pattern_List" VALUE="P4-0,P4-1,P4-2,P4-3,P4-4"/>
+        <PARAMETER NAME="Number_Paths" VALUE="1"/>
+        <PARAMETER NAME="RateSpecification" VALUE="Frequency_Specification"/>
+        <PARAMETER NAME="HardwareOversamplingRate" VALUE="1"/>
+        <PARAMETER NAME="SamplePeriod" VALUE="1"/>
+        <PARAMETER NAME="Sample_Frequency" VALUE="100"/>
+        <PARAMETER NAME="Clock_Frequency" VALUE="100"/>
+        <PARAMETER NAME="Coefficient_Sign" VALUE="Signed"/>
+        <PARAMETER NAME="Quantization" VALUE="Integer_Coefficients"/>
+        <PARAMETER NAME="Coefficient_Width" VALUE="16"/>
+        <PARAMETER NAME="BestPrecision" VALUE="false"/>
+        <PARAMETER NAME="Coefficient_Fractional_Bits" VALUE="0"/>
+        <PARAMETER NAME="Coefficient_Structure" VALUE="Inferred"/>
+        <PARAMETER NAME="Data_Sign" VALUE="Signed"/>
+        <PARAMETER NAME="Data_Width" VALUE="24"/>
+        <PARAMETER NAME="Data_Fractional_Bits" VALUE="0"/>
+        <PARAMETER NAME="Output_Rounding_Mode" VALUE="Truncate_LSBs"/>
+        <PARAMETER NAME="Output_Width" VALUE="24"/>
+        <PARAMETER NAME="Filter_Architecture" VALUE="Systolic_Multiply_Accumulate"/>
+        <PARAMETER NAME="Optimization_Goal" VALUE="Area"/>
+        <PARAMETER NAME="Optimization_Selection" VALUE="None"/>
+        <PARAMETER NAME="Data_Path_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Pre_Adder_Pipeline" VALUE="false"/>
+        <PARAMETER NAME="Coefficient_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Path_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Column_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_Broadcast_Fanout" VALUE="false"/>
+        <PARAMETER NAME="Control_LUT_Pipeline" VALUE="false"/>
+        <PARAMETER NAME="No_BRAM_Read_First_Mode" VALUE="false"/>
+        <PARAMETER NAME="Optimal_Column_Lengths" VALUE="false"/>
+        <PARAMETER NAME="Data_Path_Broadcast" VALUE="false"/>
+        <PARAMETER NAME="Disable_Half_Band_Centre_Tap" VALUE="false"/>
+        <PARAMETER NAME="No_SRL_Attributes" VALUE="false"/>
+        <PARAMETER NAME="Other" VALUE="false"/>
+        <PARAMETER NAME="Optimization_List" VALUE="None"/>
+        <PARAMETER NAME="Data_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Coefficient_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Input_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Output_Buffer_Type" VALUE="Automatic"/>
+        <PARAMETER NAME="Preference_For_Other_Storage" VALUE="Automatic"/>
+        <PARAMETER NAME="Multi_Column_Support" VALUE="Automatic"/>
+        <PARAMETER NAME="Inter_Column_Pipe_Length" VALUE="4"/>
+        <PARAMETER NAME="ColumnConfig" VALUE="12"/>
+        <PARAMETER NAME="DATA_Has_TLAST" VALUE="Not_Required"/>
+        <PARAMETER NAME="M_DATA_Has_TREADY" VALUE="false"/>
+        <PARAMETER NAME="S_DATA_Has_FIFO" VALUE="true"/>
+        <PARAMETER NAME="S_DATA_Has_TUSER" VALUE="Not_Required"/>
+        <PARAMETER NAME="M_DATA_Has_TUSER" VALUE="Not_Required"/>
+        <PARAMETER NAME="DATA_TUSER_Width" VALUE="1"/>
+        <PARAMETER NAME="S_CONFIG_Sync_Mode" VALUE="On_Vector"/>
+        <PARAMETER NAME="S_CONFIG_Method" VALUE="Single"/>
+        <PARAMETER NAME="Num_Reload_Slots" VALUE="1"/>
+        <PARAMETER NAME="Has_ACLKEN" VALUE="false"/>
+        <PARAMETER NAME="Has_ARESETn" VALUE="false"/>
+        <PARAMETER NAME="Reset_Data_Vector" VALUE="true"/>
+        <PARAMETER NAME="Blank_Output" VALUE="false"/>
+        <PARAMETER NAME="Gen_MIF_from_Spec" VALUE="false"/>
+        <PARAMETER NAME="Gen_MIF_from_COE" VALUE="false"/>
+        <PARAMETER NAME="Reload_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Gen_MIF_Files" VALUE="false"/>
+        <PARAMETER NAME="DisplayReloadOrder" VALUE="false"/>
+        <PARAMETER NAME="Passband_Min" VALUE="0.0"/>
+        <PARAMETER NAME="Passband_Max" VALUE="0.45"/>
+        <PARAMETER NAME="Stopband_Min" VALUE="0.45"/>
+        <PARAMETER NAME="Stopband_Max" VALUE="1.0"/>
+        <PARAMETER NAME="Filter_Selection" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_data_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="R_Data_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_data_tready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="R_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_data_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_1_m_axis_data_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_r_tvalid_fir"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="m_axis_data_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_fir_compiler_1_m_axis_data_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_r_tdata_fir"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS_DATA" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_data_tdata"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_data_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_data_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS_DATA" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 24} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 0} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 24 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_data_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_data_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
     </MODULE>
     <MODULE COREREVISION="4" FULLNAME="/Audio_controller/i2s_audio_stream/i2s_receiver_0" HWVERSION="1.0" INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="i2s_receiver" VLNV="xilinx.com:ip:i2s_receiver:1.0">
       <DOCUMENTS>
@@ -1693,7 +2387,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x7FFFFFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_ctrl_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_ctrl_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1703,9 +2397,9 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="24573991" DIR="I" NAME="aud_mclk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_24_576MHz_clk_out1">
+        <PORT CLKFREQUENCY="12288000" DIR="I" NAME="aud_mclk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_12_288MHz_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_clk_wiz_24_576MHz" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="Audio_controller_clk_wiz_12_288MHz" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="aud_mrst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_ps7_0_fclk1_peripheral_reset">
@@ -1713,7 +2407,7 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk1" PORT="peripheral_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="m_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1827,22 +2521,22 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="m_axis_aud_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tdata"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="2" NAME="m_axis_aud_tid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_tid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_aud_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_aud_tready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tready">
+        <PORT DIR="I" NAME="m_axis_aud_tready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_s_axis_aud_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_tready"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_tready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1850,7 +2544,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="s_axi_ctrl" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="8"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1898,7 +2592,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_ctrl_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud" NAME="m_axis_aud" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="m_axis_aud" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="3"/>
@@ -1907,7 +2601,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -1938,7 +2632,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4000FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_ctrl_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_ctrl_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1948,9 +2642,9 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="24573991" DIR="I" NAME="aud_mclk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_24_576MHz_clk_out1">
+        <PORT CLKFREQUENCY="12288000" DIR="I" NAME="aud_mclk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_12_288MHz_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_clk_wiz_24_576MHz" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="Audio_controller_clk_wiz_12_288MHz" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="aud_mrst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="rst_ps7_0_fclk1_peripheral_reset">
@@ -1958,7 +2652,7 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk1" PORT="peripheral_reset"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axis_aud_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2068,32 +2762,28 @@
             <CONNECTION INSTANCE="Audio_controller_out_mux" PORT="b"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_aud_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_aud_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tdata"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="m_axis_aud_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_aud_tid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tid">
+        <PORT DIR="I" LEFT="2" NAME="s_axis_aud_tid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="m_axis_aud_tid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_aud_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tvalid">
+        <PORT DIR="I" NAME="s_axis_aud_tvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0_m_axis_aud_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="m_axis_aud_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_aud_tready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud_tready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_tready"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="s_axis_aud_tready" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="s_axi_ctrl" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="8"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2141,7 +2831,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_ctrl_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_m_axis_aud" NAME="s_axis_aud" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="s_axis_aud" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="3"/>
@@ -2150,10 +2840,10 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="PHASE" VALUE="0.000"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
-          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 128} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 4} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 32} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 32} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 0} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_aud_tdata"/>
@@ -2392,7 +3082,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4126FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2499,7 +3189,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M04_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2783,7 +3473,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4121FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2893,7 +3583,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -3321,7 +4011,7 @@
         <PARAMETER NAME="PCW_USE_S_AXI_HP1" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_S_AXI_HP2" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_S_AXI_HP3" VALUE="0"/>
-        <PARAMETER NAME="PCW_M_AXI_GP0_FREQMHZ" VALUE="100"/>
+        <PARAMETER NAME="PCW_M_AXI_GP0_FREQMHZ" VALUE="100.0"/>
         <PARAMETER NAME="PCW_M_AXI_GP1_FREQMHZ" VALUE="100"/>
         <PARAMETER NAME="PCW_S_AXI_GP0_FREQMHZ" VALUE="100"/>
         <PARAMETER NAME="PCW_S_AXI_GP1_FREQMHZ" VALUE="10"/>
@@ -4126,7 +4816,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -4191,7 +4881,7 @@
             <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_aclk"/>
@@ -4208,17 +4898,22 @@
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="Audio_controller_clk_wiz_10MHz" PORT="clk_in1"/>
-            <CONNECTION INSTANCE="Audio_controller_clk_wiz_24_576MHz" PORT="clk_in1"/>
+            <CONNECTION INSTANCE="Audio_controller_clk_wiz_12_288MHz" PORT="clk_in1"/>
             <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_aclk"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_1" PORT="aclk"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_fir_compiler_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_aclk"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_aud_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ACLK"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="142857132" DIR="O" NAME="FCLK_CLK1" SIGIS="clk"/>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK3" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK3">
+        <PORT CLKFREQUENCY="1.42857e+08" DIR="O" NAME="FCLK_CLK1" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="1e+08" DIR="O" NAME="FCLK_CLK3" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
           </CONNECTIONS>
@@ -4411,7 +5106,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="12"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -4504,7 +5199,7 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="7"/>
+        <PARAMETER NAME="NUM_MI" VALUE="8"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -4851,302 +5546,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_bready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BREADY">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RREADY">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_wlast" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WLAST">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WLAST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="S00_AXI_wvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="S00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="11" NAME="S00_AXI_wid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARBURST">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARBURST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARLOCK">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARLOCK"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARSIZE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARSIZE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWBURST">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWBURST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWLOCK">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWLOCK"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWSIZE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWSIZE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARPROT">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARPROT"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWPROT">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWPROT"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARADDR">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARADDR"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWADDR">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWADDR"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WDATA">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WDATA"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARCACHE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARCACHE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARLEN">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARLEN"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARQOS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARQOS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWCACHE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWCACHE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWLEN">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWLEN"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWQOS">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWQOS"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WSTRB">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WSTRB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARREADY">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_awready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWREADY">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_bvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RLAST">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RLAST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RVALID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="S00_AXI_wready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WREADY">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="S00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="S00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RID"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BRESP">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BRESP"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RRESP">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RRESP"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RDATA">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RDATA"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_wid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M00_AXI_rid" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="M01_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
@@ -5155,109 +5554,6 @@
         <PORT DIR="I" NAME="M01_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M01_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M01_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M01_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
@@ -5270,105 +5566,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M02_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M02_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
@@ -5379,25 +5576,248 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="M04_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M05_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M05_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M07_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M07_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWLOCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWQOS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_awvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_awready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="S00_AXI_wid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_wlast" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_wvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_wready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="S00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_bvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_bready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="S00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S00_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARLOCK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARLOCK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S00_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARQOS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARQOS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_arvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_arready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="S00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="S00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_rlast" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S00_AXI_rvalid" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M03_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awvalid">
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M03_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awready">
+        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awready"/>
           </CONNECTIONS>
@@ -5408,13 +5828,12 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M03_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M03_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wvalid">
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M03_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wready">
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wready"/>
           </CONNECTIONS>
@@ -5424,12 +5843,12 @@
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M03_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bvalid">
+        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M03_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bready">
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bready"/>
           </CONNECTIONS>
@@ -5439,20 +5858,13 @@
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M03_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M03_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arvalid">
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M03_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arready">
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arready"/>
           </CONNECTIONS>
@@ -5467,153 +5879,211 @@
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M03_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M03_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rvalid">
+        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M03_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rready">
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awaddr">
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awaddr"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_awqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awvalid">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awready">
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awready"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wdata">
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wdata"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wstrb">
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wstrb"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_wlast" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wvalid">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wready">
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wready"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bresp">
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bresp"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bvalid">
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bready">
+        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bready"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_araddr">
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_araddr"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M04_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arcache" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M04_AXI_arqos" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_arvalid">
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_arvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_arready">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_arready"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rdata">
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rdata"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rresp">
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rresp"/>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M04_AXI_rlast" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="M04_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rvalid">
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rvalid"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M04_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rready">
+        <PORT DIR="O" NAME="M02_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rready"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M05_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M05_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wdata"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="M02_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M07_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_awvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_awready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wdata" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_wvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_wready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_bresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_bvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_bready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_arvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_arready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rdata" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M07_AXI_rvalid" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M07_AXI_rready" SIGIS="undef"/>
         <PORT DIR="O" LEFT="31" NAME="M05_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M05_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M05_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M05_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M05_AXI_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_awvalid"/>
@@ -5634,7 +6104,6 @@
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M05_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M05_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M05_AXI_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_wvalid"/>
@@ -5665,14 +6134,7 @@
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M05_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M05_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M05_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M05_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M05_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_arvalid"/>
@@ -5693,7 +6155,6 @@
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M05_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="M05_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M05_AXI_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_rvalid"/>
@@ -5704,29 +6165,12 @@
             <CONNECTION INSTANCE="switches_gpio" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_ACLK" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M06_ARESETN" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M06_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_awlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M06_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awqos" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M06_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M06_AXI_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_awvalid"/>
@@ -5747,7 +6191,6 @@
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M06_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M06_AXI_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_wvalid"/>
@@ -5778,14 +6221,7 @@
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_arlen" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arsize" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arburst" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arlock" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arcache" SIGIS="undef"/>
         <PORT DIR="O" NAME="M06_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arregion" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arqos" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="M06_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M06_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_arvalid"/>
@@ -5806,7 +6242,6 @@
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M06_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="M06_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_axi_periph_M06_AXI_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_rvalid"/>
@@ -5817,127 +6252,266 @@
             <CONNECTION INSTANCE="system_interrupts" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M04_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M04_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M04_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M04_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M04_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M04_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M04_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M04_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M04_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M04_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M04_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M04_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M01_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="M01_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="btns_gpio_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="btns_gpio" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="ps7_0_M_AXI_GP0" DATAWIDTH="32" NAME="S00_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="S00_AXI_rready"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="S00_AXI_wlast"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="S00_AXI_wvalid"/>
-            <PORTMAP LOGICAL="ARID" PHYSICAL="S00_AXI_arid"/>
             <PORTMAP LOGICAL="AWID" PHYSICAL="S00_AXI_awid"/>
-            <PORTMAP LOGICAL="WID" PHYSICAL="S00_AXI_wid"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="S00_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="S00_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="S00_AXI_awlen"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
             <PORTMAP LOGICAL="AWBURST" PHYSICAL="S00_AXI_awburst"/>
             <PORTMAP LOGICAL="AWLOCK" PHYSICAL="S00_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="S00_AXI_awsize"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="S00_AXI_arprot"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="S00_AXI_awprot"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="S00_AXI_araddr"/>
-            <PORTMAP LOGICAL="AWADDR" PHYSICAL="S00_AXI_awaddr"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="S00_AXI_wdata"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="S00_AXI_arcache"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="S00_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
             <PORTMAP LOGICAL="AWCACHE" PHYSICAL="S00_AXI_awcache"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="S00_AXI_awlen"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="S00_AXI_awprot"/>
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="S00_AXI_awqos"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="S00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="S00_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="S00_AXI_awready"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="S00_AXI_bvalid"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="S00_AXI_rlast"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="S00_AXI_rvalid"/>
+            <PORTMAP LOGICAL="WID" PHYSICAL="S00_AXI_wid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="S00_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="S00_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="S00_AXI_wlast"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="S00_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="S00_AXI_wready"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="S00_AXI_bid"/>
-            <PORTMAP LOGICAL="RID" PHYSICAL="S00_AXI_rid"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="S00_AXI_bresp"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="S00_AXI_rresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="S00_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="S00_AXI_bready"/>
+            <PORTMAP LOGICAL="ARID" PHYSICAL="S00_AXI_arid"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="S00_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="S00_AXI_arlen"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="S00_AXI_arsize"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="S00_AXI_arburst"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="S00_AXI_arlock"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="S00_AXI_arcache"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="S00_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="S00_AXI_arqos"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="S00_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="S00_AXI_arready"/>
+            <PORTMAP LOGICAL="RID" PHYSICAL="S00_AXI_rid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="S00_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="S00_AXI_rresp"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="S00_AXI_rlast"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="S00_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="S00_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="M00_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
-            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M00_AXI_arvalid"/>
-            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M00_AXI_awvalid"/>
-            <PORTMAP LOGICAL="BREADY" PHYSICAL="M00_AXI_bready"/>
-            <PORTMAP LOGICAL="RREADY" PHYSICAL="M00_AXI_rready"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M00_AXI_wlast"/>
-            <PORTMAP LOGICAL="WVALID" PHYSICAL="M00_AXI_wvalid"/>
-            <PORTMAP LOGICAL="ARID" PHYSICAL="M00_AXI_arid"/>
-            <PORTMAP LOGICAL="AWID" PHYSICAL="M00_AXI_awid"/>
-            <PORTMAP LOGICAL="WID" PHYSICAL="M00_AXI_wid"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M00_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M00_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M00_AXI_arsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M00_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M00_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M00_AXI_awsize"/>
-            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M00_AXI_arprot"/>
-            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M00_AXI_awprot"/>
-            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M00_AXI_araddr"/>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M00_AXI_awaddr"/>
-            <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M00_AXI_arcache"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M00_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M00_AXI_arqos"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M00_AXI_awcache"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M00_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M00_AXI_awqos"/>
-            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
-            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M00_AXI_arready"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M00_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M00_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M00_AXI_awready"/>
-            <PORTMAP LOGICAL="BVALID" PHYSICAL="M00_AXI_bvalid"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M00_AXI_rlast"/>
-            <PORTMAP LOGICAL="RVALID" PHYSICAL="M00_AXI_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M00_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M00_AXI_wready"/>
-            <PORTMAP LOGICAL="BID" PHYSICAL="M00_AXI_bid"/>
-            <PORTMAP LOGICAL="RID" PHYSICAL="M00_AXI_rid"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M00_AXI_bresp"/>
-            <PORTMAP LOGICAL="RRESP" PHYSICAL="M00_AXI_rresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M00_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M00_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M00_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M00_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M00_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M00_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M00_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M00_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M00_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M00_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="M01_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M01_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M01_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M01_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M01_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M01_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M01_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M01_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M01_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M01_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M01_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M01_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M01_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M01_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M01_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M01_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M01_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M01_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M01_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M01_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M01_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M01_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M01_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M01_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M01_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M01_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M01_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M01_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M01_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M01_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M01_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M01_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
           </PORTMAPS>
@@ -5945,38 +6519,22 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="M02_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M02_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M02_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M02_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M02_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M02_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M02_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M02_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M02_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M02_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M02_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M02_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M02_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M02_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M02_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M02_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M02_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M02_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M02_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M02_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M02_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M02_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M02_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M02_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M02_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M02_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M02_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M02_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M02_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M02_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M02_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M02_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M02_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M02_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M02_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M02_AXI_rready"/>
           </PORTMAPS>
@@ -5984,38 +6542,22 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="M03_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M03_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M03_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M03_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M03_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M03_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M03_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M03_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M03_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M03_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M03_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M03_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M03_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M03_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M03_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M03_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M03_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M03_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M03_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M03_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M03_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M03_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M03_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M03_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M03_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M03_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M03_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M03_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M03_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M03_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M03_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M03_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M03_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M03_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M03_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M03_AXI_rready"/>
           </PORTMAPS>
@@ -6023,38 +6565,22 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M04_AXI" DATAWIDTH="32" NAME="M04_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M04_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M04_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M04_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M04_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M04_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M04_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M04_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M04_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M04_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M04_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M04_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M04_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M04_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M04_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M04_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M04_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M04_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M04_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M04_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M04_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M04_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M04_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M04_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M04_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M04_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M04_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M04_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M04_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M04_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M04_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M04_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M04_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M04_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M04_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M04_AXI_rready"/>
           </PORTMAPS>
@@ -6062,38 +6588,22 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M05_AXI" DATAWIDTH="32" NAME="M05_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M05_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M05_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M05_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M05_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M05_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M05_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M05_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M05_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M05_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M05_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M05_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M05_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M05_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M05_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M05_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M05_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M05_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M05_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M05_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M05_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M05_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M05_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M05_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M05_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M05_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M05_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M05_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M05_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M05_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M05_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M05_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M05_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M05_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M05_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M05_AXI_rready"/>
           </PORTMAPS>
@@ -6101,40 +6611,47 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M06_AXI" DATAWIDTH="32" NAME="M06_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M06_AXI_awaddr"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M06_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M06_AXI_awsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M06_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M06_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M06_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M06_AXI_awprot"/>
-            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M06_AXI_awregion"/>
-            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M06_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M06_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M06_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M06_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M06_AXI_wstrb"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M06_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M06_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M06_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M06_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M06_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M06_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M06_AXI_araddr"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M06_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M06_AXI_arsize"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M06_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M06_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M06_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M06_AXI_arprot"/>
-            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M06_AXI_arregion"/>
-            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M06_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M06_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M06_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M06_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M06_AXI_rresp"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M06_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M06_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M06_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M07_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="M07_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="M07_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="M07_AXI_awvalid"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="M07_AXI_awready"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="M07_AXI_wdata"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="M07_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="M07_AXI_wvalid"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="M07_AXI_wready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="M07_AXI_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="M07_AXI_bvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="M07_AXI_bready"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="M07_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="M07_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="M07_AXI_arvalid"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="M07_AXI_arready"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="M07_AXI_rdata"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="M07_AXI_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="M07_AXI_rvalid"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="M07_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -6159,7 +6676,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK3">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK3"/>
           </CONNECTIONS>
@@ -6200,7 +6717,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -6233,12 +6750,15 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_ARESETN"/>
             <CONNECTION INSTANCE="Audio_controller_clk_wiz_10MHz" PORT="resetn"/>
             <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="Audio_controller_clk_wiz_24_576MHz" PORT="resetn"/>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_clk_wiz_12_288MHz" PORT="resetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="m_axis_aud_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axis_aud_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream2AXI_interf_0" PORT="s_axis_aud_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6264,9 +6784,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="24573991" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_24_576MHz_clk_out1">
+        <PORT CLKFREQUENCY="12288000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="Audio_controller_clk_wiz_12_288MHz_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_clk_wiz_24_576MHz" PORT="clk_out1"/>
+            <CONNECTION INSTANCE="Audio_controller_clk_wiz_12_288MHz" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="ext_reset_in" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="ps7_0_FCLK_RESET0_N">
@@ -6485,7 +7005,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x41201FFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -6595,7 +7115,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M05_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -8190,7 +8710,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4180FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -8285,7 +8805,7 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="14" NAME="intr" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:NULL:LEVEL_HIGH:NULL:NULL:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="concat_interrupts_dout">
+        <PORT DIR="I" LEFT="14" NAME="intr" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:NULL:NULL:NULL:NULL:NULL" SIGIS="INTERRUPT" SIGNAME="concat_interrupts_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="concat_interrupts" PORT="dout"/>
           </CONNECTIONS>
@@ -8300,7 +8820,7 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M06_AXI" DATAWIDTH="32" NAME="s_axi" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>

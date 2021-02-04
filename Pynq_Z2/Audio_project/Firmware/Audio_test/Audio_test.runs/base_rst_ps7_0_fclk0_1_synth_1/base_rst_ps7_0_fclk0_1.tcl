@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "base_rst_ps7_0_fclk0_1_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -91,7 +90,7 @@ set_property ip_output_repo g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xci
+read_ip -quiet G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xci
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_board.xdc]
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xdc]
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_ooc.xdc]

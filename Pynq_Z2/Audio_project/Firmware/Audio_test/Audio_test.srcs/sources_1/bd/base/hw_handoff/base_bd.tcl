@@ -37,6 +37,13 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # To test this script, run the following commands from Vivado Tcl console:
 # source base_script.tcl
 
+
+# The design that will be created by this Tcl script contains the following 
+# module references:
+# AXI_aud_interface, LR_Stream2AXI_interface
+
+# Please add the sources of those modules before sourcing this Tcl script.
+
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
 # <./myproj/project_1.xpr> in the current working folder.
@@ -173,6 +180,76 @@ proc create_hier_cell_i2s_audio_stream { parentCell nameHier } {
   create_bd_pin -dir O sdata_0_out
   create_bd_pin -dir I sdata_i
 
+  # Create instance: AXI_aud_interface_0_upgraded_ipi, and set properties
+  set block_name AXI_aud_interface
+  set block_cell_name AXI_aud_interface_0_upgraded_ipi
+  if { [catch {set AXI_aud_interface_0_upgraded_ipi [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $AXI_aud_interface_0_upgraded_ipi eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: LR_Stream2AXI_interf_0, and set properties
+  set block_name LR_Stream2AXI_interface
+  set block_cell_name LR_Stream2AXI_interf_0
+  if { [catch {set LR_Stream2AXI_interf_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $LR_Stream2AXI_interf_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: fir_compiler_0, and set properties
+  set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {100} \
+   CONFIG.CoefficientVector {1659,2866,1001,-223,386,-1726,-2732,996,1144,954,12497,21889,12497,954,1144,996,-2732,-1726,386,-223,1001,2866,1659} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {12} \
+   CONFIG.Data_Width {24} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Output_Rounding_Mode {Truncate_LSBs} \
+   CONFIG.Output_Width {24} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.Sample_Frequency {100} \
+ ] $fir_compiler_0
+
+  # Create instance: fir_compiler_1, and set properties
+  set fir_compiler_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_1 ]
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {100} \
+   CONFIG.CoefficientVector {1659,2866,1001,-223,386,-1726,-2732,996,1144,954,12497,21889,12497,954,1144,996,-2732,-1726,386,-223,1001,2866,1659} \
+   CONFIG.Coefficient_Fractional_Bits {0} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {12} \
+   CONFIG.Data_Width {24} \
+   CONFIG.Decimation_Rate {1} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Filter_Type {Single_Rate} \
+   CONFIG.Interpolation_Rate {1} \
+   CONFIG.Number_Channels {1} \
+   CONFIG.Output_Rounding_Mode {Truncate_LSBs} \
+   CONFIG.Output_Width {24} \
+   CONFIG.Passband_Max {0.45} \
+   CONFIG.Quantization {Integer_Coefficients} \
+   CONFIG.RateSpecification {Frequency_Specification} \
+   CONFIG.Rate_Change_Type {Integer} \
+   CONFIG.Sample_Frequency {100} \
+   CONFIG.Stopband_Max {1.0} \
+   CONFIG.Stopband_Min {0.45} \
+   CONFIG.Zero_Pack_Factor {1} \
+ ] $fir_compiler_1
+
   # Create instance: i2s_receiver_0, and set properties
   set i2s_receiver_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:i2s_receiver:1.0 i2s_receiver_0 ]
   set_property -dict [ list \
@@ -190,21 +267,37 @@ proc create_hier_cell_i2s_audio_stream { parentCell nameHier } {
  ] $i2s_transmitter_0
 
   # Create interface connections
-  connect_bd_intf_net -intf_net i2s_receiver_0_m_axis_aud [get_bd_intf_pins i2s_receiver_0/m_axis_aud] [get_bd_intf_pins i2s_transmitter_0/s_axis_aud]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins s_axi_ctrl] [get_bd_intf_pins i2s_receiver_0/s_axi_ctrl]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins s_axi_ctrl1] [get_bd_intf_pins i2s_transmitter_0/s_axi_ctrl]
 
   # Create port connections
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_L_C_Data [get_bd_pins AXI_aud_interface_0_upgraded_ipi/L_C_Data] [get_bd_pins LR_Stream2AXI_interf_0/L_C_Data]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_L_Data [get_bd_pins AXI_aud_interface_0_upgraded_ipi/L_Data] [get_bd_pins fir_compiler_0/s_axis_data_tdata]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_L_Data_valid [get_bd_pins AXI_aud_interface_0_upgraded_ipi/L_Data_valid] [get_bd_pins LR_Stream2AXI_interf_0/L_data_valid] [get_bd_pins fir_compiler_0/s_axis_data_tvalid]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_R_C_Data [get_bd_pins AXI_aud_interface_0_upgraded_ipi/R_C_Data] [get_bd_pins LR_Stream2AXI_interf_0/R_C_Data]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_R_Data [get_bd_pins AXI_aud_interface_0_upgraded_ipi/R_Data] [get_bd_pins fir_compiler_1/s_axis_data_tdata]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_R_Data_valid [get_bd_pins AXI_aud_interface_0_upgraded_ipi/R_Data_valid] [get_bd_pins LR_Stream2AXI_interf_0/R_data_valid] [get_bd_pins fir_compiler_1/s_axis_data_tvalid]
+  connect_bd_net -net AXI_aud_interface_0_upgraded_ipi_s_axis_aud_tready [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tready] [get_bd_pins i2s_receiver_0/m_axis_aud_tready]
+  connect_bd_net -net LR_Stream2AXI_interf_0_m_axis_aud_tdata [get_bd_pins LR_Stream2AXI_interf_0/m_axis_aud_tdata] [get_bd_pins i2s_transmitter_0/s_axis_aud_tdata]
+  connect_bd_net -net LR_Stream2AXI_interf_0_m_axis_aud_tid [get_bd_pins LR_Stream2AXI_interf_0/m_axis_aud_tid] [get_bd_pins i2s_transmitter_0/s_axis_aud_tid]
+  connect_bd_net -net LR_Stream2AXI_interf_0_m_axis_aud_tvalid [get_bd_pins LR_Stream2AXI_interf_0/m_axis_aud_tvalid] [get_bd_pins i2s_transmitter_0/s_axis_aud_tvalid]
   connect_bd_net -net Net [get_bd_pins sdata_i] [get_bd_pins i2s_receiver_0/sdata_0_in]
   connect_bd_net -net clk_wiz_18_432MHz_clk_out1 [get_bd_pins aud_mclk] [get_bd_pins i2s_receiver_0/aud_mclk] [get_bd_pins i2s_transmitter_0/aud_mclk]
+  connect_bd_net -net fir_compiler_0_m_axis_data_tdata [get_bd_pins LR_Stream2AXI_interf_0/s_axis_l_tdata_fir] [get_bd_pins fir_compiler_0/m_axis_data_tdata]
+  connect_bd_net -net fir_compiler_0_m_axis_data_tvalid [get_bd_pins LR_Stream2AXI_interf_0/s_axis_l_tvalid_fir] [get_bd_pins fir_compiler_0/m_axis_data_tvalid]
+  connect_bd_net -net fir_compiler_1_m_axis_data_tdata [get_bd_pins LR_Stream2AXI_interf_0/s_axis_r_tdata_fir] [get_bd_pins fir_compiler_1/m_axis_data_tdata]
+  connect_bd_net -net fir_compiler_1_m_axis_data_tvalid [get_bd_pins LR_Stream2AXI_interf_0/s_axis_r_tvalid_fir] [get_bd_pins fir_compiler_1/m_axis_data_tvalid]
   connect_bd_net -net i2s_receiver_0_irq [get_bd_pins irq] [get_bd_pins i2s_receiver_0/irq]
   connect_bd_net -net i2s_receiver_0_lrclk_out [get_bd_pins lrclk_in] [get_bd_pins i2s_receiver_0/lrclk_out] [get_bd_pins i2s_transmitter_0/lrclk_in]
+  connect_bd_net -net i2s_receiver_0_m_axis_aud_tdata [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tdata] [get_bd_pins i2s_receiver_0/m_axis_aud_tdata]
+  connect_bd_net -net i2s_receiver_0_m_axis_aud_tid [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tid] [get_bd_pins i2s_receiver_0/m_axis_aud_tid]
+  connect_bd_net -net i2s_receiver_0_m_axis_aud_tvalid [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tvalid] [get_bd_pins i2s_receiver_0/m_axis_aud_tvalid]
   connect_bd_net -net i2s_receiver_0_sclk_out [get_bd_pins sclk_in] [get_bd_pins i2s_receiver_0/sclk_out] [get_bd_pins i2s_transmitter_0/sclk_in]
   connect_bd_net -net i2s_transmitter_0_irq [get_bd_pins irq1] [get_bd_pins i2s_transmitter_0/irq]
   connect_bd_net -net i2s_transmitter_0_sdata_0_out [get_bd_pins sdata_0_out] [get_bd_pins i2s_transmitter_0/sdata_0_out]
-  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins m_axis_aud_aclk] [get_bd_pins i2s_receiver_0/m_axis_aud_aclk] [get_bd_pins i2s_receiver_0/s_axi_ctrl_aclk] [get_bd_pins i2s_transmitter_0/s_axi_ctrl_aclk] [get_bd_pins i2s_transmitter_0/s_axis_aud_aclk]
-  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins s_axi_ctrl_aresetn] [get_bd_pins i2s_receiver_0/m_axis_aud_aresetn] [get_bd_pins i2s_receiver_0/s_axi_ctrl_aresetn] [get_bd_pins i2s_transmitter_0/s_axi_ctrl_aresetn] [get_bd_pins i2s_transmitter_0/s_axis_aud_aresetn]
+  connect_bd_net -net m_axis_aud_aclk_1 [get_bd_pins m_axis_aud_aclk] [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_aclk] [get_bd_pins LR_Stream2AXI_interf_0/s_axis_aud_aclk] [get_bd_pins fir_compiler_0/aclk] [get_bd_pins fir_compiler_1/aclk] [get_bd_pins i2s_receiver_0/m_axis_aud_aclk] [get_bd_pins i2s_receiver_0/s_axi_ctrl_aclk] [get_bd_pins i2s_transmitter_0/s_axi_ctrl_aclk] [get_bd_pins i2s_transmitter_0/s_axis_aud_aclk]
   connect_bd_net -net rst_ps7_0_fclk1_peripheral_reset [get_bd_pins aud_mrst] [get_bd_pins i2s_receiver_0/aud_mrst] [get_bd_pins i2s_transmitter_0/aud_mrst]
+  connect_bd_net -net s_axi_ctrl_aresetn_1 [get_bd_pins s_axi_ctrl_aresetn] [get_bd_pins AXI_aud_interface_0_upgraded_ipi/s_axis_aud_aresetn] [get_bd_pins LR_Stream2AXI_interf_0/s_axis_aud_aresetn] [get_bd_pins i2s_receiver_0/m_axis_aud_aresetn] [get_bd_pins i2s_receiver_0/s_axi_ctrl_aresetn] [get_bd_pins i2s_transmitter_0/s_axi_ctrl_aresetn] [get_bd_pins i2s_transmitter_0/s_axis_aud_aresetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -292,19 +385,19 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
  ] $clk_wiz_10MHz
 
-  # Create instance: clk_wiz_24_576MHz, and set properties
-  set clk_wiz_24_576MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_24_576MHz ]
+  # Create instance: clk_wiz_12_288MHz, and set properties
+  set clk_wiz_12_288MHz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_12_288MHz ]
   set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {448.322} \
-   CONFIG.CLKOUT1_PHASE_ERROR {335.207} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {24.57399} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {34.250} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {27.875} \
+   CONFIG.CLKOUT1_JITTER {360.948} \
+   CONFIG.CLKOUT1_PHASE_ERROR {301.601} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {12.288} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {48.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} \
    CONFIG.MMCM_DIVCLK_DIVIDE {5} \
    CONFIG.RESET_PORT {resetn} \
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
    CONFIG.USE_LOCKED {false} \
- ] $clk_wiz_24_576MHz
+ ] $clk_wiz_12_288MHz
 
   # Create instance: i2s_audio_stream
   create_hier_cell_i2s_audio_stream $hier_obj i2s_audio_stream
@@ -347,7 +440,7 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
   connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins bclk_mux/sel] [get_bd_pins lrclk_mux/sel] [get_bd_pins mux_sel/gpio_io_o] [get_bd_pins out_mux/sel]
   connect_bd_net -net bclk_mux_y [get_bd_pins bclk] [get_bd_pins bclk_mux/y]
   connect_bd_net -net clk_wiz_10MHz_clk_out1 [get_bd_pins audio_clk_10MHz] [get_bd_pins clk_wiz_10MHz/clk_out1]
-  connect_bd_net -net clk_wiz_18_432MHz_clk_out1 [get_bd_pins aud_mclk] [get_bd_pins clk_wiz_24_576MHz/clk_out1] [get_bd_pins i2s_audio_stream/aud_mclk]
+  connect_bd_net -net clk_wiz_18_432MHz_clk_out1 [get_bd_pins aud_mclk] [get_bd_pins clk_wiz_12_288MHz/clk_out1] [get_bd_pins i2s_audio_stream/aud_mclk]
   connect_bd_net -net i2s_receiver_0_irq [get_bd_pins irq] [get_bd_pins i2s_audio_stream/irq]
   connect_bd_net -net i2s_receiver_0_lrclk_out [get_bd_pins i2s_audio_stream/lrclk_in] [get_bd_pins lrclk_mux/b]
   connect_bd_net -net i2s_receiver_0_sclk_out [get_bd_pins bclk_mux/b] [get_bd_pins i2s_audio_stream/sclk_in]
@@ -355,8 +448,8 @@ proc create_hier_cell_Audio_controller { parentCell nameHier } {
   connect_bd_net -net i2s_transmitter_0_sdata_0_out [get_bd_pins i2s_audio_stream/sdata_0_out] [get_bd_pins out_mux/b]
   connect_bd_net -net lrclk_mux_y [get_bd_pins lrclk] [get_bd_pins lrclk_mux/y]
   connect_bd_net -net mux_vector_0_y [get_bd_pins sdata_o] [get_bd_pins out_mux/y]
-  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins clk_in1] [get_bd_pins audio_codec_ctrl_0/s_axi_aclk] [get_bd_pins clk_wiz_10MHz/clk_in1] [get_bd_pins clk_wiz_24_576MHz/clk_in1] [get_bd_pins i2s_audio_stream/m_axis_aud_aclk] [get_bd_pins mux_sel/s_axi_aclk]
-  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins resetn] [get_bd_pins audio_codec_ctrl_0/s_axi_aresetn] [get_bd_pins clk_wiz_10MHz/resetn] [get_bd_pins clk_wiz_24_576MHz/resetn] [get_bd_pins i2s_audio_stream/s_axi_ctrl_aresetn] [get_bd_pins mux_sel/s_axi_aresetn]
+  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins clk_in1] [get_bd_pins audio_codec_ctrl_0/s_axi_aclk] [get_bd_pins clk_wiz_10MHz/clk_in1] [get_bd_pins clk_wiz_12_288MHz/clk_in1] [get_bd_pins i2s_audio_stream/m_axis_aud_aclk] [get_bd_pins mux_sel/s_axi_aclk]
+  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins resetn] [get_bd_pins audio_codec_ctrl_0/s_axi_aresetn] [get_bd_pins clk_wiz_10MHz/resetn] [get_bd_pins clk_wiz_12_288MHz/resetn] [get_bd_pins i2s_audio_stream/s_axi_ctrl_aresetn] [get_bd_pins mux_sel/s_axi_aresetn]
   connect_bd_net -net rst_ps7_0_fclk1_peripheral_reset [get_bd_pins aud_mrst] [get_bd_pins i2s_audio_stream/aud_mrst]
 
   # Restore current instance
@@ -1299,7 +1392,7 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {7} \
+   CONFIG.NUM_MI {8} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_100M, and set properties
@@ -1358,10 +1451,10 @@ proc create_root_design { parentCell } {
   connect_bd_net -net i2s_transmitter_0_irq [get_bd_pins Audio_controller/irq1] [get_bd_pins xlconcat_0/In2]
   connect_bd_net -net lrclk_mux_y [get_bd_ports lrclk] [get_bd_pins Audio_controller/lrclk]
   connect_bd_net -net mux_vector_0_y [get_bd_ports sdata_o] [get_bd_pins Audio_controller/sdata_o]
-  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins Audio_controller/clk_in1] [get_bd_pins btns_gpio/s_axi_aclk] [get_bd_pins ps7_0/FCLK_CLK0] [get_bd_pins ps7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_fclk0/slowest_sync_clk] [get_bd_pins switches_gpio/s_axi_aclk] [get_bd_pins system_interrupts/s_axi_aclk]
+  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins Audio_controller/clk_in1] [get_bd_pins btns_gpio/s_axi_aclk] [get_bd_pins ps7_0/FCLK_CLK0] [get_bd_pins ps7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_fclk0/slowest_sync_clk] [get_bd_pins switches_gpio/s_axi_aclk] [get_bd_pins system_interrupts/s_axi_aclk]
   connect_bd_net -net ps7_0_FCLK_CLK3 [get_bd_pins ps7_0/FCLK_CLK3] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net ps7_0_FCLK_RESET0_N [get_bd_pins ps7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in] [get_bd_pins rst_ps7_0_fclk0/ext_reset_in] [get_bd_pins rst_ps7_0_fclk1/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins Audio_controller/resetn] [get_bd_pins btns_gpio/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn] [get_bd_pins switches_gpio/s_axi_aresetn] [get_bd_pins system_interrupts/s_axi_aresetn]
+  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins Audio_controller/resetn] [get_bd_pins btns_gpio/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_fclk0/peripheral_aresetn] [get_bd_pins switches_gpio/s_axi_aresetn] [get_bd_pins system_interrupts/s_axi_aresetn]
   connect_bd_net -net rst_ps7_0_fclk1_peripheral_reset [get_bd_pins Audio_controller/aud_mrst] [get_bd_pins rst_ps7_0_fclk1/peripheral_reset]
   connect_bd_net -net switches_gpio_ip2intc_irpt [get_bd_pins concat_interrupts/In6] [get_bd_pins switches_gpio/ip2intc_irpt]
   connect_bd_net -net system_interrupts_irq [get_bd_pins system_interrupts/irq] [get_bd_pins xlconcat_0/In0]

@@ -1,0 +1,1 @@
+vopt +acc -l elaborate.log -L xilinx_vip -L xpm -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_14 -L i2s_receiver_v1_0_4 -L i2s_transmitter_v1_0_4 -L axi_vip_v1_1_7 -L processing_system7_vip_v1_0_9 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.Axi_aud_demux xil_defaultlib.glbl -o Axi_aud_demux_opt

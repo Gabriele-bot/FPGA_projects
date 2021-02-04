@@ -1,0 +1,7 @@
+Running: xsim.dir/Axi_aud_demux_wrapper_tb_behav/xsimk.exe -simmode gui -wdb Axi_aud_demux_wrapper_tb_behav.wdb -simrunnum 0 -socket 50387
+Design successfully loaded
+Design Loading Memory Usage: 9744 KB (Peak: 9744 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 11288 KB (Peak: 11288 KB)
+Simulation CPU Usage: 436 ms

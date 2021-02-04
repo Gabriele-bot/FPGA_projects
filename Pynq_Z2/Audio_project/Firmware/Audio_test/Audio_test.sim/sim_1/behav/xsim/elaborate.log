@@ -1,0 +1,98 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: G:/Vivado_2020.1/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 8606a5548bd647a294814e8b703ce3cf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_14 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Axi_aud_demux_wrapper_tb_behav xil_defaultlib.Axi_aud_demux_wrapper_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 's_axis_data_tready' is not connected on this instance [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.ip_user_files/bd/Axi_aud_demux/sim/Axi_aud_demux.v:104]
+WARNING: [VRFC 10-5021] port 's_axis_data_tready' is not connected on this instance [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.ip_user_files/bd/Axi_aud_demux/sim/Axi_aud_demux.v:110]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package fir_compiler_v7_2_14.fir_compiler_v7_2_14_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_14.globals_pkg
+Compiling package fir_compiler_v7_2_14.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.AXI_aud_interface
+Compiling module xil_defaultlib.Axi_aud_demux_AXI_aud_interface_...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=6...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=3...
+Compiling module xpm.xpm_fifo_sync(FIFO_WRITE_DEPTH=3...
+Compiling module xil_defaultlib.FIFO(C_IN_WIDTH=8,C_DEPTH=32)
+Compiling module xil_defaultlib.LR_Stream2AXI_interface
+Compiling module xil_defaultlib.Axi_aud_demux_LR_Stream2AXI_inte...
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=24,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_slave [\glb_ifx_slave(width=24,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.sp_mem [\sp_mem(c_xdevicefamily="zynq",c...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.filt_mem [\filt_mem(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=10,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=9,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=8,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=5,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=4,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.buff [\buff(c_xdevicefamily="zynq",c_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.calc [\calc(c_xdevicefamily="zynq",c_p...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.delay [\delay(c_delay_len=15,c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.single_rate [\single_rate(c_xdevicefamily="zy...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.fir_compiler_v7_2_14_viv [\fir_compiler_v7_2_14_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_14.fir_compiler_v7_2_14 [\fir_compiler_v7_2_14(c_xdevicef...]
+Compiling architecture axi_aud_demux_fir_compiler_0_0_arch of entity xil_defaultlib.Axi_aud_demux_fir_compiler_0_0 [axi_aud_demux_fir_compiler_0_0_d...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.single_rate [\single_rate(c_xdevicefamily="zy...]
+Compiling architecture synth of entity fir_compiler_v7_2_14.fir_compiler_v7_2_14_viv [\fir_compiler_v7_2_14_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_14.fir_compiler_v7_2_14 [\fir_compiler_v7_2_14(c_xdevicef...]
+Compiling architecture axi_aud_demux_fir_compiler_0_1_arch of entity xil_defaultlib.Axi_aud_demux_fir_compiler_0_1 [axi_aud_demux_fir_compiler_0_1_d...]
+Compiling module xil_defaultlib.Axi_aud_demux
+Compiling module xil_defaultlib.Axi_aud_demux_wrapper
+Compiling module xil_defaultlib.Axi_aud_demux_wrapper_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Axi_aud_demux_wrapper_tb_behav

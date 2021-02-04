@@ -37,20 +37,20 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="3"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="2"/>
+    <Option Name="WTModelSimExportSim" Val="2"/>
+    <Option Name="WTQuestaExportSim" Val="2"/>
+    <Option Name="WTIesExportSim" Val="2"/>
+    <Option Name="WTVcsExportSim" Val="2"/>
+    <Option Name="WTRivieraExportSim" Val="2"/>
+    <Option Name="WTActivehdlExportSim" Val="2"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -66,6 +66,33 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/wee/FIFO.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sources_1/imports/wee/FIFO.v"/>
+          <Attr Name="ImportTime" Val="1610292402"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/LR_Stream2AXI_interface.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sources_1/new/LR_Stream2AXI_interface.v"/>
+          <Attr Name="ImportTime" Val="1610306226"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/AXI_aud_interface.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sources_1/new/AXI_aud_interface.v"/>
+          <Attr Name="ImportTime" Val="1610303594"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/base/base.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../base/base.srcs/sources_1/bd/base/base.bd"/>
@@ -74,59 +101,94 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xci">
-          <Proxy FileSetName="base_clk_wiz_10MHz_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xci">
-          <Proxy FileSetName="base_rst_ps7_0_fclk0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_switches_gpio_0/base_switches_gpio_0.xci">
-          <Proxy FileSetName="base_switches_gpio_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_system_interrupts_0/base_system_interrupts_0.xci">
-          <Proxy FileSetName="base_system_interrupts_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_gpio_0_0/base_axi_gpio_0_0.xci">
-          <Proxy FileSetName="base_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_mux_vector_0_0/base_mux_vector_0_0.xci">
-          <Proxy FileSetName="base_mux_vector_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0.xci">
-          <Proxy FileSetName="base_i2s_receiver_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0.xci">
-          <Proxy FileSetName="base_i2s_transmitter_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci">
-          <Proxy FileSetName="base_xbar_11"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1.xci">
-          <Proxy FileSetName="base_mux_vector_0_1"/>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_LR_Stream2AXI_interf_0_0/base_LR_Stream2AXI_interf_0_0.xci">
+          <Proxy FileSetName="base_LR_Stream2AXI_interf_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xci">
           <Proxy FileSetName="base_rst_ps7_0_fclk0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0.xci">
-          <Proxy FileSetName="base_bclk_mux_0"/>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_fir_compiler_0_1/base_fir_compiler_0_1.xci">
+          <Proxy FileSetName="base_fir_compiler_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_aud_interface_0_upgraded_ipi_0/base_AXI_aud_interface_0_upgraded_ipi_0.xci">
+          <Proxy FileSetName="base_AXI_aud_interface_0_upgraded_ipi_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1.xci">
           <Proxy FileSetName="base_clk_wiz_10MHz_1"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_fir_compiler_0_2/base_fir_compiler_0_2.xci">
+          <Proxy FileSetName="base_fir_compiler_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_gpio_0_0/base_axi_gpio_0_0.xci">
+          <Proxy FileSetName="base_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0.xci">
+          <Proxy FileSetName="base_i2s_receiver_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0.xci">
+          <Proxy FileSetName="base_i2s_transmitter_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xci">
+          <Proxy FileSetName="base_rst_ps7_0_fclk0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_mux_vector_0_1/base_mux_vector_0_1.xci">
+          <Proxy FileSetName="base_mux_vector_0_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0.xci">
           <Proxy FileSetName="base_audio_codec_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_system_interrupts_0/base_system_interrupts_0.xci">
+          <Proxy FileSetName="base_system_interrupts_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_ps7_0_0/base_ps7_0_0.xci">
+          <Proxy FileSetName="base_ps7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_switches_gpio_0/base_switches_gpio_0.xci">
+          <Proxy FileSetName="base_switches_gpio_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_bclk_mux_0/base_bclk_mux_0.xci">
+          <Proxy FileSetName="base_bclk_mux_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_video test_1/Audio_video test_1.srcs/sources_1/bd/base/ip/base_xbar_11/base_xbar_11.xci">
+          <Proxy FileSetName="base_xbar_11"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_mux_vector_0_0/base_mux_vector_0_0.xci">
+          <Proxy FileSetName="base_mux_vector_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_100M_1/base_rst_ps7_0_100M_1.xci">
+          <Proxy FileSetName="base_rst_ps7_0_100M_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_btns_gpio_0/base_btns_gpio_0.xci">
           <Proxy FileSetName="base_btns_gpio_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_ps7_0_0/base_ps7_0_0.xci">
-          <Proxy FileSetName="base_ps7_0_0"/>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_clk_wiz_10MHz_0/base_clk_wiz_10MHz_0.xci">
+          <Proxy FileSetName="base_clk_wiz_10MHz_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/base/hdl/base_wrapper.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v"/>
           <Attr Name="ImportTime" Val="1609463257"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl/Axi_aud_demux_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sources_1/bd/Axi_aud_demux/hdl/Axi_aud_demux_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1610320400"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/Axi_aud_demux/Axi_aud_demux.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sources_1/bd/Axi_aud_demux/Axi_aud_demux.bd"/>
+          <Attr Name="ImportTime" Val="1610320400"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -152,11 +214,19 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/imports/new/Axi_aud_demux_wrapper_tb.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Progetti_vivado/Test_01/Test_01.srcs/sim_1/new/Axi_aud_demux_wrapper_tb.sv"/>
+          <Attr Name="ImportTime" Val="1610320829"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="base_wrapper"/>
+        <Option Name="TopModule" Val="Axi_aud_demux_wrapper_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
@@ -266,6 +336,36 @@
     <FileSet Name="base_clk_wiz_10MHz_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_clk_wiz_10MHz_1">
       <Config>
         <Option Name="TopModule" Val="base_clk_wiz_10MHz_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_fir_compiler_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_fir_compiler_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_fir_compiler_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_fir_compiler_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_fir_compiler_0_2">
+      <Config>
+        <Option Name="TopModule" Val="base_fir_compiler_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_rst_ps7_0_100M_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_rst_ps7_0_100M_1">
+      <Config>
+        <Option Name="TopModule" Val="base_rst_ps7_0_100M_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_aud_interface_0_upgraded_ipi_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_aud_interface_0_upgraded_ipi_0">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_aud_interface_0_upgraded_ipi_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_LR_Stream2AXI_interf_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_LR_Stream2AXI_interf_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_LR_Stream2AXI_interf_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -391,9 +491,7 @@
     </Run>
     <Run Id="base_i2s_receiver_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_i2s_receiver_0_0" Part="xc7z020clg400-1" ConstrsSet="base_i2s_receiver_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_i2s_receiver_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -403,9 +501,7 @@
     </Run>
     <Run Id="base_i2s_transmitter_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_i2s_transmitter_0_0" Part="xc7z020clg400-1" ConstrsSet="base_i2s_transmitter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_i2s_transmitter_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -415,9 +511,7 @@
     </Run>
     <Run Id="base_xbar_11_synth_1" Type="Ft3:Synth" SrcSet="base_xbar_11" Part="xc7z020clg400-1" ConstrsSet="base_xbar_11" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_xbar_11_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -427,9 +521,7 @@
     </Run>
     <Run Id="base_mux_vector_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_mux_vector_0_1" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_mux_vector_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -439,9 +531,7 @@
     </Run>
     <Run Id="base_bclk_mux_0_synth_1" Type="Ft3:Synth" SrcSet="base_bclk_mux_0" Part="xc7z020clg400-1" ConstrsSet="base_bclk_mux_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_bclk_mux_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -451,9 +541,7 @@
     </Run>
     <Run Id="base_rst_ps7_0_fclk0_1_synth_1" Type="Ft3:Synth" SrcSet="base_rst_ps7_0_fclk0_1" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_rst_ps7_0_fclk0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -462,6 +550,56 @@
       <RQSFiles/>
     </Run>
     <Run Id="base_clk_wiz_10MHz_1_synth_1" Type="Ft3:Synth" SrcSet="base_clk_wiz_10MHz_1" Part="xc7z020clg400-1" ConstrsSet="base_clk_wiz_10MHz_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_clk_wiz_10MHz_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_fir_compiler_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_fir_compiler_0_1" Part="xc7z020clg400-1" ConstrsSet="base_fir_compiler_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_fir_compiler_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_fir_compiler_0_2_synth_1" Type="Ft3:Synth" SrcSet="base_fir_compiler_0_2" Part="xc7z020clg400-1" ConstrsSet="base_fir_compiler_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_fir_compiler_0_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_100M_1_synth_1" Type="Ft3:Synth" SrcSet="base_rst_ps7_0_100M_1" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_100M_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_rst_ps7_0_100M_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_aud_interface_0_upgraded_ipi_0" Part="xc7z020clg400-1" ConstrsSet="base_AXI_aud_interface_0_upgraded_ipi_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_LR_Stream2AXI_interf_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_LR_Stream2AXI_interf_0_0" Part="xc7z020clg400-1" ConstrsSet="base_LR_Stream2AXI_interf_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_LR_Stream2AXI_interf_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -646,9 +784,7 @@
     </Run>
     <Run Id="base_i2s_receiver_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_i2s_receiver_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_i2s_receiver_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -665,9 +801,7 @@
     </Run>
     <Run Id="base_i2s_transmitter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_i2s_transmitter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_i2s_transmitter_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -684,9 +818,7 @@
     </Run>
     <Run Id="base_xbar_11_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_xbar_11" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_xbar_11_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -703,9 +835,7 @@
     </Run>
     <Run Id="base_mux_vector_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_mux_vector_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -722,9 +852,7 @@
     </Run>
     <Run Id="base_bclk_mux_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_bclk_mux_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_bclk_mux_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -741,9 +869,7 @@
     </Run>
     <Run Id="base_rst_ps7_0_fclk0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_rst_ps7_0_fclk0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -759,6 +885,91 @@
       <RQSFiles/>
     </Run>
     <Run Id="base_clk_wiz_10MHz_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_clk_wiz_10MHz_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_clk_wiz_10MHz_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_fir_compiler_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_fir_compiler_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_fir_compiler_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_fir_compiler_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_fir_compiler_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_fir_compiler_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_100M_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_100M_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_rst_ps7_0_100M_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_aud_interface_0_upgraded_ipi_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_aud_interface_0_upgraded_ipi_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_LR_Stream2AXI_interf_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_LR_Stream2AXI_interf_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_LR_Stream2AXI_interf_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

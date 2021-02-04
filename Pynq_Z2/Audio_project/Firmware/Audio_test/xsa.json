@@ -42,20 +42,18 @@
             "core": {
                 "name": "OCL_REGION_0",
                 "type": "clc_region",
-                "numComputeUnits": "60",
-                "availableResources": {
-                    "bramCount": "139",
-                    "dspCount": "220",
-                    "lutCount": "51011",
-                    "registerCount": "101561"
-                }
+                "numComputeUnits": "60"
             }
         }
     ],
     "files": [
         {
-            "name": "base_wrapper.bit",
+            "name": "Audio_bassboost.bit",
             "type": "FULL_BIT"
+        },
+        {
+            "name": "sim.bin",
+            "type": "SIM_BINARY"
         }
     ],
     "vendor": "xilinx",
@@ -72,12 +70,6 @@
     "generatedVersion": "2020.1",
     "generatedChangeList": "2902540",
     "generatedIpChangeList": "2902112",
-    "generatedTimestamp": "Sat Jan  2 00:07:10 2021",
-    "resources": [
-        {
-            "type": "REG",
-            "count": "101561"
-        }
-    ]
+    "generatedTimestamp": "Sat Jan 16 16:47:51 2021"
 }
 

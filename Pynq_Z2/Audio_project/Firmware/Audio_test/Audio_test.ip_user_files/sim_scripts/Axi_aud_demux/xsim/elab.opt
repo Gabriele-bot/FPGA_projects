@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_14 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Axi_aud_demux xil_defaultlib.Axi_aud_demux xil_defaultlib.glbl -log elaborate.log

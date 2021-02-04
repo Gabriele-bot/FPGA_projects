@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -122,6 +122,10 @@ set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PY
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_board.xdc]
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xdc]
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_fir_compiler_0_1/base_fir_compiler_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_fir_compiler_0_2/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_fir_compiler_0_2/base_fir_compiler_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/base_ooc.xdc]
 
