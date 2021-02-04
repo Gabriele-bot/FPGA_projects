@@ -1,7 +1,11 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+<<<<<<< HEAD
 | Date         : Sat Jan 16 16:42:43 2021
+=======
+| Date         : Sat Jan  2 17:02:13 2021
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | Host         : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file base_wrapper_clock_utilization_routed.rpt
 | Design       : base_wrapper
@@ -53,7 +57,11 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                         | Driver Pin                                                   | Net                                                                              |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+-------------------------------+--------------------------------------------------------------+----------------------------------------------------------------------------------+
+<<<<<<< HEAD
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 6 |        7472 |               0 |       10.000 | clk_fpga_0                    | base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O        | base_i/ps7_0/inst/FCLK_CLK0                                                      |
+=======
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 6 |        4325 |               0 |       10.000 | clk_fpga_0                    | base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O        | base_i/ps7_0/inst/FCLK_CLK0                                                      |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 3 |         566 |               0 |       81.380 | clk_out1_base_clk_wiz_10MHz_1 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clkout1_buf/O | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1                          |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |           1 |               0 |       20.000 | clkfbout_base_clk_wiz_10MHz_0 | base_i/Audio_controller/clk_wiz_10MHz/inst/clkf_buf/O        | base_i/Audio_controller/clk_wiz_10MHz/inst/clkfbout_buf_base_clk_wiz_10MHz_0     |
 | g3        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y3  | n/a          |                 1 |           1 |               0 |       50.000 | clkfbout_base_clk_wiz_10MHz_1 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clkf_buf/O    | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clkfbout_buf_base_clk_wiz_10MHz_1 |
@@ -87,12 +95,21 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+<<<<<<< HEAD
 | X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  2500 |    0 |  1000 |    0 |    60 |    0 |    30 |    0 |    60 |
 | X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3200 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
 | X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1410 |  1200 | 1278 |   400 |    0 |    20 |    0 |    10 |   12 |    20 |
 | X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  986 |  2600 | 1112 |   850 |    0 |    60 |    0 |    30 |   12 |    40 |
 | X0Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2875 |  1200 | 1006 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1607 |  2600 |  484 |   850 |    1 |    60 |    0 |    30 |    0 |    40 |
+=======
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   32 |  2500 |   16 |  1000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3200 |    0 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1798 |  1200 |  646 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  426 |  2600 |  133 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2151 |  1200 |  694 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  410 |  2600 |  119 |   850 |    0 |    60 |    0 |    30 |    0 |    40 |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -124,6 +141,7 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
+<<<<<<< HEAD
 +----+-------+-------+
 |    | X0    | X1    |
 +----+-------+-------+
@@ -131,6 +149,15 @@ All Modules
 | Y1 |  1991 |  1496 |
 | Y0 |     1 |     1 |
 +----+-------+-------+
+=======
++----+-------+------+
+|    | X0    | X1   |
++----+-------+------+
+| Y2 |  2148 |  410 |
+| Y1 |  1502 |  231 |
+| Y0 |    33 |    1 |
++----+-------+------+
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 
 
 7. Device Cell Placement Summary for Global Clock g1
@@ -147,6 +174,7 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
+<<<<<<< HEAD
 +----+----+------+
 |    | X0 | X1   |
 +----+----+------+
@@ -154,6 +182,15 @@ All Modules
 | Y1 |  0 |   33 |
 | Y0 |  0 |    0 |
 +----+----+------+
+=======
++----+------+------+
+|    | X0   | X1   |
++----+------+------+
+| Y2 |    4 |    0 |
+| Y1 |  365 |  197 |
+| Y0 |    0 |    0 |
++----+------+------+
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 
 
 8. Device Cell Placement Summary for Global Clock g2
@@ -231,7 +268,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                          |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------+
+<<<<<<< HEAD
 | g0        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                                                  |
+=======
+| g0        | n/a   | BUFG/O          | None       |          33 |               0 | 32 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                                                  |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | g2        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | base_i/Audio_controller/clk_wiz_10MHz/inst/clkfbout_buf_base_clk_wiz_10MHz_0 |
 | g4        | n/a   | BUFG/O          | None       |           0 |               1 |  0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_10MHz/inst/clk_out1                          |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+------------------------------------------------------------------------------+
@@ -257,11 +298,20 @@ All Modules
 13. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
+<<<<<<< HEAD
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------+
 | g0        | n/a   | BUFG/O          | None       |        1991 |               0 | 1410 |    569 |    0 |  12 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------+
+=======
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        1502 |               0 | 1435 |     66 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
+| g1        | n/a   | BUFG/O          | None       |         365 |               0 |  363 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1 |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -273,8 +323,13 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+<<<<<<< HEAD
 | g0        | n/a   | BUFG/O          | None       |        1496 |               0 | 954 |    530 |    0 |  12 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
 | g1        | n/a   | BUFG/O          | None       |          33 |               0 |  32 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1 |
+=======
+| g0        | n/a   | BUFG/O          | None       |         231 |               0 | 230 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
+| g1        | n/a   | BUFG/O          | None       |         197 |               0 | 196 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1 |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -287,7 +342,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+<<<<<<< HEAD
 | g0        | n/a   | BUFG/O          | None       |        2872 |               0 | 2871 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
+=======
+| g0        | n/a   | BUFG/O          | None       |        2148 |               0 | 2147 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | g1        | n/a   | BUFG/O          | None       |           4 |               0 |    4 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -298,12 +357,20 @@ All Modules
 16. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
+<<<<<<< HEAD
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 | g0        | n/a   | BUFG/O          | None       |        1109 |               0 | 1080 |     25 |    1 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0                             |
 | g1        | n/a   | BUFG/O          | None       |         529 |               0 |  527 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+=======
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                         |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------+
+| g0        | n/a   | BUFG/O          | None       |         410 |               0 | 410 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | base_i/ps7_0/inst/FCLK_CLK0 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------+
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -326,12 +393,20 @@ set_property LOC IOB_X0Y11 [get_cells audio_clk_10MHz_OBUF_inst]
 #startgroup
 create_pblock {CLKAG_base_i/ps7_0/inst/FCLK_CLK0}
 add_cells_to_pblock [get_pblocks  {CLKAG_base_i/ps7_0/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=base_i/Audio_controller/clk_wiz_12_288MHz/inst/mmcm_adv_inst && NAME!=base_i/Audio_controller/clk_wiz_10MHz/inst/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="base_i/ps7_0/inst/FCLK_CLK0"}]]]
+<<<<<<< HEAD
 resize_pblock [get_pblocks {CLKAG_base_i/ps7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+=======
+resize_pblock [get_pblocks {CLKAG_base_i/ps7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 #endgroup
 
 # Clock net "base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1" driven by instance "base_i/Audio_controller/clk_wiz_12_288MHz/inst/clkout1_buf" located at site "BUFGCTRL_X0Y1"
 #startgroup
 create_pblock {CLKAG_base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1}
 add_cells_to_pblock [get_pblocks  {CLKAG_base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1"}]]]
+<<<<<<< HEAD
 resize_pblock [get_pblocks {CLKAG_base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+=======
+resize_pblock [get_pblocks {CLKAG_base_i/Audio_controller/clk_wiz_12_288MHz/inst/clk_out1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 #endgroup

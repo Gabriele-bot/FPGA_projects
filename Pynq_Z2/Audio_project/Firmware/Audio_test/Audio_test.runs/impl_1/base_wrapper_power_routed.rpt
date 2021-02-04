@@ -1,7 +1,11 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+<<<<<<< HEAD
 | Date             : Sat Jan 16 16:42:41 2021
+=======
+| Date             : Sat Jan  2 17:02:12 2021
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | Host             : DESKTOP-4HQCNQE running 64-bit major release  (build 9200)
 | Command          : report_power -file base_wrapper_power_routed.rpt -pb base_wrapper_power_summary_routed.pb -rpx base_wrapper_power_routed.rpx
 | Design           : base_wrapper
@@ -30,6 +34,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
+<<<<<<< HEAD
 | Total On-Chip Power (W)  | 1.672        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
@@ -38,6 +43,16 @@ Table of Contents
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 65.7         |
 | Junction Temperature (C) | 44.3         |
+=======
+| Total On-Chip Power (W)  | 1.650        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 1.508        |
+| Device Static (W)        | 0.142        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 66.0         |
+| Junction Temperature (C) | 44.0         |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -58,6 +73,7 @@ Table of Contents
 |   Register              |    <0.001 |     6878 |    106400 |            6.46 |
 |   CARRY4                |    <0.001 |       58 |     13300 |            0.44 |
 |   F7/F8 Muxes           |    <0.001 |       36 |     53200 |            0.07 |
+<<<<<<< HEAD
 |   LUT as Shift Register |    <0.001 |      593 |     17400 |            3.41 |
 |   Others                |     0.000 |      556 |       --- |             --- |
 | Signals                 |     0.004 |     9543 |       --- |             --- |
@@ -68,6 +84,17 @@ Table of Contents
 | PS7                     |     1.258 |        1 |       --- |             --- |
 | Static Power            |     0.143 |          |           |                 |
 | Total                   |     1.672 |          |           |                 |
+=======
+|   LUT as Shift Register |    <0.001 |       63 |     17400 |            0.36 |
+|   Others                |     0.000 |      377 |       --- |             --- |
+| Signals                 |     0.004 |     6250 |       --- |             --- |
+| Block RAM               |    <0.001 |        1 |       140 |            0.71 |
+| MMCM                    |     0.225 |        2 |         4 |           50.00 |
+| I/O                     |     0.004 |       15 |       125 |           12.00 |
+| PS7                     |     1.258 |        1 |       --- |             --- |
+| Static Power            |     0.142 |          |           |                 |
+| Total                   |     1.650 |          |           |                 |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +104,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+<<<<<<< HEAD
 | Vccint    |       1.000 |     0.057 |       0.042 |      0.015 |       NA    | Unspecified | NA         |
+=======
+| Vccint    |       1.000 |     0.036 |       0.022 |      0.015 |       NA    | Unspecified | NA         |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | Vccaux    |       1.800 |     0.140 |       0.125 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -90,7 +121,11 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+<<<<<<< HEAD
 | Vccpint   |       1.000 |     0.679 |       0.649 |      0.030 |       NA    | Unspecified | NA         |
+=======
+| Vccpint   |       1.000 |     0.678 |       0.649 |      0.030 |       NA    | Unspecified | NA         |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 | Vccpaux   |       1.800 |     0.037 |       0.026 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.354 |       0.352 |      0.002 |       NA    | Unspecified | NA         |
@@ -158,6 +193,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
+<<<<<<< HEAD
 | base_wrapper             |     1.529 |
 |   IIC_1_scl_iobuf        |     0.001 |
 |   IIC_1_sda_iobuf        |     0.001 |
@@ -167,6 +203,17 @@ Table of Contents
 |       clk_wiz_10MHz      |     0.107 |
 |       clk_wiz_12_288MHz  |     0.119 |
 |       i2s_audio_stream   |     0.033 |
+=======
+| base_wrapper             |     1.508 |
+|   IIC_1_scl_iobuf        |     0.001 |
+|   IIC_1_sda_iobuf        |     0.001 |
+|   base_i                 |     1.504 |
+|     Audio_controller     |     0.238 |
+|       audio_codec_ctrl_0 |     0.001 |
+|       clk_wiz_10MHz      |     0.107 |
+|       clk_wiz_12_288MHz  |     0.119 |
+|       i2s_audio_stream   |     0.012 |
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 |     ps7_0                |     1.259 |
 |       inst               |     1.259 |
 |     ps7_0_axi_periph     |     0.004 |

@@ -23,9 +23,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+<<<<<<< HEAD
 INFO: [Synth 8-7075] Helper process launched with PID 4688
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.820 ; gain = 9.227
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 4684
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1085.414 ; gain = 3.816
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'base_wrapper' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/hdl/base_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [G:/Vivado_2020.1/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
@@ -36,6 +42,7 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF' [G:/Vivado_2020.1/Vivado/2020.1
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [G:/Vivado_2020.1/Vivado/2020.1/scripts/rt/data/unisim_comp.v:36238]
 INFO: [Synth 8-6157] synthesizing module 'base' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:449]
 INFO: [Synth 8-6157] synthesizing module 'Audio_controller_imp_1JZ8N5Y' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:12]
+<<<<<<< HEAD
 INFO: [Synth 8-6157] synthesizing module 'base_audio_codec_ctrl_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'base_audio_codec_ctrl_0_0' (2#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'base_mux_vector_0_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_1_stub.v:6]
@@ -79,6 +86,33 @@ INFO: [Synth 8-6155] done synthesizing module 'base_mux_vector_0_0' (15#1) [G:/V
 INFO: [Synth 8-6155] done synthesizing module 'Audio_controller_imp_1JZ8N5Y' (16#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:12]
 INFO: [Synth 8-6157] synthesizing module 'base_btns_gpio_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'base_btns_gpio_0' (17#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
+=======
+INFO: [Synth 8-6157] synthesizing module 'base_audio_codec_ctrl_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_audio_codec_ctrl_0_0' (2#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_audio_codec_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_mux_vector_0_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_mux_vector_0_1' (3#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_clk_wiz_10MHz_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'base_clk_wiz_10MHz_0' (4#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'base_clk_wiz_10MHz_0' is unconnected for instance 'clk_wiz_10MHz' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:364]
+WARNING: [Synth 8-7023] instance 'clk_wiz_10MHz' of module 'base_clk_wiz_10MHz_0' has 4 connections declared, but only 3 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:364]
+INFO: [Synth 8-6157] synthesizing module 'base_clk_wiz_10MHz_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'base_clk_wiz_10MHz_1' (5#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_clk_wiz_10MHz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'i2s_audio_stream_imp_13BF0RV' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2354]
+INFO: [Synth 8-6157] synthesizing module 'base_i2s_receiver_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_i2s_receiver_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_i2s_receiver_0_0' (6#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_i2s_receiver_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_i2s_transmitter_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_i2s_transmitter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_i2s_transmitter_0_0' (7#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_i2s_transmitter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'i2s_audio_stream_imp_13BF0RV' (8#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2354]
+INFO: [Synth 8-6157] synthesizing module 'base_bclk_mux_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_bclk_mux_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_bclk_mux_0' (9#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_bclk_mux_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_axi_gpio_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_axi_gpio_0_0' (10#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_mux_vector_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_mux_vector_0_0' (11#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_mux_vector_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_controller_imp_1JZ8N5Y' (12#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:12]
+INFO: [Synth 8-6157] synthesizing module 'base_btns_gpio_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_btns_gpio_0' (13#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_btns_gpio_0_stub.v:6]
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Synth 8-6157] synthesizing module 'base_concat_interrupts_0' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_concat_interrupts_0/synth/base_concat_interrupts_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 6 - type: integer 
@@ -115,16 +149,24 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [g:/Vivado/P
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 15 - type: integer 
 	Parameter NUM_PORTS bound to: 7 - type: integer 
+<<<<<<< HEAD
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (18#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'base_concat_interrupts_0' (19#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_concat_interrupts_0/synth/base_concat_interrupts_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'base_ps7_0_0' (20#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
+=======
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (14#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'base_concat_interrupts_0' (15#1) [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_concat_interrupts_0/synth/base_concat_interrupts_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_ps7_0_0' (16#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_ps7_0_0_stub.v:6]
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 WARNING: [Synth 8-7071] port 'GPIO_O' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
 WARNING: [Synth 8-7071] port 'GPIO_T' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
 WARNING: [Synth 8-7071] port 'FCLK_CLK1' of module 'base_ps7_0_0' is unconnected for instance 'ps7_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
 WARNING: [Synth 8-7023] instance 'ps7_0' of module 'base_ps7_0_0' has 77 connections declared, but only 72 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:851]
+<<<<<<< HEAD
 INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_axi_periph_2' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1192]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DE2YVW' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2800]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DE2YVW' (21#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2800]
@@ -188,6 +230,60 @@ INFO: [Synth 8-6157] synthesizing module 'base_switches_gpio_0' [G:/Vivado/Pynq_
 INFO: [Synth 8-6155] done synthesizing module 'base_switches_gpio_0' (36#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_switches_gpio_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'base_system_interrupts_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'base_system_interrupts_0' (37#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-8340-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
+=======
+INFO: [Synth 8-6157] synthesizing module 'base_ps7_0_axi_periph_2' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1182]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DE2YVW' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2593]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DE2YVW' (17#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2593]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1C31QAY' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2725]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1C31QAY' (18#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2725]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1M1FQ9D' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2857]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1M1FQ9D' (19#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2857]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_L4H1ON' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_L4H1ON' (20#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2982]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_BMW16V' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3107]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_BMW16V' (21#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3107]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1E6Q06P' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3239]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1E6Q06P' (22#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3239]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1JMSMUI' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3371]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1JMSMUI' (23#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3371]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1WI8JL5' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3503]
+INFO: [Synth 8-6157] synthesizing module 'base_auto_pc_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_auto_pc_0' (24#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1WI8JL5' (25#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:3503]
+INFO: [Synth 8-6157] synthesizing module 'base_xbar_11' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_xbar_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_xbar_11' (26#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_xbar_11_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'base_xbar_11' is unconnected for instance 'xbar' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'base_xbar_11' is unconnected for instance 'xbar' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'base_xbar_11' has 40 connections declared, but only 38 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:2313]
+INFO: [Synth 8-6155] done synthesizing module 'base_ps7_0_axi_periph_2' (27#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1182]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_100M_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_100M_1' (28#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_100M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'base_rst_ps7_0_100M_1' is unconnected for instance 'rst_ps7_0_100M' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'base_rst_ps7_0_100M_1' has 10 connections declared, but only 5 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_fclk0_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_fclk0_0' (29#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_fclk0_0' is unconnected for instance 'rst_ps7_0_fclk0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_fclk0' of module 'base_rst_ps7_0_fclk0_0' has 10 connections declared, but only 6 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1104]
+INFO: [Synth 8-6157] synthesizing module 'base_rst_ps7_0_fclk0_1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_rst_ps7_0_fclk0_1' (30#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_rst_ps7_0_fclk0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'base_rst_ps7_0_fclk0_1' is unconnected for instance 'rst_ps7_0_fclk1' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_fclk1' of module 'base_rst_ps7_0_fclk0_1' has 10 connections declared, but only 6 given [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:1111]
+INFO: [Synth 8-6157] synthesizing module 'base_switches_gpio_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_switches_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_switches_gpio_0' (31#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_switches_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'base_system_interrupts_0' [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'base_system_interrupts_0' (32#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/.Xil/Vivado-1720-DESKTOP-4HQCNQE/realtime/base_system_interrupts_0_stub.v:6]
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Synth 8-6157] synthesizing module 'base_xlconcat_0_1' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ip/base_xlconcat_0_1/synth/base_xlconcat_0_1.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat__parameterized0' [g:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -229,18 +325,31 @@ INFO: [Synth 8-6155] done synthesizing module 'base_xlconcat_0_1' (38#1) [g:/Viv
 INFO: [Synth 8-6155] done synthesizing module 'base' (39#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/synth/base.v:449]
 INFO: [Synth 8-6155] done synthesizing module 'base_wrapper' (40#1) [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/bd/base/hdl/base_wrapper.v:12]
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1150.406 ; gain = 69.812
+=======
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.570 ; gain = 63.973
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1150.406 ; gain = 69.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1150.406 ; gain = 69.812
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1150.406 ; gain = 0.000
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.570 ; gain = 63.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.570 ; gain = 63.973
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1145.570 ; gain = 0.000
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -306,21 +415,35 @@ Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test
 Finished Parsing XDC File [G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1220.434 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1210.500 ; gain = 0.000
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
+<<<<<<< HEAD
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1220.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.434 ; gain = 139.840
+=======
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1210.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1210.500 ; gain = 128.902
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.434 ; gain = 139.840
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1210.500 ; gain = 128.902
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -612,10 +735,17 @@ Applied set_property DONT_TOUCH = true for base_i/Audio_controller/i2s_audio_str
 Applied set_property DONT_TOUCH = true for base_i/Audio_controller/i2s_audio_stream/AXI_aud_interface_0_upgraded_ipi. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for base_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.434 ; gain = 139.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1220.434 ; gain = 139.840
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1210.500 ; gain = 128.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1210.500 ; gain = 128.902
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -637,25 +767,41 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1220.434 ; gain = 139.840
+=======
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1210.500 ; gain = 128.902
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.320 ; gain = 155.727
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1231.270 ; gain = 149.672
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1236.617 ; gain = 156.023
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1231.492 ; gain = 149.895
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1255.742 ; gain = 175.148
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1250.605 ; gain = 169.008
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -673,37 +819,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -738,6 +908,7 @@ Report BlackBoxes:
 +------+----------------------------------------+----------+
 
 Report Cell Usage: 
+<<<<<<< HEAD
 +------+--------------------------------------+------+
 |      |Cell                                  |Count |
 +------+--------------------------------------+------+
@@ -771,11 +942,47 @@ Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 .
 Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1261.488 ; gain = 180.895
 INFO: [Project 1-571] Translating synthesized netlist
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1261.488 ; gain = 0.000
+=======
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |base_audio_codec_ctrl_0 |     1|
+|2     |base_auto_pc            |     1|
+|3     |base_axi_gpio_0         |     1|
+|4     |base_bclk_mux           |     1|
+|5     |base_btns_gpio          |     1|
+|6     |base_clk_wiz_10MHz      |     2|
+|8     |base_i2s_receiver_0     |     1|
+|9     |base_i2s_transmitter_0  |     1|
+|10    |base_mux_vector_0       |     2|
+|12    |base_ps7_0              |     1|
+|13    |base_rst_ps7_0_100M     |     1|
+|14    |base_rst_ps7_0_fclk0    |     2|
+|16    |base_switches_gpio      |     1|
+|17    |base_system_interrupts  |     1|
+|18    |base_xbar               |     1|
+|19    |IBUF                    |     7|
+|20    |IOBUF                   |     2|
+|21    |OBUF                    |     6|
++------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1256.367 ; gain = 109.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.367 ; gain = 174.770
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1256.367 ; gain = 0.000
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1286.512 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.668 ; gain = 0.000
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
@@ -783,9 +990,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 102 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
+<<<<<<< HEAD
 synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1286.512 ; gain = 205.918
+=======
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1280.668 ; gain = 199.070
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.runs/synth_1/base_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file base_wrapper_utilization_synth.rpt -pb base_wrapper_utilization_synth.pb
+<<<<<<< HEAD
 INFO: [Common 17-206] Exiting Vivado at Sat Jan 16 16:39:54 2021...
+=======
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  2 17:00:13 2021...
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8

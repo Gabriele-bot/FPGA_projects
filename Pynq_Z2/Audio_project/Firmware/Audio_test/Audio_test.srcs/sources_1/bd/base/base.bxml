@@ -2,10 +2,17 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="base" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
+<<<<<<< HEAD
     <Generation Name="SYNTHESIS" State="STALE" Timestamp="1610818442"/>
     <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1610818442"/>
     <Generation Name="SIMULATION" State="STALE" Timestamp="1610818442"/>
     <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1610818442"/>
+=======
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1609603058"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1609603058"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1609603058"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1609603058"/>
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\base_audio_codec_ctrl_0_0\base_audio_codec_ctrl_0_0.xci" Type="IP">
         <Instance HierarchyPath="Audio_controller/audio_codec_ctrl_0"/>

@@ -70,7 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+<<<<<<< HEAD
 set_msg_config -id {HDL-1065} -limit 10000
+=======
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 

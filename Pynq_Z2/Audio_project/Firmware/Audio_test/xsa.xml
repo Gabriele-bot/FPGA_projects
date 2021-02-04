@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root VersionMajor="1" VersionMinor="15">
+<<<<<<< HEAD
   <GenAppInfo Name="Vivado" Version="2020.1" CL="2902540" TimeStamp="Sat Jan 16 16:47:51 2021"/>
+=======
+  <GenAppInfo Name="Vivado" Version="2020.1" CL="2902540" TimeStamp="Sat Jan  2 17:03:32 2021"/>
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
   <DSA Vendor="xilinx" BoardId="" Name="" VersionMajor="0" VersionMinor="0" Description="Vivado generated Hardware Platform" FeatureRomTimestamp="0" DcpLogicFunctionStripped="false" DcpEncrypt="false" Unified="true" Fixed="true" DefaultOutputType="hw_export">
     <Build UsesPR="false" PlatformState="pre_synth" AcceleratorBinaryContent="bitstream" ValidBinaryContentValues="dcp,bitstream" TopModuleName="base_wrapper"/>
     <Board Name="" Vendor="" Part="">

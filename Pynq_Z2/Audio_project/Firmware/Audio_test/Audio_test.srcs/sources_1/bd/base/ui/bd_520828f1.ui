@@ -1,5 +1,6 @@
 {
    "ActiveEmotionalView":"Default View",
+<<<<<<< HEAD
    "Default View_ScaleFactor":"0.566197",
    "Default View_TopLeft":"-276,265",
    "ExpandedHierarchyInLayout":"",
@@ -61,6 +62,69 @@ preplace netloc ps7_0_DDR 1 2 3 690J 540 NJ 540 1470J
 preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1090 230n
 levelinfo -pg 1 -20 140 470 910 1310 1500
 pagesize -pg 1 -db -bbox -sgen -120 0 1670 1420
+=======
+   "Default View_ScaleFactor":"1.10526",
+   "Default View_TopLeft":"1046,558",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 6 -x 1780 -y 740 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 1780 -y 760 -defaultsOSRD
+preplace port IIC_1 -pg 1 -lvl 6 -x 1780 -y 780 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 6 -x 1780 -y 130 -defaultsOSRD
+preplace port sws_2bits -pg 1 -lvl 6 -x 1780 -y 290 -defaultsOSRD
+preplace port audio_clk_10MHz -pg 1 -lvl 6 -x 1780 -y 970 -defaultsOSRD
+preplace port sdata_i -pg 1 -lvl 0 -x -30 -y 1410 -defaultsOSRD
+preplace portBus bclk -pg 1 -lvl 6 -x 1780 -y 870 -defaultsOSRD
+preplace portBus codec_addr -pg 1 -lvl 6 -x 1780 -y 890 -defaultsOSRD
+preplace portBus lrclk -pg 1 -lvl 6 -x 1780 -y 910 -defaultsOSRD
+preplace portBus sdata_o -pg 1 -lvl 6 -x 1780 -y 950 -defaultsOSRD
+preplace inst btns_gpio -pg 1 -lvl 4 -x 1340 -y 140 -defaultsOSRD
+preplace inst ps7_0 -pg 1 -lvl 2 -x 450 -y 810 -defaultsOSRD
+preplace inst rst_ps7_0_fclk0 -pg 1 -lvl 2 -x 450 -y 1100 -defaultsOSRD
+preplace inst switches_gpio -pg 1 -lvl 4 -x 1340 -y 300 -defaultsOSRD
+preplace inst system_interrupts -pg 1 -lvl 4 -x 1340 -y 580 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 130 -y 1200 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 870 -y 920 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 870 -y 240 -defaultsOSRD
+preplace inst rst_ps7_0_fclk1 -pg 1 -lvl 3 -x 870 -y 1520 -defaultsOSRD
+preplace inst Audio_controller -pg 1 -lvl 4 -x 1340 -y 910 -defaultsOSRD
+preplace inst concat_interrupts -pg 1 -lvl 5 -x 1640 -y 500 -defaultsOSRD
+preplace netloc audio_codec_ctrl_0_codec_address 1 4 2 NJ 860 1750
+preplace netloc clk_wiz_10MHz_clk_out1 1 4 2 NJ 940 1740
+preplace netloc ps7_0_FCLK_CLK3 1 2 1 N 880
+preplace netloc ps7_0_FCLK_RESET0_N 1 1 2 250 1000 660
+preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 2 2 690 490 1100
+preplace netloc system_interrupts_irq 1 0 5 0 660 NJ 660 NJ 660 1060J 670 1490
+preplace netloc xlconcat_0_dout 1 1 1 230 820n
+preplace netloc mux_vector_0_y 1 4 2 NJ 920 1760
+preplace netloc i2s_receiver_0_irq 1 0 5 10 980 NJ 980 670J 1030 NJ 1030 1480
+preplace netloc i2s_transmitter_0_irq 1 0 5 20 990 NJ 990 650J 1040 NJ 1040 1470
+preplace netloc Net 1 0 4 -10J 960 NJ 960 680J 820 1040J
+preplace netloc bclk_mux_y 1 4 2 NJ 840 1760
+preplace netloc lrclk_mux_y 1 4 2 NJ 880 1740
+preplace netloc clk_wiz_18_432MHz_clk_out1 1 2 3 700 1050 NJ 1050 1490
+preplace netloc ps7_0_FCLK_CLK0 1 1 3 240 970 670 480 1090
+preplace netloc rst_ps7_0_fclk1_peripheral_reset 1 3 1 1080 980n
+preplace netloc concat_interrupts_dout 1 3 3 1120 380 NJ 380 1760
+preplace netloc switches_gpio_ip2intc_irpt 1 4 1 1470 310n
+preplace netloc btns_gpio_ip2intc_irpt 1 4 1 1490 150n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1050 240n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 1 N 280
+preplace netloc btns_gpio_GPIO 1 4 2 NJ 130 N
+preplace netloc swsleds_gpio_GPIO 1 4 2 NJ 290 N
+preplace netloc ps7_0_DDR 1 2 4 NJ 740 NJ 740 NJ 740 N
+preplace netloc ps7_0_IIC_1 1 2 4 NJ 780 NJ 780 NJ 780 N
+preplace netloc processing_system7_0_FIXED_IO 1 2 4 NJ 760 NJ 760 NJ 760 N
+preplace netloc ps7_0_M_AXI_GP0 1 2 1 660 60n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1110 180n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 1070 260n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 1050 120n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 1080 220n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 1 1060 300n
+levelinfo -pg 1 -30 130 450 870 1340 1640 1780
+pagesize -pg 1 -db -bbox -sgen -130 0 1950 2170
+>>>>>>> 01330e6196a25366755d028547ac8a674b358bf8
 "
 }
 {
