@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/new/Ext_Mod.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ext_Mod
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.ip_user_files/bd/Test/ip/Test_xlconstant_0_0/sim/Test_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.ip_user_files/bd/Test/ip/Test_Ext_Mod_0_0/sim/Test_Ext_Mod_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Ext_Mod_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.ip_user_files/bd/Test/ip/Test_xlconcat_0_0/sim/Test_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.ip_user_files/bd/Test/sim/Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/bd/Test/hdl/Test_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_wrapper

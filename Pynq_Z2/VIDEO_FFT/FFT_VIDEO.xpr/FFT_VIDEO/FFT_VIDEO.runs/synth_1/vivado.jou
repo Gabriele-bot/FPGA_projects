@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr  3 02:01:56 2021
+# Process ID: 10932
+# Current directory: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/synth_1
+# Command line: vivado.exe -log base_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_wrapper.tcl
+# Log file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/synth_1/base_wrapper.vds
+# Journal file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_wrapper.tcl -notrace

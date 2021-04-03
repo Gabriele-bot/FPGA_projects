@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 00:43:47 2021
+# Process ID: 13808
+# Current directory: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_rst_ps7_0_fclk0_0_synth_1
+# Command line: vivado.exe -log base_rst_ps7_0_fclk0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_rst_ps7_0_fclk0_0.tcl
+# Log file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_rst_ps7_0_fclk0_0_synth_1/base_rst_ps7_0_fclk0_0.vds
+# Journal file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_rst_ps7_0_fclk0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_rst_ps7_0_fclk0_0.tcl -notrace

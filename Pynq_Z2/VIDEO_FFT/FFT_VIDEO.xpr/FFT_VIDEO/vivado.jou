@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr  3 01:45:00 2021
+# Process ID: 13024
+# Current directory: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2768
+# Log file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.xpr
+open_bd_design {D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/bd/Test/Test.bd}
+update_compile_order -fileset sources_1
+close_project
+open_project D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/bd/base/base.bd}
+group_bd_cells HDMI_FFT_LR [get_bd_cells FFT_CONFIG] [get_bd_cells FFT_L] [get_bd_cells Ready_AND] [get_bd_cells OFFSET_L] [get_bd_cells cordic_R] [get_bd_cells Ext_Mod_R] [get_bd_cells xlconstant_1] [get_bd_cells OFFSET_L_VALID] [get_bd_cells Packet_framer_L] [get_bd_cells FFT_R] [get_bd_cells rgb2dvi_0] [get_bd_cells CONFIG_PAR] [get_bd_cells CONFIG_DATA_VAILD] [get_bd_cells cordic_L] [get_bd_cells FFT_BRAM_0] [get_bd_cells Ext_Mod_L] [get_bd_cells AXI_FFT_CTRL] [get_bd_cells Packet_framer_R] [get_bd_cells HDMI_test_0]
+regenerate_bd_layout
+set_property name s_axis_l_tdata [get_bd_pins HDMI_FFT_LR/s_axis_tdata]
+set_property name s_axis_r_tdata [get_bd_pins HDMI_FFT_LR/s_axis_tdata1]
+set_property name s_axis_r_tvalid [get_bd_pins HDMI_FFT_LR/s_axis_tvalid1]
+set_property name s_axis_l_tvalid [get_bd_pins HDMI_FFT_LR/s_axis_tvalid]
+set_property name OFFSET [get_bd_cells HDMI_FFT_LR/OFFSET_L]
+set_property name OFFSET_VALID [get_bd_cells HDMI_FFT_LR/OFFSET_L_VALID]
+regenerate_bd_layout -hierarchy [get_bd_cells HDMI_FFT_LR]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets axi_data_fifo_0_M_AXI] [get_bd_cells axi_data_fifo_0]
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells rst_ps7_0_142M]
+delete_bd_objs [get_bd_nets rst_ps7_0_142M_peripheral_aresetn] [get_bd_intf_nets axi_mem_intercon_M00_AXI] [get_bd_cells axi_mem_intercon]
+delete_bd_objs [get_bd_nets ps7_0_FCLK_CLK1]
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {0} CONFIG.PCW_EN_CLK1_PORT {0} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells ps7_0]
+endgroup
+regenerate_bd_layout
+set_property location {2 421 614} [get_bd_cells xlconcat_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {8}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+delete_bd_objs [get_bd_nets ps7_0_FCLK_CLK3] [get_bd_cells rst_ps7_0_100M]
+startgroup
+set_property -dict [list CONFIG.PCW_EN_CLK3_PORT {0}] [get_bd_cells ps7_0]
+endgroup
+regenerate_bd_layout
+set_property location {-1201 979} [get_bd_ports sdata_i]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+reset_run base_ps7_0_0_synth_1
+reset_run base_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+archive_project G:/Vivado/FFT_VIDEO/FFT_VIDEO.xpr.zip -temp_dir C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13024-DESKTOP-4SFHT1M -force -include_local_ip_cache -include_config_settings

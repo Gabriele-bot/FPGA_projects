@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 00:45:44 2021
+# Process ID: 13740
+# Current directory: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_axis_data_fifo_0_0_synth_1
+# Command line: vivado.exe -log base_axis_data_fifo_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_axis_data_fifo_0_0.tcl
+# Log file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_axis_data_fifo_0_0_synth_1/base_axis_data_fifo_0_0.vds
+# Journal file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_axis_data_fifo_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_axis_data_fifo_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1143.797 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Test_dma.xpr/Test_dma/Test_dma.ipdefs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP base_axis_data_fifo_0_0, cache-ID = 8e17d23835a27c48.
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 00:46:12 2021...

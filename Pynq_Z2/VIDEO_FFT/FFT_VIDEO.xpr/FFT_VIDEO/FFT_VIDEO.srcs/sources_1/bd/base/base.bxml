@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="base" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1617408053"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1617408053"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1617408053"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1617408053"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\base_audio_codec_ctrl_0_0\base_audio_codec_ctrl_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/audio_codec_ctrl_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615323066" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_btns_gpio_0\base_btns_gpio_0.xci" Type="IP">
+        <Instance HierarchyPath="btns_gpio"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615323068" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_concat_interrupts_0\base_concat_interrupts_0.xci" Type="IP">
+        <Instance HierarchyPath="concat_interrupts"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615313889" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_ps7_0_0\base_ps7_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247424" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_rst_ps7_0_fclk0_0\base_rst_ps7_0_fclk0_0.xci" Type="IP">
+        <Instance HierarchyPath="rst_ps7_0_fclk0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615323066" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_system_interrupts_0\base_system_interrupts_0.xci" Type="IP">
+        <Instance HierarchyPath="system_interrupts"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616246158" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlconcat_0_1\base_xlconcat_0_1.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615313889" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_mux_vector_0_0\base_mux_vector_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/out_mux"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615314205" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axi_gpio_0_0\base_axi_gpio_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/mux_sel"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615323068" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_clk_wiz_10MHz_1\base_clk_wiz_10MHz_1.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/clk_wiz_audio"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615653376" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_rst_ps7_0_fclk0_1\base_rst_ps7_0_fclk0_1.xci" Type="IP">
+        <Instance HierarchyPath="rst_ps7_0_fclk1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615653376" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_AXI_aud_interface_0_upgraded_ipi_0\base_AXI_aud_interface_0_upgraded_ipi_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/AXI_aud_interface_0_upgraded_ipi"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615409200" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_bclk_mux_0\base_bclk_mux_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/bclk_mux"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615314207" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_lrclk_mux_0\base_lrclk_mux_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/lrclk_mux"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615314207" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_Pulse_LED_controller_0_0\base_Pulse_LED_controller_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Pulse_LED_controller_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615323068" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xbar_0\base_xbar_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247426" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xfft_0_0\base_xfft_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/FFT_L"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247428" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_rgb2dvi_0_0\base_rgb2dvi_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/rgb2dvi_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615743384" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_HDMI_test_0_0\base_HDMI_test_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/HDMI_test_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247430" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlconstant_1_0\base_xlconstant_1_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/xlconstant_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615667394" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_i2s_receiver_0_0\base_i2s_receiver_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/i2s_receiver_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615721994" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_i2s_transmitter_0_0\base_i2s_transmitter_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/i2s_transmitter_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615721994" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_ps7_0_axi_periph_0\base_ps7_0_axi_periph_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="1615721996" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_cordic_0_0\base_cordic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/cordic_L"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616246160" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_Ext_Mod_0_0\base_Ext_Mod_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/Ext_Mod_L"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1615940280" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_FFT_BRAM_0_0\base_FFT_BRAM_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/FFT_BRAM_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616250734" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_FFT_config_0_0\base_FFT_config_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/FFT_CONFIG"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247428" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axi_gpio_0_1\base_axi_gpio_0_1.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/AXI_FFT_CTRL"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247430" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlslice_1_0\base_xlslice_1_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/CONFIG_PAR"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247186" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlslice_2_0\base_xlslice_2_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/CONFIG_DATA_VAILD"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="1616247186" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axis_data_fifo_0_0\base_axis_data_fifo_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/L_FIFO"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_axis_data_fifo_1_0\base_axis_data_fifo_1_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/R_FIFO"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_LR_Stream_2_AXI_I2S_0_0\base_LR_Stream_2_AXI_I2S_0_0.xci" Type="IP">
+        <Instance HierarchyPath="Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlslice_0_0\base_xlslice_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/OFFSET"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_xlslice_3_0\base_xlslice_3_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/OFFSET_VALID"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_Packet_framer_0_0\base_Packet_framer_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/Packet_framer_L"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_Packet_framer_L_0\base_Packet_framer_L_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/Packet_framer_R"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_FFT_L_0\base_FFT_L_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/FFT_R"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_util_vector_logic_0_0\base_util_vector_logic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/Ready_AND"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_Ext_Mod_L_0\base_Ext_Mod_L_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/Ext_Mod_R"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_cordic_L_0\base_cordic_L_0.xci" Type="IP">
+        <Instance HierarchyPath="HDMI_FFT_LR/cordic_R"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\base.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\base_auto_pc_0\base_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="base_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\base.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="base.bda">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\base_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\base.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\base.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>
