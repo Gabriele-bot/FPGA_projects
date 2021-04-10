@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="Axi_aud_demux" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1617363711"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1617363711"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1617363711"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1617363711"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\Axi_aud_demux_AXI_aud_interface_0_0\Axi_aud_demux_AXI_aud_interface_0_0.xci" Type="IP">
+        <Instance HierarchyPath="AXI_aud_interface_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\Axi_aud_demux_LR_Stream2AXI_interf_0_0\Axi_aud_demux_LR_Stream2AXI_interf_0_0.xci" Type="IP">
+        <Instance HierarchyPath="LR_Stream2AXI_interf_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\Axi_aud_demux_fir_compiler_0_0\Axi_aud_demux_fir_compiler_0_0.xci" Type="IP">
+        <Instance HierarchyPath="fir_compiler_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\Axi_aud_demux_fir_compiler_0_1\Axi_aud_demux_fir_compiler_0_1.xci" Type="IP">
+        <Instance HierarchyPath="fir_compiler_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

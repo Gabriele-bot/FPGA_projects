@@ -1,0 +1,451 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  9 19:18:03 2021
+# Process ID: 19392
+# Current directory: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1
+# Command line: vivado.exe -log base_axi_bram_ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_axi_bram_ctrl_0_0.tcl
+# Log file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/base_axi_bram_ctrl_0_0.vds
+# Journal file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_axi_bram_ctrl_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+Command: synth_design -top base_axi_bram_ctrl_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18532
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1177.742 ; gain = 51.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'base_axi_bram_ctrl_0_0' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/synth/base_axi_bram_ctrl_0_0.vhd:104]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31357' bound to instance 'U0' of component 'axi_bram_ctrl' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/synth/base_axi_bram_ctrl_0_0.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 2048 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+	Parameter C_BRAM_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'full_axi' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_ENABLE_AXI_CTRL_REG_IF bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-6774] Null subtype or type declaration found [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-3919] null assignment ignored [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29350]
+INFO: [Synth 8-638] synthesizing module 'sng_port_arb' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sng_port_arb' (1#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:11456]
+INFO: [Synth 8-638] synthesizing module 'wr_chnl' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-506] null port 'FaultInjectECC' ignored [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24126]
+INFO: [Synth 8-638] synthesizing module 'wrap_brst' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'wrap_brst' (2#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:12455]
+INFO: [Synth 8-638] synthesizing module 'SRL_FIFO' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+	Parameter C_DATA_BITS bound to: 1 - type: integer 
+	Parameter C_DEPTH bound to: 8 - type: integer 
+	Parameter C_XON bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'FDR' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711' bound to instance 'Data_Exists_DFF' of component 'FDR' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:230]
+INFO: [Synth 8-6157] synthesizing module 'FDR' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDR' (3#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13711]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (4#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-6157] synthesizing module 'XORCY' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372]
+INFO: [Synth 8-6155] done synthesizing module 'XORCY' (5#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (6#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'MUXCY_L' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961' bound to instance 'MUXCY_L_I' of component 'MUXCY_L' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:247]
+INFO: [Synth 8-3491] module 'XORCY' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:82372' bound to instance 'XORCY_I' of component 'XORCY' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:254]
+INFO: [Synth 8-3491] module 'FDRE' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724' bound to instance 'FDRE_I' of component 'FDRE' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:260]
+INFO: [Synth 8-3491] module 'SRL16E' declared at 'D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034' bound to instance 'SRL16E_I' of component 'SRL16E' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:271]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+	Parameter INIT bound to: 16'b0000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (7#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-256] done synthesizing module 'SRL_FIFO' (8#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'wr_chnl' (9#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:24159]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30020]
+INFO: [Synth 8-638] synthesizing module 'rd_chnl' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+	Parameter C_AXI_ADDR_WIDTH bound to: 13 - type: integer 
+	Parameter C_BRAM_ADDR_ADJUST_FACTOR bound to: 2 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_NARROW bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4 - type: string 
+	Parameter C_SINGLE_PORT_BRAM bound to: 1 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rd_chnl' (10#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:14746]
+INFO: [Synth 8-256] done synthesizing module 'full_axi' (11#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:29280]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (12#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30527]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (13#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/c9f0/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31528]
+INFO: [Synth 8-256] done synthesizing module 'base_axi_bram_ctrl_0_0' (14#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/synth/base_axi_bram_ctrl_0_0.vhd:104]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1252.301 ; gain = 126.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.301 ; gain = 126.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.301 ; gain = 126.414
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1252.301 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/base_axi_bram_ctrl_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/base_axi_bram_ctrl_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1355.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDR => FDRE: 1 instance 
+  MUXCY_L => MUXCY: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1362.984 ; gain = 7.715
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'arb_sm_cs_reg' in module 'sng_port_arb'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' in module 'wr_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' in module 'rd_chnl'
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                 wr_data |                               01 |                               10
+                 rd_data |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'arb_sm_cs_reg' using encoding 'sequential' in module 'sng_port_arb'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+            brst_wr_data |                              010 |                               10
+             sng_wr_data |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_WDATA_SM_NO_ECC_SNG_REG_WREADY.wr_data_sng_sm_cs_reg' using encoding 'one-hot' in module 'wr_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                sng_addr |                             0001 |                             0011
+                sec_addr |                             0010 |                             0100
+               full_pipe |                             0011 |                             0101
+           full_throttle |                             0100 |                             0110
+               last_addr |                             0101 |                             0111
+           last_throttle |                             0110 |                             1000
+               last_data |                             0111 |                             1001
+       last_data_ar_pend |                             1000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rd_data_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          w8_throttle_b2 |                              001 |                              101
+             w8_throttle |                              010 |                              010
+        w8_2nd_last_data |                              011 |                              011
+            w8_last_data |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.rlast_sm_cs_reg' using encoding 'sequential' in module 'rd_chnl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 106   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   5 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   8 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   5 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 52    
+	   3 Input    1 Bit        Muxes := 16    
+	   9 Input    1 Bit        Muxes := 19    
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1362.984 ; gain = 237.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1368.039 ; gain = 242.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1377.125 ; gain = 251.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     1|
+|2     |LUT2  |    23|
+|3     |LUT3  |    52|
+|4     |LUT4  |    27|
+|5     |LUT5  |    28|
+|6     |LUT6  |   102|
+|7     |MUXF7 |     1|
+|8     |FDRE  |   196|
+|9     |FDSE  |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1382.941 ; gain = 257.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1382.941 ; gain = 146.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1382.941 ; gain = 257.055
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1382.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1392.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1392.012 ; gain = 266.125
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/base_axi_bram_ctrl_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP base_axi_bram_ctrl_0_0, cache-ID = 3ef839869918b1ee
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_bram_ctrl_0_0_synth_1/base_axi_bram_ctrl_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_axi_bram_ctrl_0_0_utilization_synth.rpt -pb base_axi_bram_ctrl_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  9 19:18:38 2021...

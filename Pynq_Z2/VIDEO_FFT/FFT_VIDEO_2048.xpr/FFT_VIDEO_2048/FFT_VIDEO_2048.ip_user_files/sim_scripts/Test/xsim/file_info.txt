@@ -1,0 +1,6 @@
+Test_cordic_0_0.vhd,vhdl,xil_defaultlib,../../../bd/Test/ip/Test_cordic_0_0/sim/Test_cordic_0_0.vhd,
+Test_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/Test/ip/Test_xlconstant_0_0/sim/Test_xlconstant_0_0.v,
+Test_Ext_Mod_0_0.v,verilog,xil_defaultlib,../../../bd/Test/ip/Test_Ext_Mod_0_0/sim/Test_Ext_Mod_0_0.v,
+Test_xlconcat_0_0.v,verilog,xil_defaultlib,../../../bd/Test/ip/Test_xlconcat_0_0/sim/Test_xlconcat_0_0.v,
+Test.v,verilog,xil_defaultlib,../../../bd/Test/sim/Test.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

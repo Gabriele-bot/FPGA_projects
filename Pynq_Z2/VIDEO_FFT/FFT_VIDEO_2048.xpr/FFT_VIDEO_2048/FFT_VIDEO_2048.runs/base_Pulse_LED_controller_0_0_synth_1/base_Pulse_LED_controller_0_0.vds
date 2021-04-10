@@ -1,0 +1,246 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr  2 13:48:14 2021
+# Process ID: 5816
+# Current directory: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_Pulse_LED_controller_0_0_synth_1
+# Command line: vivado.exe -log base_Pulse_LED_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_Pulse_LED_controller_0_0.tcl
+# Log file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_Pulse_LED_controller_0_0_synth_1/base_Pulse_LED_controller_0_0.vds
+# Journal file: D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_Pulse_LED_controller_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source base_Pulse_LED_controller_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Test_dma.xpr/Test_dma/Test_dma.ipdefs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+Command: synth_design -top base_Pulse_LED_controller_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'base_Pulse_LED_controller_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16736
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1176.578 ; gain = 32.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'base_Pulse_LED_controller_0_0' [d:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/bd/base/ip/base_Pulse_LED_controller_0_0/synth/base_Pulse_LED_controller_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Pulse_LED_controller' [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:7]
+	Parameter AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter AUDIO_DATA_WIDTH bound to: 24 - type: integer 
+	Parameter N_AUDIO_CH bound to: 1 - type: integer 
+	Parameter wait_for_tvalid bound to: 3'b000 
+	Parameter load_data bound to: 3'b001 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:133]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:158]
+WARNING: [Synth 8-567] referenced signal 'dRSUM' should be on the sensitivity list [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'Pulse_LED_controller' (1#1) [D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Pulse_LED_controller.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'base_Pulse_LED_controller_0_0' (2#1) [d:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/bd/base/ip/base_Pulse_LED_controller_0_0/synth/base_Pulse_LED_controller_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1234.648 ; gain = 90.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1234.648 ; gain = 90.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1234.648 ; gain = 90.270
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1234.648 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1341.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1341.410 ; gain = 0.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_Curr_L_reg' in module 'Pulse_LED_controller'
+INFO: [Synth 8-802] inferred FSM for state register 'state_Curr_R_reg' in module 'Pulse_LED_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         wait_for_tvalid |                                0 |                              000
+               load_data |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_Curr_L_reg' using encoding 'sequential' in module 'Pulse_LED_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         wait_for_tvalid |                                0 |                              000
+               load_data |                                1 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_Curr_R_reg' using encoding 'sequential' in module 'Pulse_LED_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input   11 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1341.410 ; gain = 197.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1347.203 ; gain = 202.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    24|
+|2     |LUT1   |    18|
+|3     |LUT2   |    12|
+|4     |LUT3   |    28|
+|5     |LUT4   |    38|
+|6     |LUT5   |    20|
+|7     |LUT6   |    14|
+|8     |FDRE   |    34|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:39 . Memory (MB): peak = 1355.387 ; gain = 104.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1355.387 ; gain = 211.008
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1367.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1372.875 ; gain = 228.496
+INFO: [Common 17-1381] The checkpoint 'D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_Pulse_LED_controller_0_0_synth_1/base_Pulse_LED_controller_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Common 17-1381] The checkpoint 'D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_Pulse_LED_controller_0_0_synth_1/base_Pulse_LED_controller_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file base_Pulse_LED_controller_0_0_utilization_synth.rpt -pb base_Pulse_LED_controller_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 13:49:31 2021...

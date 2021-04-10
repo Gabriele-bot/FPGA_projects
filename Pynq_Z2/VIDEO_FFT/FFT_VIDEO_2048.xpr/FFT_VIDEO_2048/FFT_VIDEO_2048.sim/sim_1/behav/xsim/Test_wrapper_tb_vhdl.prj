@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Test_dma.ip_user_files/bd/Test/ip/Test_cordic_0_0/sim/Test_cordic_0_0.vhd" \
+
+# Do not sort compile order
+nosort

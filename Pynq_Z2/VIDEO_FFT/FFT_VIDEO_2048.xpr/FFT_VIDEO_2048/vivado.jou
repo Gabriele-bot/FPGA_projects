@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 10 13:00:33 2021
+# Process ID: 14272
+# Current directory: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13644
+# Log file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr
+archive_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO.xpr.zip -temp_dir C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M -force -include_local_ip_cache -include_config_settings

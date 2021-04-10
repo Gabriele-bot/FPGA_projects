@@ -1,0 +1,378 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 10 13:00:33 2021
+# Process ID: 14272
+# Current directory: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13644
+# Log file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1201.152 ; gain = 74.934
+archive_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO.xpr.zip -temp_dir C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M/PrjAr/_X_'.
+WARNING: [IP_Flow 19-3571] IP 'base_Ext_Mod_L_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'base_Packet_framer_L_0' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'base_Windowing_0_1' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axis_aud'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_l_fir' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_r_fir' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aud_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_aud'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'm_axis_aud_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
+WARNING: [IP_Flow 19-3480] master: Portmap direction mismatched between component port 'm_axis_aud_tready' and definition port 'TREADY'.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_l_fir': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r_fir': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'm_axis_aud_aclk': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axis_aud'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_l' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_l' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_r' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_r' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_l' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_r' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_l': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_btn'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_btn'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_fftconfig' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_fftconfig'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'outwindow'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'outwindow'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_l' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_r' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'm_axis_aud': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_l': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_L' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_L' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_R' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_R' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
+WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'get_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'get_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS_DATA'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'get_data'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'get_data'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS_DATA'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_audio_codec_ctrl_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_rst_ps7_0_fclk0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_ps7_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_rst_ps7_0_fclk0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_bclk_mux_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_clk_wiz_10MHz_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_lrclk_mux_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_xbar_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_xfft_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_rgb2dvi_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_cordic_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_i2s_receiver_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_i2s_transmitter_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_1_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_config_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_LR_Stream_2_AXI_I2S_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_aud_interface_0_upgraded_ipi_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Pulse_LED_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_util_vector_logic_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_mux_vector_0_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_last_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_mux_vector_0_3_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_last_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_data_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_last_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_CORDIC_FIFO_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_BRAM_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_HDMI_test_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axi_bram_ctrl_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'base_audio_codec_ctrl_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_rst_ps7_0_fclk0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_ps7_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_rst_ps7_0_fclk0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_bclk_mux_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_clk_wiz_10MHz_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_lrclk_mux_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_xbar_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_xfft_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_rgb2dvi_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_cordic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_i2s_receiver_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_i2s_transmitter_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_1_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_config_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_LR_Stream_2_AXI_I2S_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_aud_interface_0_upgraded_ipi_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Pulse_LED_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_util_vector_logic_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mux_vector_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_last_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_mux_vector_0_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_last_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_data_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_last_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_CORDIC_FIFO_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_BRAM_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_HDMI_test_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axi_bram_ctrl_0_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_aud_interface_0_upgraded_ipi_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_aud_interface_0_upgraded_ipi_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_CORDIC_FIFO_L_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_CORDIC_FIFO_L_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Ext_Mod_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Ext_Mod_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Ext_Mod_L_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Ext_Mod_L_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_BRAM_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_BRAM_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_L_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_L_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_L_data_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_L_data_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_L_last_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_L_last_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_L_last_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_L_last_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_L_last_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_L_last_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_FFT_config_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_FFT_config_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_HDMI_test_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_HDMI_test_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_LR_Stream_2_AXI_I2S_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_LR_Stream_2_AXI_I2S_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Packet_framer_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Packet_framer_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Packet_framer_L_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Packet_framer_L_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Pulse_LED_controller_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Pulse_LED_controller_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Windowing_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Windowing_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_Windowing_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_Windowing_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_audio_codec_ctrl_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_audio_codec_ctrl_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_bram_ctrl_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_bram_ctrl_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_gpio_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_gpio_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_gpio_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axis_data_fifo_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axis_data_fifo_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axis_data_fifo_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axis_data_fifo_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axis_data_fifo_1_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axis_data_fifo_1_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_bclk_mux_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_bclk_mux_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_clk_wiz_10MHz_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_clk_wiz_10MHz_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_cordic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_cordic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_i2s_receiver_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_i2s_receiver_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_i2s_transmitter_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_i2s_transmitter_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_lrclk_mux_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_lrclk_mux_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mux_vector_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mux_vector_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_mux_vector_0_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_mux_vector_0_3'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_ps7_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_ps7_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_rgb2dvi_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_rgb2dvi_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_rst_ps7_0_fclk0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_rst_ps7_0_fclk0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_rst_ps7_0_fclk0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_rst_ps7_0_fclk0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_util_vector_logic_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_util_vector_logic_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_xbar_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_xbar_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_xfft_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_xfft_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
