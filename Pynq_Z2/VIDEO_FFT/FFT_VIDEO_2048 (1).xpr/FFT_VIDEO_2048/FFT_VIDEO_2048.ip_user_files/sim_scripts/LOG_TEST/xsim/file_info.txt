@@ -1,0 +1,11 @@
+LOG_TEST_Atanh_cordic_In_concat_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_Atanh_cordic_In_concat_0/sim/LOG_TEST_Atanh_cordic_In_concat_0.v,
+LOG_TEST_Atanh_cordic_Out_concat_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_Atanh_cordic_Out_concat_0/sim/LOG_TEST_Atanh_cordic_Out_concat_0.v,
+LOG_TEST_Input_slice_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_Input_slice_0/sim/LOG_TEST_Input_slice_0.v,
+LOG_TEST_One_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_One_0/sim/LOG_TEST_One_0.v,
+LOG_TEST_Padding7_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_Padding7_0/sim/LOG_TEST_Padding7_0.v,
+LOG_TEST_Padding8_0.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_Padding8_0/sim/LOG_TEST_Padding8_0.v,
+LOG_TEST_cordic_0_0.vhd,vhdl,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_cordic_0_0/sim/LOG_TEST_cordic_0_0.vhd,
+LOG_TEST_minus_one_0.vhd,vhdl,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_minus_one_0/sim/LOG_TEST_minus_one_0.vhd,
+LOG_TEST_plus_one_0.vhd,vhdl,xil_defaultlib,../../../bd/LOG_TEST/ip/LOG_TEST_plus_one_0/sim/LOG_TEST_plus_one_0.vhd,
+LOG_TEST.v,verilog,xil_defaultlib,../../../bd/LOG_TEST/sim/LOG_TEST.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

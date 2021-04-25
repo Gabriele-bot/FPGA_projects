@@ -1,0 +1,2245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="54" Path="C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7356-DESKTOP-4SFHT1M/PrjAr/_X_/FFT_VIDEO_2048.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="70aba13b42424ca3bc7c6283349143fd"/>
+    <Option Name="Part" Val="xc7z020clg400-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="SimulatorInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorInstallDirIES" Val=""/>
+    <Option Name="SimulatorInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorInstallDirVCS" Val=""/>
+    <Option Name="SimulatorInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorInstallDirActiveHdl" Val=""/>
+    <Option Name="SimulatorGccInstallDirModelSim" Val=""/>
+    <Option Name="SimulatorGccInstallDirQuesta" Val=""/>
+    <Option Name="SimulatorGccInstallDirIES" Val=""/>
+    <Option Name="SimulatorGccInstallDirXcelium" Val=""/>
+    <Option Name="SimulatorGccInstallDirVCS" Val=""/>
+    <Option Name="SimulatorGccInstallDirRiviera" Val=""/>
+    <Option Name="SimulatorGccInstallDirActiveHdl" Val=""/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/FFT_VIDEO_2048.ipdefs/ip"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="WTXSimLaunchSim" Val="119"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="17"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
+    <Option Name="WTIesExportSim" Val="17"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
+    <Option Name="WTActivehdlExportSim" Val="17"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="SimTypes" Val="bfm"/>
+    <Option Name="SimTypes" Val="tlm"/>
+    <Option Name="SimTypes" Val="tlm_dpi"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
+    <Option Name="DcpsUptoDate" Val="TRUE"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/imports/new/AXI_aud_interface.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sources_1/new/AXI_aud_interface.v"/>
+          <Attr Name="ImportTime" Val="1610303594"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Pulse_LED_controller.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/sources_1/new/Pulse_LED_controller.v"/>
+          <Attr Name="ImportTime" Val="1613850602"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/HDMI_out_module.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Test_dma/Test_dma.srcs/sources_1/new/HDMI_out_module.v"/>
+          <Attr Name="ImportTime" Val="1615673072"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Ext_Mod.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/new/Ext_Mod.v"/>
+          <Attr Name="ImportTime" Val="1615940176"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/FFT_BRAM.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/new/FFT_BRAM.v"/>
+          <Attr Name="ImportTime" Val="1616006164"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/FFT_config.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/new/FFT_config.v"/>
+          <Attr Name="ImportTime" Val="1616095010"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/wee/FIFO.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sources_1/imports/wee/FIFO.v"/>
+          <Attr Name="ImportTime" Val="1610292402"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/LR_Stream_2_AXI_I2S.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/LR_Stream_2_AXI_I2S.v"/>
+          <Attr Name="ImportTime" Val="1617307607"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Packet_framer.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/sources_1/new/Packet_framer.v"/>
+          <Attr Name="ImportTime" Val="1617370920"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/Windowing.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="D:/Progetti_vivado/TEST_FFT_IFFT/TEST_FFT_IFFT.srcs/sources_1/new/Windowing.v"/>
+          <Attr Name="ImportTime" Val="1617183123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AXI_DEMUX.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/AXI_DEMUX.v"/>
+          <Attr Name="ImportTime" Val="1618587018"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AXIS_MUX.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/AXIS_MUX.v"/>
+          <Attr Name="ImportTime" Val="1618587083"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/APPROX_LOG_MOD.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/APPROX_LOG_MOD.v"/>
+          <Attr Name="ImportTime" Val="1619179294"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/base/base.bd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/base.bd"/>
+          <Attr Name="ImportTime" Val="1609522267"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_APPROX_LOG_MOD_0_1/base_APPROX_LOG_MOD_0_1.xci">
+          <Proxy FileSetName="base_APPROX_LOG_MOD_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_DEMUX_0_0/base_AXI_DEMUX_0_0.xci">
+          <Proxy FileSetName="base_AXI_DEMUX_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_DEMUX_0_1/base_AXI_DEMUX_0_1.xci">
+          <Proxy FileSetName="base_AXI_DEMUX_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_APPROX_LOG_MOD_0_0/base_APPROX_LOG_MOD_0_0.xci">
+          <Proxy FileSetName="base_APPROX_LOG_MOD_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_MUX_0_1/base_AXI_MUX_0_1.xci">
+          <Proxy FileSetName="base_AXI_MUX_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_MUX_0_0/base_AXI_MUX_0_0.xci">
+          <Proxy FileSetName="base_AXI_MUX_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_audio_codec_ctrl_0_0/base_audio_codec_ctrl_0_0.xci">
+          <Proxy FileSetName="base_audio_codec_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_ps7_0_0/base_ps7_0_0.xci">
+          <Proxy FileSetName="base_ps7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_config_0_0/base_FFT_config_0_0.xci">
+          <Proxy FileSetName="base_FFT_config_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rgb2dvi_0_0/base_rgb2dvi_0_0.xci">
+          <Proxy FileSetName="base_rgb2dvi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1.xci">
+          <Proxy FileSetName="base_clk_wiz_10MHz_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_AXI_aud_interface_0_upgraded_ipi_0/base_AXI_aud_interface_0_upgraded_ipi_0.xci">
+          <Proxy FileSetName="base_AXI_aud_interface_0_upgraded_ipi_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xci">
+          <Proxy FileSetName="base_rst_ps7_0_fclk0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_HDMI_test_0_0/base_HDMI_test_0_0.xci">
+          <Proxy FileSetName="base_HDMI_test_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0.xci">
+          <Proxy FileSetName="base_i2s_receiver_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_cordic_0_0/base_cordic_0_0.xci">
+          <Proxy FileSetName="base_cordic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_bclk_mux_0/base_bclk_mux_0.xci">
+          <Proxy FileSetName="base_bclk_mux_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_xbar_0/base_xbar_0.xci">
+          <Proxy FileSetName="base_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_gpio_0_0/base_axi_gpio_0_0.xci">
+          <Proxy FileSetName="base_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Pulse_LED_controller_0_0/base_Pulse_LED_controller_0_0.xci">
+          <Proxy FileSetName="base_Pulse_LED_controller_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_xfft_0_0/base_xfft_0_0.xci">
+          <Proxy FileSetName="base_xfft_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xci">
+          <Proxy FileSetName="base_rst_ps7_0_fclk0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0.xci">
+          <Proxy FileSetName="base_i2s_transmitter_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_lrclk_mux_0/base_lrclk_mux_0.xci">
+          <Proxy FileSetName="base_lrclk_mux_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Ext_Mod_0_0/base_Ext_Mod_0_0.xci">
+          <Proxy FileSetName="base_Ext_Mod_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.xci">
+          <Proxy FileSetName="base_FFT_BRAM_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_gpio_0_1/base_axi_gpio_0_1.xci">
+          <Proxy FileSetName="base_axi_gpio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_util_vector_logic_0_0/base_util_vector_logic_0_0.xci">
+          <Proxy FileSetName="base_util_vector_logic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_L_data_0/base_FFT_L_data_0.xci">
+          <Proxy FileSetName="base_FFT_L_data_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_gpio_0_2/base_axi_gpio_0_2.xci">
+          <Proxy FileSetName="base_axi_gpio_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Packet_framer_L_0/base_Packet_framer_L_0.xci">
+          <Proxy FileSetName="base_Packet_framer_L_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axi_bram_ctrl_0_0/base_axi_bram_ctrl_0_0.xci">
+          <Proxy FileSetName="base_axi_bram_ctrl_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_mux_vector_0_3/base_mux_vector_0_3.xci">
+          <Proxy FileSetName="base_mux_vector_0_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_L_last_0/base_FFT_L_last_0.xci">
+          <Proxy FileSetName="base_FFT_L_last_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_L_last_1/base_FFT_L_last_1.xci">
+          <Proxy FileSetName="base_FFT_L_last_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axis_data_fifo_0_0/base_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="base_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_L_last_2/base_FFT_L_last_2.xci">
+          <Proxy FileSetName="base_FFT_L_last_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_CORDIC_FIFO_L_0/base_CORDIC_FIFO_L_0.xci">
+          <Proxy FileSetName="base_CORDIC_FIFO_L_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Packet_framer_0_0/base_Packet_framer_0_0.xci">
+          <Proxy FileSetName="base_Packet_framer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axis_data_fifo_0_1/base_axis_data_fifo_0_1.xci">
+          <Proxy FileSetName="base_axis_data_fifo_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Windowing_0_0/base_Windowing_0_0.xci">
+          <Proxy FileSetName="base_Windowing_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Ext_Mod_L_0/base_Ext_Mod_L_0.xci">
+          <Proxy FileSetName="base_Ext_Mod_L_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_mux_vector_0_2/base_mux_vector_0_2.xci">
+          <Proxy FileSetName="base_mux_vector_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_axis_data_fifo_1_0/base_axis_data_fifo_1_0.xci">
+          <Proxy FileSetName="base_axis_data_fifo_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_LR_Stream_2_AXI_I2S_0_0/base_LR_Stream_2_AXI_I2S_0_0.xci">
+          <Proxy FileSetName="base_LR_Stream_2_AXI_I2S_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_FFT_L_0/base_FFT_L_0.xci">
+          <Proxy FileSetName="base_FFT_L_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="base.bd" FileRelPathName="ip/base_Windowing_0_1/base_Windowing_0_1.xci">
+          <Proxy FileSetName="base_Windowing_0_1"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/base/hdl/base_wrapper.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/base/hdl/base_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1609463257"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/Cordic_atanh/Cordic_atanh.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/ip/Cordic_atanh/Cordic_atanh.xci"/>
+          <Attr Name="ImportTime" Val="1618579594"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Log_Mod.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/Log_Mod.v"/>
+          <Attr Name="ImportTime" Val="1619110058"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Data_stream2DMA.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Test_dma/Test_dma.srcs/sources_1/new/Data_stream2DMA.v"/>
+          <Attr Name="ImportTime" Val="1615409190"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/Test/Test.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/bd/Test/Test.bd"/>
+          <Attr Name="ImportTime" Val="1615940222"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/Axi_aud_demux/Axi_aud_demux.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sources_1/bd/Axi_aud_demux/Axi_aud_demux.bd"/>
+          <Attr Name="ImportTime" Val="1610320400"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/LR_Stream2AXI_interface.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sources_1/new/LR_Stream2AXI_interface.v"/>
+          <Attr Name="ImportTime" Val="1610306226"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl/Axi_aud_demux_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sources_1/bd/Axi_aud_demux/hdl/Axi_aud_demux_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1610320400"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Test_dma/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1615719724"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/Test/hdl/Test_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/bd/Test/hdl/Test_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1615939898"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Log_module.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sources_1/new/Log_module.v"/>
+          <Attr Name="ImportTime" Val="1616006100"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/AXI_AUD_DeMux.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="D:/Progetti_vivado/FFT_TEST_V02/FFT_TEST_V02.srcs/sources_1/new/AXI_AUD_DeMux.v"/>
+          <Attr Name="ImportTime" Val="1617114383"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/FFT_VIDEO/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1617408638"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/No_window_2048.mem">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/No_window_2048.mem"/>
+          <Attr Name="ImportTime" Val="1617820576"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Hann_func_2048.mem">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Hann_func_2048.mem"/>
+          <Attr Name="ImportTime" Val="1617820542"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/FFT_VIDEO_2048/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1618052604"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/LOG_TEST/LOG_TEST.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/LOG_TEST/LOG_TEST.bd"/>
+          <Attr Name="ImportTime" Val="1618340682"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/LOG_TEST/hdl/LOG_TEST_wrapper.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/LOG_TEST/hdl/LOG_TEST_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1618332737"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/archive_project_summary.txt"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="base_wrapper"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/base.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/vivado/constraints/base.xdc"/>
+          <Attr Name="ImportTime" Val="1615677649"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/new/Timing.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/constrs_1/new/Timing.xdc"/>
+          <Attr Name="ImportTime" Val="1615736320"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Timing.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/Cordic_test_tb.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sim_1/new/Cordic_test_tb.sv"/>
+          <Attr Name="ImportTime" Val="1619110245"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/Test_wrapper_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sim_1/new/Test_wrapper_tb.sv"/>
+          <Attr Name="ImportTime" Val="1615937954"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/new/Axi_aud_demux_wrapper_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Progetti_vivado/Test_01/Test_01.srcs/sim_1/new/Axi_aud_demux_wrapper_tb.sv"/>
+          <Attr Name="ImportTime" Val="1610320829"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/Ext_mod_tb.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="F:/Test_dma.xpr/Test_dma/Test_dma.srcs/sim_1/new/Ext_mod_tb.v"/>
+          <Attr Name="ImportTime" Val="1615826526"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/Data_stream2DMA_tb.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Test_dma/Test_dma.srcs/sim_1/new/Data_stream2DMA_tb.v"/>
+          <Attr Name="ImportTime" Val="1615407127"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/FFT_VIDEO_2048/Cordic_test_tb_behav.wcfg">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/Cordic_test_tb_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1619178043"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="Cordic_test_tb"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SelectedSimModel" Val="rtl"/>
+        <Option Name="PamDesignTestbench" Val=""/>
+        <Option Name="PamDutBypassFile" Val="xil_dut_bypass"/>
+        <Option Name="PamSignalDriverFile" Val="xil_bypass_driver"/>
+        <Option Name="PamPseudoTop" Val="pseudo_tb"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/Cordic_test_tb_behav.wcfg"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+      <Filter Type="Utils"/>
+      <Config>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_audio_codec_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_audio_codec_ctrl_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_audio_codec_ctrl_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_rst_ps7_0_fclk0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_rst_ps7_0_fclk0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_rst_ps7_0_fclk0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_ps7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_ps7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_ps7_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_rst_ps7_0_fclk0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_rst_ps7_0_fclk0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_rst_ps7_0_fclk0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_bclk_mux_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_bclk_mux_0">
+      <Config>
+        <Option Name="TopModule" Val="base_bclk_mux_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_clk_wiz_10MHz_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_clk_wiz_10MHz_1">
+      <Config>
+        <Option Name="TopModule" Val="base_clk_wiz_10MHz_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_lrclk_mux_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_lrclk_mux_0">
+      <Config>
+        <Option Name="TopModule" Val="base_lrclk_mux_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="base_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_xfft_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_xfft_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_xfft_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_rgb2dvi_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_rgb2dvi_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_rgb2dvi_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_cordic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_cordic_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_cordic_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axi_gpio_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axi_gpio_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_axi_gpio_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_i2s_receiver_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_i2s_receiver_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_i2s_receiver_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axi_gpio_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axi_gpio_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_axi_gpio_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_i2s_transmitter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_i2s_transmitter_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_i2s_transmitter_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axis_data_fifo_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axis_data_fifo_1_0">
+      <Config>
+        <Option Name="TopModule" Val="base_axis_data_fifo_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axis_data_fifo_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axis_data_fifo_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_axis_data_fifo_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_config_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_config_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_config_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Ext_Mod_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Ext_Mod_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Ext_Mod_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_LR_Stream_2_AXI_I2S_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_LR_Stream_2_AXI_I2S_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_LR_Stream_2_AXI_I2S_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_aud_interface_0_upgraded_ipi_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_aud_interface_0_upgraded_ipi_0">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_aud_interface_0_upgraded_ipi_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Pulse_LED_controller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Pulse_LED_controller_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Pulse_LED_controller_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Ext_Mod_L_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Ext_Mod_L_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Ext_Mod_L_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_L_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_L_0">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_L_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_util_vector_logic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_util_vector_logic_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_util_vector_logic_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Packet_framer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Packet_framer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Packet_framer_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Packet_framer_L_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Packet_framer_L_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Packet_framer_L_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_mux_vector_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_mux_vector_0_2">
+      <Config>
+        <Option Name="TopModule" Val="base_mux_vector_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_L_last_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_L_last_1">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_L_last_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_mux_vector_0_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_mux_vector_0_3">
+      <Config>
+        <Option Name="TopModule" Val="base_mux_vector_0_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_L_last_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_L_last_0">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_L_last_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_L_data_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_L_data_0">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_L_data_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_L_last_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_L_last_2">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_L_last_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axi_gpio_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axi_gpio_0_2">
+      <Config>
+        <Option Name="TopModule" Val="base_axi_gpio_0_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axis_data_fifo_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axis_data_fifo_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_axis_data_fifo_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_CORDIC_FIFO_L_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_CORDIC_FIFO_L_0">
+      <Config>
+        <Option Name="TopModule" Val="base_CORDIC_FIFO_L_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_FFT_BRAM_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_FFT_BRAM_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_FFT_BRAM_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_HDMI_test_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_HDMI_test_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_HDMI_test_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Windowing_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Windowing_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_Windowing_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_Windowing_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_Windowing_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_Windowing_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_axi_bram_ctrl_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_axi_bram_ctrl_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_axi_bram_ctrl_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_MUX_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_MUX_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_MUX_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_MUX_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_MUX_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_MUX_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_DEMUX_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_DEMUX_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_DEMUX_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_AXI_DEMUX_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_AXI_DEMUX_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_AXI_DEMUX_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_APPROX_LOG_MOD_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_APPROX_LOG_MOD_0_1">
+      <Config>
+        <Option Name="TopModule" Val="base_APPROX_LOG_MOD_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="base_APPROX_LOG_MOD_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/base_APPROX_LOG_MOD_0_0">
+      <Config>
+        <Option Name="TopModule" Val="base_APPROX_LOG_MOD_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="15">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_audio_codec_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_audio_codec_ctrl_0_0" Part="xc7z020clg400-1" ConstrsSet="base_audio_codec_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_audio_codec_ctrl_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_audio_codec_ctrl_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_fclk0_1_synth_1" Type="Ft3:Synth" SrcSet="base_rst_ps7_0_fclk0_1" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_rst_ps7_0_fclk0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_rst_ps7_0_fclk0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_ps7_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_ps7_0_0" Part="xc7z020clg400-1" ConstrsSet="base_ps7_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_ps7_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_ps7_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_fclk0_0_synth_1" Type="Ft3:Synth" SrcSet="base_rst_ps7_0_fclk0_0" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_rst_ps7_0_fclk0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_rst_ps7_0_fclk0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_bclk_mux_0_synth_1" Type="Ft3:Synth" SrcSet="base_bclk_mux_0" Part="xc7z020clg400-1" ConstrsSet="base_bclk_mux_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_bclk_mux_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_bclk_mux_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_clk_wiz_10MHz_1_synth_1" Type="Ft3:Synth" SrcSet="base_clk_wiz_10MHz_1" Part="xc7z020clg400-1" ConstrsSet="base_clk_wiz_10MHz_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_clk_wiz_10MHz_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_clk_wiz_10MHz_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_lrclk_mux_0_synth_1" Type="Ft3:Synth" SrcSet="base_lrclk_mux_0" Part="xc7z020clg400-1" ConstrsSet="base_lrclk_mux_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_lrclk_mux_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_lrclk_mux_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="base_xbar_0" Part="xc7z020clg400-1" ConstrsSet="base_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_xfft_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_xfft_0_0" Part="xc7z020clg400-1" ConstrsSet="base_xfft_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_xfft_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Test_dma/Test_dma.srcs/utils_1/imports/base_xfft_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rgb2dvi_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_rgb2dvi_0_0" Part="xc7z020clg400-1" ConstrsSet="base_rgb2dvi_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_rgb2dvi_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Test_dma.xpr/Test_dma/Test_dma.srcs/utils_1/imports/base_rgb2dvi_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_cordic_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_cordic_0_0" Part="xc7z020clg400-1" ConstrsSet="base_cordic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_cordic_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Test_dma.xpr/Test_dma/Test_dma.srcs/utils_1/imports/base_cordic_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_axi_gpio_0_1" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axi_gpio_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="H:/FFT/FFT_2.0/FFT_2.0.srcs/utils_1/imports/base_axi_gpio_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_i2s_receiver_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_i2s_receiver_0_0" Part="xc7z020clg400-1" ConstrsSet="base_i2s_receiver_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_i2s_receiver_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_i2s_receiver_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_axi_gpio_0_0" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axi_gpio_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axi_gpio_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_i2s_transmitter_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_i2s_transmitter_0_0" Part="xc7z020clg400-1" ConstrsSet="base_i2s_transmitter_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_i2s_transmitter_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_i2s_transmitter_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_1_0_synth_1" Type="Ft3:Synth" SrcSet="base_axis_data_fifo_1_0" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axis_data_fifo_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axis_data_fifo_1_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_axis_data_fifo_0_0" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axis_data_fifo_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axis_data_fifo_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_config_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_config_0_0" Part="xc7z020clg400-1" ConstrsSet="base_FFT_config_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_config_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_FFT_config_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Ext_Mod_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_Ext_Mod_0_0" Part="xc7z020clg400-1" ConstrsSet="base_Ext_Mod_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Ext_Mod_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Ext_Mod_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_LR_Stream_2_AXI_I2S_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_LR_Stream_2_AXI_I2S_0_0" Part="xc7z020clg400-1" ConstrsSet="base_LR_Stream_2_AXI_I2S_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_LR_Stream_2_AXI_I2S_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_LR_Stream_2_AXI_I2S_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_aud_interface_0_upgraded_ipi_0" Part="xc7z020clg400-1" ConstrsSet="base_AXI_aud_interface_0_upgraded_ipi_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_AXI_aud_interface_0_upgraded_ipi_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Pulse_LED_controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_Pulse_LED_controller_0_0" Part="xc7z020clg400-1" ConstrsSet="base_Pulse_LED_controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Pulse_LED_controller_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Pulse_LED_controller_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Ext_Mod_L_0_synth_1" Type="Ft3:Synth" SrcSet="base_Ext_Mod_L_0" Part="xc7z020clg400-1" ConstrsSet="base_Ext_Mod_L_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Ext_Mod_L_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Ext_Mod_L_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_0_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_L_0" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_L_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_FFT_L_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_util_vector_logic_0_0" Part="xc7z020clg400-1" ConstrsSet="base_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_util_vector_logic_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_util_vector_logic_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Packet_framer_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_Packet_framer_0_0" Part="xc7z020clg400-1" ConstrsSet="base_Packet_framer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Packet_framer_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Packet_framer_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Packet_framer_L_0_synth_1" Type="Ft3:Synth" SrcSet="base_Packet_framer_L_0" Part="xc7z020clg400-1" ConstrsSet="base_Packet_framer_L_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Packet_framer_L_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Packet_framer_L_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_mux_vector_0_2_synth_1" Type="Ft3:Synth" SrcSet="base_mux_vector_0_2" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_mux_vector_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_mux_vector_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_1_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_L_last_1" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_L_last_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_mux_vector_0_3_synth_1" Type="Ft3:Synth" SrcSet="base_mux_vector_0_3" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_mux_vector_0_3_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_mux_vector_0_3_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_0_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_L_last_0" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_L_last_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_data_0_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_L_data_0" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_data_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_L_data_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_data_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_2_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_L_last_2" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_L_last_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_2_synth_1" Type="Ft3:Synth" SrcSet="base_axi_gpio_0_2" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axi_gpio_0_2_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axi_gpio_0_2_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_axis_data_fifo_0_1" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axis_data_fifo_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axis_data_fifo_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_CORDIC_FIFO_L_0_synth_1" Type="Ft3:Synth" SrcSet="base_CORDIC_FIFO_L_0" Part="xc7z020clg400-1" ConstrsSet="base_CORDIC_FIFO_L_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_CORDIC_FIFO_L_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_CORDIC_FIFO_L_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_BRAM_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_FFT_BRAM_0_0" Part="xc7z020clg400-1" ConstrsSet="base_FFT_BRAM_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_FFT_BRAM_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_BRAM_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_HDMI_test_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_HDMI_test_0_0" Part="xc7z020clg400-1" ConstrsSet="base_HDMI_test_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_HDMI_test_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_HDMI_test_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Windowing_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_Windowing_0_0" Part="xc7z020clg400-1" ConstrsSet="base_Windowing_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Windowing_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Windowing_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Windowing_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_Windowing_0_1" Part="xc7z020clg400-1" ConstrsSet="base_Windowing_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_Windowing_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Windowing_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_bram_ctrl_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_axi_bram_ctrl_0_0" Part="xc7z020clg400-1" ConstrsSet="base_axi_bram_ctrl_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axi_bram_ctrl_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_MUX_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_MUX_0_1" Part="xc7z020clg400-1" ConstrsSet="base_AXI_MUX_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_MUX_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_MUX_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_MUX_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_MUX_0_0" Part="xc7z020clg400-1" ConstrsSet="base_AXI_MUX_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_MUX_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_MUX_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_DEMUX_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_DEMUX_0_0" Part="xc7z020clg400-1" ConstrsSet="base_AXI_DEMUX_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_DEMUX_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_DEMUX_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_DEMUX_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_AXI_DEMUX_0_1" Part="xc7z020clg400-1" ConstrsSet="base_AXI_DEMUX_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_AXI_DEMUX_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_DEMUX_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_APPROX_LOG_MOD_0_1_synth_1" Type="Ft3:Synth" SrcSet="base_APPROX_LOG_MOD_0_1" Part="xc7z020clg400-1" ConstrsSet="base_APPROX_LOG_MOD_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_APPROX_LOG_MOD_0_1_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_APPROX_LOG_MOD_0_1_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_APPROX_LOG_MOD_0_0_synth_1" Type="Ft3:Synth" SrcSet="base_APPROX_LOG_MOD_0_0" Part="xc7z020clg400-1" ConstrsSet="base_APPROX_LOG_MOD_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/base_APPROX_LOG_MOD_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_APPROX_LOG_MOD_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_audio_codec_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_audio_codec_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_audio_codec_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_audio_codec_ctrl_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_fclk0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_rst_ps7_0_fclk0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_rst_ps7_0_fclk0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_ps7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_ps7_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_ps7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_ps7_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rst_ps7_0_fclk0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_rst_ps7_0_fclk0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_rst_ps7_0_fclk0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_rst_ps7_0_fclk0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_bclk_mux_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_bclk_mux_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_bclk_mux_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_bclk_mux_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_clk_wiz_10MHz_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_clk_wiz_10MHz_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_clk_wiz_10MHz_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_clk_wiz_10MHz_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_lrclk_mux_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_lrclk_mux_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_lrclk_mux_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_lrclk_mux_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Audio_test/Audio_test.srcs/utils_1/imports/base_xbar_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_xfft_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_xfft_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_xfft_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/Pynq_file/PYNQ-master/boards/Pynq-Z2/base/Test_dma/Test_dma.srcs/utils_1/imports/base_xfft_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_rgb2dvi_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_rgb2dvi_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_rgb2dvi_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Test_dma.xpr/Test_dma/Test_dma.srcs/utils_1/imports/base_rgb2dvi_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_cordic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_cordic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_cordic_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Test_dma.xpr/Test_dma/Test_dma.srcs/utils_1/imports/base_cordic_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axi_gpio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="H:/FFT/FFT_2.0/FFT_2.0.srcs/utils_1/imports/base_axi_gpio_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_i2s_receiver_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_i2s_receiver_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_i2s_receiver_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_i2s_receiver_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axi_gpio_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axi_gpio_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_i2s_transmitter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_i2s_transmitter_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_i2s_transmitter_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_i2s_transmitter_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axis_data_fifo_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axis_data_fifo_1_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axis_data_fifo_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_axis_data_fifo_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_config_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_config_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_config_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_FFT_config_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Ext_Mod_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Ext_Mod_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Ext_Mod_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Ext_Mod_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_LR_Stream_2_AXI_I2S_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_LR_Stream_2_AXI_I2S_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_LR_Stream_2_AXI_I2S_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_LR_Stream_2_AXI_I2S_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_aud_interface_0_upgraded_ipi_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_aud_interface_0_upgraded_ipi_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_aud_interface_0_upgraded_ipi_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_AXI_aud_interface_0_upgraded_ipi_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Pulse_LED_controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Pulse_LED_controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Pulse_LED_controller_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Pulse_LED_controller_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Ext_Mod_L_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Ext_Mod_L_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Ext_Mod_L_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_Ext_Mod_L_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_L_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_FFT_L_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_util_vector_logic_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_util_vector_logic_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.srcs/utils_1/imports/base_util_vector_logic_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Packet_framer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Packet_framer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Packet_framer_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Packet_framer_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Packet_framer_L_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Packet_framer_L_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Packet_framer_L_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Packet_framer_L_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_mux_vector_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_mux_vector_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_mux_vector_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_L_last_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_mux_vector_0_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_mux_vector_0_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_mux_vector_0_3_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_mux_vector_0_3_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_L_last_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_data_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_data_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_L_data_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_data_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_L_last_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_L_last_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_L_last_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_L_last_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_gpio_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axi_gpio_0_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axi_gpio_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axi_gpio_0_2_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axis_data_fifo_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axis_data_fifo_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axis_data_fifo_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axis_data_fifo_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_CORDIC_FIFO_L_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_CORDIC_FIFO_L_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_CORDIC_FIFO_L_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_CORDIC_FIFO_L_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_FFT_BRAM_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_FFT_BRAM_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_FFT_BRAM_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_FFT_BRAM_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_HDMI_test_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_HDMI_test_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_HDMI_test_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_HDMI_test_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Windowing_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Windowing_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Windowing_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Windowing_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_Windowing_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_Windowing_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_Windowing_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_Windowing_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_axi_bram_ctrl_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_axi_bram_ctrl_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_axi_bram_ctrl_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_axi_bram_ctrl_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_MUX_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_MUX_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_MUX_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_MUX_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_MUX_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_MUX_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_MUX_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_MUX_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_DEMUX_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_DEMUX_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_DEMUX_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_DEMUX_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_AXI_DEMUX_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_AXI_DEMUX_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_AXI_DEMUX_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_AXI_DEMUX_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_APPROX_LOG_MOD_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_APPROX_LOG_MOD_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_APPROX_LOG_MOD_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_APPROX_LOG_MOD_0_1_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="base_APPROX_LOG_MOD_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="base_APPROX_LOG_MOD_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="base_APPROX_LOG_MOD_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/utils_1/imports/base_APPROX_LOG_MOD_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+  </Runs>
+  <Board/>
+  <DashboardSummary Version="1" Minor="0">
+    <Dashboards>
+      <Dashboard Name="default_dashboard">
+        <Gadgets>
+          <Gadget Name="drc_1" Type="drc" Version="1" Row="2" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_drc_0 "/>
+          </Gadget>
+          <Gadget Name="methodology_1" Type="methodology" Version="1" Row="2" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_methodology_0 "/>
+          </Gadget>
+          <Gadget Name="power_1" Type="power" Version="1" Row="1" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_power_0 "/>
+          </Gadget>
+          <Gadget Name="timing_1" Type="timing" Version="1" Row="0" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_route_report_timing_summary_0 "/>
+          </Gadget>
+          <Gadget Name="utilization_1" Type="utilization" Version="1" Row="0" Column="0">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="synth_1#synth_1_synth_report_utilization_0 "/>
+            <GadgetParam Name="RUN.STEP" Type="string" Value="synth_design"/>
+            <GadgetParam Name="RUN.TYPE" Type="string" Value="synthesis"/>
+          </Gadget>
+          <Gadget Name="utilization_2" Type="utilization" Version="1" Row="1" Column="1">
+            <GadgetParam Name="REPORTS" Type="string_list" Value="impl_1#impl_1_place_report_utilization_0 "/>
+          </Gadget>
+        </Gadgets>
+      </Dashboard>
+      <CurrentDashboard>default_dashboard</CurrentDashboard>
+    </Dashboards>
+  </DashboardSummary>
+</Project>

@@ -1,0 +1,2 @@
+Cordic_atanh.vhd,vhdl,xil_defaultlib,../../../../FFT_VIDEO_2048.srcs/sources_1/ip/Cordic_atanh/sim/Cordic_atanh.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 13 18:52:19 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="LOG_TEST" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Din">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Input_slice" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="aRst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_aRst_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="aresetn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Atanh_cordic_Out_concat_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Atanh_cordic_Out_concat" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="m_axis_dout_tlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="External_Ports_m_axis_dout_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="m_axis_dout_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tuser">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="m_axis_dout_tuser"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="m_axis_dout_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="s_axis_cartesian_tlast"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="cordic_0_s_axis_cartesian_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="s_axis_cartesian_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tuser">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="s_axis_cartesian_tuser"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="cordic_0" PORT="s_axis_cartesian_tvalid"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="4" FULLNAME="/Atanh_cordic_In_concat" HWVERSION="2.1" INSTANCE="Atanh_cordic_In_concat" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN34_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN35_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN37_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN38_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN39_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN40_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN41_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN42_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN43_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN44_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN45_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN46_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN47_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN48_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN49_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN50_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN51_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN52_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN53_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN54_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN55_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN56_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN57_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN58_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN59_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN60_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN61_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN62_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN63_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN64_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN65_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN66_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN67_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN68_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN69_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN70_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN71_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN72_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN73_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN74_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN75_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN76_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN77_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN78_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN79_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN80_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN81_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN82_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN83_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN84_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN85_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN86_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN87_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN88_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN89_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN90_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN91_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN92_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN93_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN94_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN95_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN96_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN97_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN100_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN101_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN102_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN103_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN104_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN105_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN106_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN107_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN108_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN109_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN110_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN111_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN112_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN113_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN114_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN115_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN116_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN117_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN118_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN119_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN120_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN121_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN122_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN123_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN124_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="64"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_Atanh_cordic_In_concat_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="24" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="plus_one_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plus_one" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="Padding7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Padding7" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="24" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="minus_one_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minus_one" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="In3" RIGHT="0" SIGIS="undef" SIGNAME="Padding7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Padding7" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Atanh_cordic_In_concat_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_0" PORT="s_axis_cartesian_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/Atanh_cordic_Out_concat" HWVERSION="2.1" INSTANCE="Atanh_cordic_Out_concat" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN34_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN35_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN37_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN38_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN39_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN40_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN41_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN42_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN43_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN44_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN45_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN46_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN47_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN48_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN49_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN50_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN51_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN52_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN53_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN54_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN55_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN56_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN57_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN58_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN59_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN60_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN61_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN62_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN63_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN64_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN65_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN66_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN67_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN68_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN69_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN70_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN71_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN72_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN73_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN74_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN75_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN76_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN77_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN78_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN79_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN80_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN81_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN82_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN83_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN84_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN85_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN86_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN87_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN88_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN89_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN90_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN91_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN92_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN93_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN94_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN95_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN96_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN97_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN100_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN101_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN102_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN103_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN104_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN105_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN106_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN107_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN108_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN109_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN110_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN111_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN112_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN113_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN114_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN115_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN116_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN117_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN118_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN119_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN120_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN121_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN122_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN123_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN124_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="32"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_Atanh_cordic_Out_concat_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cordic_0" PORT="m_axis_dout_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="Padding8_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Padding8" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Atanh_cordic_Out_concat_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/Input_slice" HWVERSION="1.0" INSTANCE="Input_slice" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="24"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_Input_slice_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="24" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Input_slice_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plus_one" PORT="A"/>
+            <CONNECTION INSTANCE="minus_one" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/One" HWVERSION="1.1" INSTANCE="One" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_One_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="One_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="plus_one" PORT="B"/>
+            <CONNECTION INSTANCE="minus_one" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/Padding7" HWVERSION="1.1" INSTANCE="Padding7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x00"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_Padding7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="6" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Padding7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_In_concat" PORT="In1"/>
+            <CONNECTION INSTANCE="Atanh_cordic_In_concat" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/Padding8" HWVERSION="1.1" INSTANCE="Padding8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x00"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_Padding8_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="Padding8_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_Out_concat" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="16" FULLNAME="/cordic_0" HWVERSION="6.0" INSTANCE="cordic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cordic" VLNV="xilinx.com:ip:cordic:6.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=cordic;v=v6_0;d=pg105-cordic.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_ARCHITECTURE" VALUE="2"/>
+        <PARAMETER NAME="C_CORDIC_FUNCTION" VALUE="5"/>
+        <PARAMETER NAME="C_COARSE_ROTATE" VALUE="0"/>
+        <PARAMETER NAME="C_DATA_FORMAT" VALUE="0"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ACLK" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_CARTESIAN" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_PHASE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="C_INPUT_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="C_ITERATIONS" VALUE="0"/>
+        <PARAMETER NAME="C_OUTPUT_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_PHASE_FORMAT" VALUE="0"/>
+        <PARAMETER NAME="C_PIPELINE_MODE" VALUE="-2"/>
+        <PARAMETER NAME="C_PRECISION" VALUE="0"/>
+        <PARAMETER NAME="C_ROUND_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_SCALE_COMP" VALUE="0"/>
+        <PARAMETER NAME="C_THROTTLE_SCHEME" VALUE="2"/>
+        <PARAMETER NAME="C_TLAST_RESOLUTION" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_PHASE_TUSER" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_PHASE_TLAST" VALUE="0"/>
+        <PARAMETER NAME="C_S_AXIS_PHASE_TDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S_AXIS_PHASE_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_CARTESIAN_TUSER" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_S_AXIS_CARTESIAN_TLAST" VALUE="1"/>
+        <PARAMETER NAME="C_S_AXIS_CARTESIAN_TDATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_S_AXIS_CARTESIAN_TUSER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_M_AXIS_DOUT_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_M_AXIS_DOUT_TUSER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_cordic_0_0"/>
+        <PARAMETER NAME="Functional_Selection" VALUE="Arc_Tanh"/>
+        <PARAMETER NAME="Architectural_Configuration" VALUE="Parallel"/>
+        <PARAMETER NAME="Pipelining_Mode" VALUE="Maximum"/>
+        <PARAMETER NAME="Data_Format" VALUE="SignedFraction"/>
+        <PARAMETER NAME="Phase_Format" VALUE="Radians"/>
+        <PARAMETER NAME="Input_Width" VALUE="25"/>
+        <PARAMETER NAME="Output_Width" VALUE="24"/>
+        <PARAMETER NAME="Round_Mode" VALUE="Truncate"/>
+        <PARAMETER NAME="Iterations" VALUE="0"/>
+        <PARAMETER NAME="Precision" VALUE="0"/>
+        <PARAMETER NAME="Coarse_Rotation" VALUE="false"/>
+        <PARAMETER NAME="Compensation_Scaling" VALUE="No_Scale_Compensation"/>
+        <PARAMETER NAME="cartesian_has_tuser" VALUE="true"/>
+        <PARAMETER NAME="cartesian_tuser_width" VALUE="16"/>
+        <PARAMETER NAME="cartesian_has_tlast" VALUE="true"/>
+        <PARAMETER NAME="phase_has_tuser" VALUE="false"/>
+        <PARAMETER NAME="phase_tuser_width" VALUE="1"/>
+        <PARAMETER NAME="phase_has_tlast" VALUE="false"/>
+        <PARAMETER NAME="flow_control" VALUE="Blocking"/>
+        <PARAMETER NAME="optimize_goal" VALUE="Performance"/>
+        <PARAMETER NAME="out_tready" VALUE="true"/>
+        <PARAMETER NAME="out_tlast_behv" VALUE="Pass_Cartesian_TLAST"/>
+        <PARAMETER NAME="ACLKEN" VALUE="false"/>
+        <PARAMETER NAME="ARESETN" VALUE="true"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_aclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_aRst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="aRst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_cartesian_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="cordic_0_s_axis_cartesian_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_cartesian_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_cartesian_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="External_Ports_s_axis_cartesian_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_cartesian_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="s_axis_cartesian_tdata" RIGHT="0" SIGIS="undef" SIGNAME="Atanh_cordic_In_concat_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_In_concat" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_dout_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="External_Ports_m_axis_dout_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_dout_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_dout_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_dout_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="cordic_0_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_Out_concat" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS_CARTESIAN" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="8"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="LOG_TEST_aclk"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_cartesian_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_cartesian_tlast"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_cartesian_tready"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_cartesian_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_cartesian_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS_DOUT" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="LOG_TEST_aclk"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type generated dependency polar_mag_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency polar_mag_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency polar_mag_fractwidth format long minimum {} maximum {}} value -2} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}} field_phase {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency polar_phase_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type generated dependency polar_phase_offset format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency polar_phase_fractwidth format long minimum {} maximum {}} value 21} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}} TDATA_WIDTH 24 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_dout_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_dout_tlast"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_dout_tready"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_dout_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_dout_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="14" FULLNAME="/minus_one" HWVERSION="12.0" INSTANCE="minus_one" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_addsub" VLNV="xilinx.com:ip:c_addsub:12.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=c_addsub;v=v12_0;d=pg120-c-addsub.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_IMPLEMENTATION" VALUE="0"/>
+        <PARAMETER NAME="C_A_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="C_B_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_OUT_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="C_CE_OVERRIDES_SCLR" VALUE="0"/>
+        <PARAMETER NAME="C_A_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_B_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LATENCY" VALUE="0"/>
+        <PARAMETER NAME="C_ADD_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_B_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="C_B_VALUE" VALUE="0"/>
+        <PARAMETER NAME="C_AINIT_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_SINIT_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_CE_OVERRIDES_BYPASS" VALUE="1"/>
+        <PARAMETER NAME="C_BYPASS_LOW" VALUE="0"/>
+        <PARAMETER NAME="C_SCLR_OVERRIDES_SSET" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_C_IN" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_C_OUT" VALUE="0"/>
+        <PARAMETER NAME="C_BORROW_LOW" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_BYPASS" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SCLR" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SSET" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SINIT" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_minus_one_0"/>
+        <PARAMETER NAME="Implementation" VALUE="Fabric"/>
+        <PARAMETER NAME="A_Type" VALUE="Unsigned"/>
+        <PARAMETER NAME="B_Type" VALUE="Unsigned"/>
+        <PARAMETER NAME="A_Width" VALUE="25"/>
+        <PARAMETER NAME="B_Width" VALUE="1"/>
+        <PARAMETER NAME="Add_Mode" VALUE="Subtract"/>
+        <PARAMETER NAME="Out_Width" VALUE="25"/>
+        <PARAMETER NAME="Latency_Configuration" VALUE="Manual"/>
+        <PARAMETER NAME="Latency" VALUE="0"/>
+        <PARAMETER NAME="B_Constant" VALUE="false"/>
+        <PARAMETER NAME="B_Value" VALUE="0"/>
+        <PARAMETER NAME="CE" VALUE="false"/>
+        <PARAMETER NAME="C_In" VALUE="false"/>
+        <PARAMETER NAME="C_Out" VALUE="false"/>
+        <PARAMETER NAME="Borrow_Sense" VALUE="Active_Low"/>
+        <PARAMETER NAME="SCLR" VALUE="false"/>
+        <PARAMETER NAME="SSET" VALUE="false"/>
+        <PARAMETER NAME="SINIT" VALUE="false"/>
+        <PARAMETER NAME="SINIT_Value" VALUE="0"/>
+        <PARAMETER NAME="Bypass" VALUE="false"/>
+        <PARAMETER NAME="Bypass_Sense" VALUE="Active_High"/>
+        <PARAMETER NAME="Sync_Ctrl_Priority" VALUE="Reset_Overrides_Set"/>
+        <PARAMETER NAME="Sync_CE_Priority" VALUE="Sync_Overrides_CE"/>
+        <PARAMETER NAME="Bypass_CE_Priority" VALUE="CE_Overrides_Bypass"/>
+        <PARAMETER NAME="AINIT_Value" VALUE="0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="24" NAME="A" RIGHT="0" SIGIS="data" SIGNAME="Input_slice_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Input_slice" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="B" RIGHT="0" SIGIS="data" SIGNAME="One_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="One" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="24" NAME="S" RIGHT="0" SIGIS="data" SIGNAME="minus_one_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_In_concat" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="14" FULLNAME="/plus_one" HWVERSION="12.0" INSTANCE="plus_one" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_addsub" VLNV="xilinx.com:ip:c_addsub:12.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=c_addsub;v=v12_0;d=pg120-c-addsub.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_VERBOSITY" VALUE="0"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_IMPLEMENTATION" VALUE="0"/>
+        <PARAMETER NAME="C_A_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="C_B_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_OUT_WIDTH" VALUE="25"/>
+        <PARAMETER NAME="C_CE_OVERRIDES_SCLR" VALUE="0"/>
+        <PARAMETER NAME="C_A_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_B_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LATENCY" VALUE="0"/>
+        <PARAMETER NAME="C_ADD_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_B_CONSTANT" VALUE="0"/>
+        <PARAMETER NAME="C_B_VALUE" VALUE="0"/>
+        <PARAMETER NAME="C_AINIT_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_SINIT_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_CE_OVERRIDES_BYPASS" VALUE="1"/>
+        <PARAMETER NAME="C_BYPASS_LOW" VALUE="0"/>
+        <PARAMETER NAME="C_SCLR_OVERRIDES_SSET" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_C_IN" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_C_OUT" VALUE="0"/>
+        <PARAMETER NAME="C_BORROW_LOW" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_BYPASS" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SCLR" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SSET" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SINIT" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="LOG_TEST_plus_one_0"/>
+        <PARAMETER NAME="Implementation" VALUE="Fabric"/>
+        <PARAMETER NAME="A_Type" VALUE="Unsigned"/>
+        <PARAMETER NAME="B_Type" VALUE="Unsigned"/>
+        <PARAMETER NAME="A_Width" VALUE="25"/>
+        <PARAMETER NAME="B_Width" VALUE="1"/>
+        <PARAMETER NAME="Add_Mode" VALUE="Add"/>
+        <PARAMETER NAME="Out_Width" VALUE="25"/>
+        <PARAMETER NAME="Latency_Configuration" VALUE="Manual"/>
+        <PARAMETER NAME="Latency" VALUE="0"/>
+        <PARAMETER NAME="B_Constant" VALUE="false"/>
+        <PARAMETER NAME="B_Value" VALUE="0"/>
+        <PARAMETER NAME="CE" VALUE="false"/>
+        <PARAMETER NAME="C_In" VALUE="false"/>
+        <PARAMETER NAME="C_Out" VALUE="false"/>
+        <PARAMETER NAME="Borrow_Sense" VALUE="Active_Low"/>
+        <PARAMETER NAME="SCLR" VALUE="false"/>
+        <PARAMETER NAME="SSET" VALUE="false"/>
+        <PARAMETER NAME="SINIT" VALUE="false"/>
+        <PARAMETER NAME="SINIT_Value" VALUE="0"/>
+        <PARAMETER NAME="Bypass" VALUE="false"/>
+        <PARAMETER NAME="Bypass_Sense" VALUE="Active_High"/>
+        <PARAMETER NAME="Sync_Ctrl_Priority" VALUE="Reset_Overrides_Set"/>
+        <PARAMETER NAME="Sync_CE_Priority" VALUE="Sync_Overrides_CE"/>
+        <PARAMETER NAME="Bypass_CE_Priority" VALUE="CE_Overrides_Bypass"/>
+        <PARAMETER NAME="AINIT_Value" VALUE="0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="24" NAME="A" RIGHT="0" SIGIS="data" SIGNAME="Input_slice_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Input_slice" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="B" RIGHT="0" SIGIS="data" SIGNAME="One_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="One" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="24" NAME="S" RIGHT="0" SIGIS="data" SIGNAME="plus_one_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Atanh_cordic_In_concat" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

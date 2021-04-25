@@ -1,0 +1,53 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.719081",
+   "Default View_TopLeft":"-210,-56",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port aRst_n -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port aclk -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port m_axis_dout_tlast -pg 1 -lvl 6 -x 1260 -y 380 -defaultsOSRD
+preplace port m_axis_dout_tready -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port m_axis_dout_tvalid -pg 1 -lvl 6 -x 1260 -y 440 -defaultsOSRD
+preplace port s_axis_cartesian_tlast -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port s_axis_cartesian_tready -pg 1 -lvl 6 -x 1260 -y 260 -defaultsOSRD
+preplace port s_axis_cartesian_tvalid -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace portBus Din -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus dout -pg 1 -lvl 6 -x 1260 -y 190 -defaultsOSRD
+preplace portBus m_axis_dout_tuser -pg 1 -lvl 6 -x 1260 -y 420 -defaultsOSRD
+preplace portBus s_axis_cartesian_tuser -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace inst Atanh_cordic_In_concat -pg 1 -lvl 3 -x 510 -y 180 -defaultsOSRD
+preplace inst Atanh_cordic_Out_concat -pg 1 -lvl 5 -x 1140 -y 190 -defaultsOSRD
+preplace inst Input_slice -pg 1 -lvl 1 -x 120 -y 180 -defaultsOSRD
+preplace inst One -pg 1 -lvl 1 -x 120 -y 80 -defaultsOSRD
+preplace inst Padding7 -pg 1 -lvl 2 -x 320 -y 300 -defaultsOSRD
+preplace inst Padding8 -pg 1 -lvl 4 -x 830 -y 200 -defaultsOSRD
+preplace inst minus_one -pg 1 -lvl 2 -x 320 -y 190 -defaultsOSRD
+preplace inst plus_one -pg 1 -lvl 2 -x 320 -y 70 -defaultsOSRD
+preplace inst Cordic_atanh -pg 1 -lvl 4 -x 830 -y 390 -defaultsOSRD
+preplace netloc Atanh_cordic_concat_dout 1 3 1 610 180n
+preplace netloc CORDIC_FIFO_R_s_axis_tready 1 0 5 NJ 520 NJ 520 NJ 520 NJ 520 1040
+preplace netloc One_dout 1 1 1 220 80n
+preplace netloc Padding7_dout 1 2 1 410 170n
+preplace netloc Padding8_dout 1 4 1 NJ 200
+preplace netloc cordic_0_m_axis_dout_tdata 1 4 1 1040 180n
+preplace netloc cordic_0_m_axis_dout_tlast 1 4 2 NJ 380 NJ
+preplace netloc cordic_0_m_axis_dout_tuser 1 4 2 NJ 420 NJ
+preplace netloc cordic_0_m_axis_dout_tvalid 1 4 2 NJ 440 NJ
+preplace netloc cordic_0_s_axis_cartesian_tready 1 3 3 620 260 NJ 260 NJ
+preplace netloc cordic_R_m_axis_dout_tdata 1 0 1 NJ 180
+preplace netloc cordic_R_m_axis_dout_tlast 1 0 4 NJ 360 NJ 360 NJ 360 NJ
+preplace netloc cordic_R_m_axis_dout_tuser 1 0 4 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc cordic_R_m_axis_dout_tvalid 1 0 4 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc minus_one_S 1 2 1 N 190
+preplace netloc plus_one_S 1 2 1 410 70n
+preplace netloc ps7_0_FCLK_CLK0 1 0 4 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 4 NJ 460 NJ 460 NJ 460 NJ
+preplace netloc xlslice_0_Dout1 1 1 1 230 60n
+preplace netloc Atanh_cordic_Out_concat_dout 1 5 1 NJ 190
+levelinfo -pg 1 0 120 320 510 830 1140 1260
+pagesize -pg 1 -db -bbox -sgen -240 0 1470 540
+"
+}
+

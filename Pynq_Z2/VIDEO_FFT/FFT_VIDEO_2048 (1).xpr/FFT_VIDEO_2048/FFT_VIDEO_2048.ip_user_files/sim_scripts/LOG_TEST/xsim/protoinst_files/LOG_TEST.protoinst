@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"LOG_TEST": {
+			"proto_instances": {
+			}
+		}
+	}
+}

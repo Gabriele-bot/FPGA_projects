@@ -1,0 +1,1505 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr 24 13:38:38 2021
+| Host         : DESKTOP-4SFHT1M running 64-bit major release  (build 9200)
+| Command      : report_methodology -file base_wrapper_methodology_drc_routed.rpt -pb base_wrapper_methodology_drc_routed.pb -rpx base_wrapper_methodology_drc_routed.rpx
+| Design       : base_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 293
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                      | 6          |
+| TIMING-20 | Warning          | Non-clocked latch                                  | 284        |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects        | 1          |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock base_i/Audio_controller/clk_wiz_audio/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock base_i/Audio_controller/clk_wiz_audio/inst/clk_in1 is created on an inappropriate internal pin base_i/Audio_controller/clk_wiz_audio/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on sdata_i relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on LED_L relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on LED_R relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on bclk[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on lrclk[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on sdata_o[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_IM_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/data_RE_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tlast_buffer_reg cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tlast_buffer_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_L/inst/tuser_buffer_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_IM_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/data_RE_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tlast_buffer_reg cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tlast_buffer_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Ext_Mod_R/inst/tuser_buffer_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#129 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#130 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#131 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#132 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#133 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#134 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#135 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#136 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#137 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#138 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#139 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#140 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#141 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#142 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#143 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#144 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_l_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#145 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#146 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#147 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#148 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#149 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#150 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#151 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#152 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#153 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#154 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#155 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#156 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#157 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#158 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#159 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#160 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#161 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#162 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#163 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#164 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#165 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#166 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#167 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#168 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/dina_buff_r_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#169 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#170 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#171 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#172 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#173 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#174 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#175 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#176 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#177 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#178 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_l_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#179 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#180 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#181 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#182 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#183 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#184 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#185 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#186 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#187 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#188 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/FFT_BRAM_0/inst/index_buff_r_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#189 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#190 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#191 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#192 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#193 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#194 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#195 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#196 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#197 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#198 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#199 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#200 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#201 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#202 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#203 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#204 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#205 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#206 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#207 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#208 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#209 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#210 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#211 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#212 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_L/inst/data_buffer_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#213 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[0] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#214 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[10] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#215 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[11] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#216 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[12] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#217 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[13] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#218 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[14] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#219 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[15] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#220 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[16] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#221 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#222 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#223 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#224 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[1] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#225 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#226 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#227 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#228 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#229 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[2] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#230 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[3] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#231 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[4] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#232 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[5] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#233 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[6] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#234 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[7] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#235 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[8] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#236 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[9] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Packet_framer_R/inst/data_buffer_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#237 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#238 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#239 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#240 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#241 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#242 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#243 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#244 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[24] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#245 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[25] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#246 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[26] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#247 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[27] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#248 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[28] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#249 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[29] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#250 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[30] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#251 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[31] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#252 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[32] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#253 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[33] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#254 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[34] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#255 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[35] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#256 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[36] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#257 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[37] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#258 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[38] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#259 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[39] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#260 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[40] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_L/inst/data_mult_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#261 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[17] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#262 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[18] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#263 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[19] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#264 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[20] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#265 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[21] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#266 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[22] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#267 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[23] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#268 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[24] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#269 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[25] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#270 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[26] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#271 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[27] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#272 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[28] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#273 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[29] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#274 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[30] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#275 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[31] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#276 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[32] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[32]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#277 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[33] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[33]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#278 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[34] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[34]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#279 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[35] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[35]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#280 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[36] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[36]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#281 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[37] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[37]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#282 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[38] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[38]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#283 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[39] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[39]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#284 Warning
+Non-clocked latch  
+The latch base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[40] cannot be properly analyzed as its control pin base_i/HDMI_FFT_LR/Windowing_R/inst/data_mult_reg[40]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+

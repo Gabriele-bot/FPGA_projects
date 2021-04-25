@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/ec67/hdl" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/34f8/hdl" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/d0f7" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/8713/hdl" --include "D:/Vivado/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../FFT_VIDEO_2048.srcs/sources_1/new/APPROX_LOG_MOD.v" \
+
+sv xil_defaultlib  --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/ec67/hdl" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/34f8/hdl" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/d0f7" --include "../../../../FFT_VIDEO_2048.srcs/sources_1/bd/base/ipshared/8713/hdl" --include "D:/Vivado/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../FFT_VIDEO_2048.srcs/sim_1/new/Cordic_test_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
