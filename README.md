@@ -35,7 +35,7 @@ FFT parameters:
 - Find a better way to display the spectrum (now is linear in the frequencies)
 
 ## Logarithmic output
-This is an example of a the logarithm result.
+This is an example of the logarithm result.
 <center>
     <img src="LOG_MOD_example.png" alt="Drawing" style="width: 500px"/>
 </center>
