@@ -1,129 +1,143 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.43275",
-   "Default View_TopLeft":"115,637",
+   "Default View_ScaleFactor":"0.931559",
+   "Default View_TopLeft":"2663,836",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port S_AXI_FFT_CTRL -pg 1 -lvl 0 -x -20 -y 1100 -defaultsOSRD
-preplace port S_AXI_WND -pg 1 -lvl 0 -x -20 -y 1220 -defaultsOSRD
-preplace port S_AXI_WND_BRAM -pg 1 -lvl 0 -x -20 -y 940 -defaultsOSRD
-preplace port aclk -pg 1 -lvl 0 -x -20 -y 960 -defaultsOSRD
-preplace port aRst_n -pg 1 -lvl 0 -x -20 -y 980 -defaultsOSRD
-preplace port s_axis_l_tvalid -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
-preplace port hdmi_out_clk_p -pg 1 -lvl 12 -x 4130 -y 1030 -defaultsOSRD
-preplace port hdmi_out_clk_n -pg 1 -lvl 12 -x 4130 -y 1050 -defaultsOSRD
-preplace port s_axis_r_tvalid -pg 1 -lvl 0 -x -20 -y 840 -defaultsOSRD
-preplace portBus hdmi_out_hpd -pg 1 -lvl 12 -x 4130 -y 1210 -defaultsOSRD
-preplace portBus s_axis_l_tdata -pg 1 -lvl 0 -x -20 -y 80 -defaultsOSRD
-preplace portBus hdmi_out_data_p -pg 1 -lvl 12 -x 4130 -y 1070 -defaultsOSRD
-preplace portBus hdmi_out_data_n -pg 1 -lvl 12 -x 4130 -y 1090 -defaultsOSRD
-preplace portBus s_axis_r_tdata -pg 1 -lvl 0 -x -20 -y 820 -defaultsOSRD
-preplace inst FFT_CONFIG -pg 1 -lvl 4 -x 1500 -y 1050 -defaultsOSRD
-preplace inst FFT_L -pg 1 -lvl 5 -x 1980 -y 530 -defaultsOSRD
-preplace inst Ready_AND -pg 1 -lvl 5 -x 1980 -y 1010 -defaultsOSRD
-preplace inst OFFSET -pg 1 -lvl 8 -x 2970 -y 730 -defaultsOSRD
-preplace inst cordic_R -pg 1 -lvl 7 -x 2650 -y 790 -defaultsOSRD
-preplace inst Ext_Mod_R -pg 1 -lvl 6 -x 2350 -y 770 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 11 -x 3950 -y 1210 -defaultsOSRD
-preplace inst OFFSET_VALID -pg 1 -lvl 8 -x 2970 -y 830 -defaultsOSRD
-preplace inst FFT_R -pg 1 -lvl 5 -x 1980 -y 810 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 11 -x 3950 -y 1050 -defaultsOSRD
-preplace inst CONFIG_PAR -pg 1 -lvl 3 -x 1010 -y 980 -defaultsOSRD
-preplace inst CONFIG_DATA_VAILD -pg 1 -lvl 3 -x 1010 -y 1080 -defaultsOSRD
-preplace inst cordic_L -pg 1 -lvl 7 -x 2650 -y 930 -defaultsOSRD
-preplace inst Ext_Mod_L -pg 1 -lvl 6 -x 2350 -y 910 -defaultsOSRD
-preplace inst AXI_FFT_CTRL -pg 1 -lvl 2 -x 560 -y 1120 -defaultsOSRD
-preplace inst Packet_framer_L -pg 1 -lvl 3 -x 1010 -y 100 -defaultsOSRD
-preplace inst Packet_framer_R -pg 1 -lvl 3 -x 1010 -y 840 -defaultsOSRD
-preplace inst FFT_L_data -pg 1 -lvl 4 -x 1500 -y 200 -defaultsOSRD
-preplace inst FFT_R_data -pg 1 -lvl 4 -x 1500 -y 620 -defaultsOSRD
-preplace inst FFT_L_last -pg 1 -lvl 4 -x 1500 -y 340 -defaultsOSRD
-preplace inst FFT_R_last -pg 1 -lvl 4 -x 1500 -y 900 -defaultsOSRD
-preplace inst FFT_L_valid -pg 1 -lvl 4 -x 1500 -y 480 -defaultsOSRD
-preplace inst FFT_R_valid -pg 1 -lvl 4 -x 1500 -y 760 -defaultsOSRD
-preplace inst FFT_WINDOW_en -pg 1 -lvl 3 -x 1010 -y 1240 -defaultsOSRD
-preplace inst CORDIC_FIFO_L -pg 1 -lvl 8 -x 2970 -y 950 -defaultsOSRD
-preplace inst CORDIC_FIFO_R -pg 1 -lvl 8 -x 2970 -y 1090 -defaultsOSRD
-preplace inst FFT_BRAM_0 -pg 1 -lvl 9 -x 3310 -y 1030 -defaultsOSRD
-preplace inst HDMI_test_0 -pg 1 -lvl 10 -x 3630 -y 1040 -defaultsOSRD
-preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x 190 -y 960 -defaultsOSRD
-preplace inst BRAM_ADDR_SLICE -pg 1 -lvl 2 -x 560 -y 500 -defaultsOSRD
-preplace inst BRAM_DIN_SLICE1 -pg 1 -lvl 2 -x 560 -y 620 -defaultsOSRD
-preplace inst BRAM_WE_SLICE2 -pg 1 -lvl 2 -x 560 -y 740 -defaultsOSRD
-preplace inst Windowing_R -pg 1 -lvl 3 -x 1010 -y 610 -defaultsOSRD
-preplace inst Windowing_L -pg 1 -lvl 3 -x 1010 -y 330 -defaultsOSRD
-preplace netloc xlslice_1_Dout 1 3 1 1250 980n
-preplace netloc xlslice_2_Dout 1 3 1 1300J 1050n
-preplace netloc FFT_CONFIG_m_axis_fftconfig_tdata 1 4 1 1700 540n
-preplace netloc Ready_AND_Res 1 4 2 NJ 1080 2190
-preplace netloc Net1 1 4 1 1720 580n
-preplace netloc FFT_L_s_axis_config_tready 1 4 1 1760 560n
-preplace netloc FFT_R_s_axis_config_tready 1 4 1 1770 840n
-preplace netloc axi_gpio_0_gpio2_io_o 1 2 6 NJ 1150 NJ 1150 NJ 1150 2220J 670 NJ 670 2850
-preplace netloc xlslice_0_Dout 1 8 1 3120J 730n
-preplace netloc xlslice_3_Dout 1 8 1 3100J 830n
-preplace netloc HDMI_test_0_vid_pData 1 10 1 N 1010
-preplace netloc HDMI_test_0_vid_pVDE 1 10 1 N 1070
-preplace netloc HDMI_test_0_vid_pHSync 1 10 1 N 1030
-preplace netloc HDMI_test_0_vid_pVSync 1 10 1 N 1050
-preplace netloc HDMI_test_0_PixelClk 1 8 3 3140 1190 NJ 1190 3780
-preplace netloc axi_gpio_0_gpio_io_o 1 2 1 750 980n
-preplace netloc FFT_BRAM_0_out_data 1 9 1 3480 1020n
-preplace netloc FFT_BRAM_0_out_data_r 1 9 1 3470 1040n
-preplace netloc HDMI_test_0_ren 1 8 3 3150 890 NJ 890 3770
-preplace netloc HDMI_test_0_addr 1 8 3 3150 1180 NJ 1180 3770
-preplace netloc ps7_0_FCLK_CLK0 1 0 10 20 820 390 830 700 1160 1310 1160 1740 1090 2200 680 2480 700 2840 1170 3110 1170 3490
-preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 11 30 830 360 840 710 1140 NJ 1140 1750 1100 2230 690 2470 710 2820 1180 3130 1200 NJ 1200 3790
-preplace netloc xlconstant_1_dout 1 11 1 NJ 1210
-preplace netloc Audio_controller_L_Data 1 0 3 NJ 80 NJ 80 780
-preplace netloc Audio_controller_L_Data_valid 1 0 3 NJ 100 NJ 100 770
-preplace netloc rgb2dvi_0_TMDS_Clk_p 1 11 1 NJ 1030
-preplace netloc rgb2dvi_0_TMDS_Clk_n 1 11 1 NJ 1050
-preplace netloc rgb2dvi_0_TMDS_Data_p 1 11 1 NJ 1070
-preplace netloc rgb2dvi_0_TMDS_Data_n 1 11 1 NJ 1090
-preplace netloc Audio_controller_R_Data 1 0 3 0J 800 410J 820 740
-preplace netloc Audio_controller_R_Data_valid 1 0 3 10J 810 NJ 810 780
-preplace netloc Packet_framer_L_m_axis_tdata 1 3 1 1310 90n
-preplace netloc Windowing_L_M_AXIS_DATA_tdata 1 3 1 1250 200n
-preplace netloc FFT_L_data_y 1 4 1 1760 200n
-preplace netloc Packet_framer_R_m_axis_tdata 1 3 1 1270 600n
-preplace netloc Windowing_R_M_AXIS_DATA_tdata 1 3 1 1260 600n
-preplace netloc Packet_framer_L_m_axis_tlast 1 3 1 1300 110n
-preplace netloc Windowing_L_M_AXIS_DATA_tlast 1 3 1 N 340
-preplace netloc FFT_L_last_y 1 4 1 1750 340n
-preplace netloc Packet_framer_L_m_axis_tvalid 1 3 1 1290 130n
-preplace netloc Windowing_L_M_AXIS_DATA_tvalid 1 3 1 1250 360n
-preplace netloc Packet_framer_R_m_axis_tlast 1 3 1 1240 850n
-preplace netloc Windowing_R_M_AXIS_DATA_tlast 1 3 1 1250 620n
-preplace netloc Packet_framer_R_m_axis_tvalid 1 3 1 1300 740n
-preplace netloc Windowing_R_M_AXIS_DATA_tvalid 1 3 1 1260 640n
-preplace netloc FFT_L_valid_y 1 4 1 1700 480n
-preplace netloc FFT_R_data_y 1 4 1 1710 620n
-preplace netloc FFT_R_last_y 1 4 1 1730 760n
-preplace netloc FFT_R_valid_y 1 4 1 1690 760n
-preplace netloc Net 1 3 1 1280 220n
-preplace netloc axi_bram_ctrl_0_bram_addr_a 1 1 1 350 500n
-preplace netloc BRAM_ADDR_SLICE_Dout 1 2 1 750 300n
-preplace netloc axi_bram_ctrl_0_bram_clk_a 1 1 2 380 560 760
-preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 1 1 400 620n
-preplace netloc BRAM_DIN_SLICE1_Dout 1 2 1 720 340n
-preplace netloc axi_bram_ctrl_0_bram_en_a 1 1 2 370 440 770
-preplace netloc axi_bram_ctrl_0_bram_we_a 1 1 1 420 740n
-preplace netloc BRAM_WE_SLICE2_Dout 1 2 1 730 380n
-preplace netloc Ext_Mod_0_m_axis 1 6 1 N 910
-preplace netloc Ext_Mod_R_m_axis 1 6 1 N 770
-preplace netloc Conn1 1 0 3 NJ 1220 NJ 1220 NJ
-preplace netloc ps7_0_axi_periph_M05_AXI 1 0 2 NJ 1100 NJ
-preplace netloc FFT_L_M_AXIS_DATA 1 5 1 2210 470n
-preplace netloc FFT_R_M_AXIS_DATA 1 5 1 N 750
-preplace netloc CORDIC_FIFO_R_M_AXIS 1 8 1 3090 970n
-preplace netloc cordic_L_M_AXIS_DOUT 1 7 1 N 930
-preplace netloc CORDIC_FIFO_L_M_AXIS 1 8 1 N 950
-preplace netloc cordic_R_M_AXIS_DOUT 1 7 1 2830 790n
-preplace netloc Conn2 1 0 1 NJ 940
-levelinfo -pg 1 -20 190 560 1010 1500 1980 2350 2650 2970 3310 3630 3950 4130
-pagesize -pg 1 -db -bbox -sgen -210 0 4320 1320
+preplace port S_AXI_FFT_CTRL -pg 1 -lvl 0 -x -20 -y 1070 -defaultsOSRD
+preplace port S_AXI_WND -pg 1 -lvl 0 -x -20 -y 1000 -defaultsOSRD
+preplace port S_AXI_WND_BRAM -pg 1 -lvl 0 -x -20 -y 870 -defaultsOSRD
+preplace port S_AXI_FFT_OUTSCALER -pg 1 -lvl 0 -x -20 -y 1400 -defaultsOSRD
+preplace port aclk -pg 1 -lvl 0 -x -20 -y 890 -defaultsOSRD
+preplace port aRst_n -pg 1 -lvl 0 -x -20 -y 910 -defaultsOSRD
+preplace port s_axis_l_tvalid -pg 1 -lvl 0 -x -20 -y 790 -defaultsOSRD
+preplace port hdmi_out_clk_p -pg 1 -lvl 15 -x 5470 -y 1250 -defaultsOSRD
+preplace port hdmi_out_clk_n -pg 1 -lvl 15 -x 5470 -y 1270 -defaultsOSRD
+preplace port s_axis_r_tvalid -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
+preplace portBus hdmi_out_hpd -pg 1 -lvl 15 -x 5470 -y 1110 -defaultsOSRD
+preplace portBus s_axis_l_tdata -pg 1 -lvl 0 -x -20 -y 770 -defaultsOSRD
+preplace portBus hdmi_out_data_p -pg 1 -lvl 15 -x 5470 -y 1290 -defaultsOSRD
+preplace portBus hdmi_out_data_n -pg 1 -lvl 15 -x 5470 -y 1310 -defaultsOSRD
+preplace portBus s_axis_r_tdata -pg 1 -lvl 0 -x -20 -y 80 -defaultsOSRD
+preplace inst FFT_L -pg 1 -lvl 5 -x 2030 -y 910 -defaultsOSRD
+preplace inst Ready_AND -pg 1 -lvl 5 -x 2030 -y 1110 -defaultsOSRD
+preplace inst cordic_R -pg 1 -lvl 8 -x 3020 -y 1000 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 14 -x 5290 -y 1110 -defaultsOSRD
+preplace inst FFT_R -pg 1 -lvl 5 -x 2030 -y 630 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 14 -x 5290 -y 1270 -defaultsOSRD
+preplace inst CONFIG_PAR -pg 1 -lvl 3 -x 1050 -y 1140 -defaultsOSRD
+preplace inst CONFIG_DATA_VAILD -pg 1 -lvl 3 -x 1050 -y 1240 -defaultsOSRD
+preplace inst cordic_L -pg 1 -lvl 8 -x 3020 -y 1420 -defaultsOSRD
+preplace inst AXI_FFT_CTRL -pg 1 -lvl 2 -x 580 -y 1090 -defaultsOSRD
+preplace inst FFT_L_data -pg 1 -lvl 4 -x 1550 -y 620 -defaultsOSRD
+preplace inst FFT_R_data -pg 1 -lvl 4 -x 1550 -y 200 -defaultsOSRD
+preplace inst FFT_L_last -pg 1 -lvl 4 -x 1550 -y 900 -defaultsOSRD
+preplace inst FFT_R_last -pg 1 -lvl 4 -x 1550 -y 340 -defaultsOSRD
+preplace inst FFT_L_valid -pg 1 -lvl 4 -x 1550 -y 760 -defaultsOSRD
+preplace inst FFT_R_valid -pg 1 -lvl 4 -x 1550 -y 480 -defaultsOSRD
+preplace inst FFT_WINDOW_en -pg 1 -lvl 3 -x 1050 -y 1020 -defaultsOSRD
+preplace inst CORDIC_FIFO_L -pg 1 -lvl 10 -x 3680 -y 1020 -defaultsOSRD
+preplace inst CORDIC_FIFO_R -pg 1 -lvl 10 -x 3680 -y 1220 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x 190 -y 890 -defaultsOSRD
+preplace inst BRAM_ADDR_SLICE -pg 1 -lvl 2 -x 580 -y 460 -defaultsOSRD
+preplace inst BRAM_DIN_SLICE1 -pg 1 -lvl 2 -x 580 -y 580 -defaultsOSRD
+preplace inst BRAM_WE_SLICE2 -pg 1 -lvl 2 -x 580 -y 700 -defaultsOSRD
+preplace inst HDMI_test_0 -pg 1 -lvl 13 -x 4950 -y 1260 -defaultsOSRD
+preplace inst Ext_Mod_L -pg 1 -lvl 6 -x 2380 -y 870 -defaultsOSRD
+preplace inst FFT_CONFIG -pg 1 -lvl 4 -x 1550 -y 1160 -defaultsOSRD
+preplace inst Packet_framer_L -pg 1 -lvl 3 -x 1050 -y 840 -defaultsOSRD
+preplace inst Packet_framer_R -pg 1 -lvl 3 -x 1050 -y 100 -defaultsOSRD
+preplace inst Ext_Mod_R -pg 1 -lvl 6 -x 2380 -y 1040 -defaultsOSRD
+preplace inst Windowing_R -pg 1 -lvl 3 -x 1050 -y 330 -defaultsOSRD
+preplace inst Windowing_L -pg 1 -lvl 3 -x 1050 -y 610 -defaultsOSRD
+preplace inst AXI_DEMUX_L -pg 1 -lvl 7 -x 2670 -y 1130 -defaultsOSRD
+preplace inst AXI_DEMUX_R -pg 1 -lvl 7 -x 2670 -y 940 -defaultsOSRD
+preplace inst FFT_BRAM_0 -pg 1 -lvl 12 -x 4590 -y 1140 -defaultsOSRD
+preplace inst APPROX_LOG_MOD_R -pg 1 -lvl 8 -x 3020 -y 860 -defaultsOSRD
+preplace inst APPROX_LOG_MOD_L -pg 1 -lvl 8 -x 3020 -y 1140 -defaultsOSRD
+preplace inst AXI_FFT_OUTSCALER -pg 1 -lvl 8 -x 3020 -y 1280 -defaultsOSRD
+preplace inst AXI_MUX_R -pg 1 -lvl 9 -x 3380 -y 1040 -defaultsOSRD
+preplace inst AXI_MUX_L -pg 1 -lvl 9 -x 3380 -y 1240 -defaultsOSRD
+preplace netloc xlslice_1_Dout 1 3 1 NJ 1140
+preplace netloc xlslice_2_Dout 1 3 1 1300J 1160n
+preplace netloc FFT_CONFIG_m_axis_fftconfig_tdata 1 4 1 1760 640n
+preplace netloc Ready_AND_Res 1 4 2 N 1190 2240
+preplace netloc Net1 1 4 1 1780 680n
+preplace netloc FFT_L_s_axis_config_tready 1 4 1 1820 940n
+preplace netloc FFT_R_s_axis_config_tready 1 4 1 1810 660n
+preplace netloc HDMI_test_0_vid_pData 1 13 1 N 1230
+preplace netloc HDMI_test_0_vid_pVDE 1 13 1 N 1290
+preplace netloc HDMI_test_0_vid_pHSync 1 13 1 N 1250
+preplace netloc HDMI_test_0_vid_pVSync 1 13 1 N 1270
+preplace netloc HDMI_test_0_PixelClk 1 11 3 3860 1400 NJ 1400 5090
+preplace netloc axi_gpio_0_gpio_io_o 1 2 1 730 1080n
+preplace netloc FFT_BRAM_0_out_data 1 12 1 4750 1130n
+preplace netloc FFT_BRAM_0_out_data_r 1 12 1 4770 1150n
+preplace netloc HDMI_test_0_ren 1 11 3 3870 1280 4760J 1130 5090
+preplace netloc HDMI_test_0_addr 1 11 3 3880 1290 4780J 1120 5100
+preplace netloc ps7_0_FCLK_CLK0 1 0 13 30 780 400 780 740 1310 1340 1250 1800 1200 2250 950 2500 1030 2850 780 3210 930 3530 1300 N 1300 3850 1300 4790J
+preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 14 20 760 360 790 770 940 1290J 980 1750 1180 2260 960 2540 1040 2830 770 3240 920 3540 1140 N 1140 3840 1390 NJ 1390 5100J
+preplace netloc xlconstant_1_dout 1 14 1 NJ 1110
+preplace netloc Audio_controller_L_Data 1 0 3 0J 750 400J 760 810
+preplace netloc Audio_controller_L_Data_valid 1 0 3 10J 770 NJ 770 820
+preplace netloc rgb2dvi_0_TMDS_Clk_p 1 14 1 NJ 1250
+preplace netloc rgb2dvi_0_TMDS_Clk_n 1 14 1 NJ 1270
+preplace netloc rgb2dvi_0_TMDS_Data_p 1 14 1 NJ 1290
+preplace netloc rgb2dvi_0_TMDS_Data_n 1 14 1 NJ 1310
+preplace netloc Audio_controller_R_Data 1 0 3 NJ 80 NJ 80 820
+preplace netloc Audio_controller_R_Data_valid 1 0 3 NJ 100 NJ 100 810
+preplace netloc Packet_framer_L_m_axis_tdata 1 3 1 1310 600n
+preplace netloc Windowing_L_M_AXIS_DATA_tdata 1 3 1 1300 600n
+preplace netloc FFT_L_data_y 1 4 1 1770 620n
+preplace netloc Packet_framer_R_m_axis_tdata 1 3 1 1350 90n
+preplace netloc Windowing_R_M_AXIS_DATA_tdata 1 3 1 1290 200n
+preplace netloc Packet_framer_L_m_axis_tlast 1 3 1 1280 850n
+preplace netloc Windowing_L_M_AXIS_DATA_tlast 1 3 1 1290 620n
+preplace netloc FFT_L_last_y 1 4 1 1790 860n
+preplace netloc Packet_framer_L_m_axis_tvalid 1 3 1 1340 740n
+preplace netloc Windowing_L_M_AXIS_DATA_tvalid 1 3 1 1300 640n
+preplace netloc Packet_framer_R_m_axis_tlast 1 3 1 1340 110n
+preplace netloc Windowing_R_M_AXIS_DATA_tlast 1 3 1 N 340
+preplace netloc Packet_framer_R_m_axis_tvalid 1 3 1 1330 130n
+preplace netloc Windowing_R_M_AXIS_DATA_tvalid 1 3 1 1290 360n
+preplace netloc FFT_L_valid_y 1 4 1 1740 760n
+preplace netloc FFT_R_data_y 1 4 1 1810 200n
+preplace netloc FFT_R_last_y 1 4 1 1800 340n
+preplace netloc FFT_R_valid_y 1 4 1 1770 480n
+preplace netloc Net 1 3 1 1320 220n
+preplace netloc axi_bram_ctrl_0_bram_addr_a 1 1 1 350 460n
+preplace netloc BRAM_ADDR_SLICE_Dout 1 2 1 790 300n
+preplace netloc axi_bram_ctrl_0_bram_clk_a 1 1 2 390 640 760
+preplace netloc axi_bram_ctrl_0_bram_wrdata_a 1 1 1 380 580n
+preplace netloc BRAM_DIN_SLICE1_Dout 1 2 1 780 340n
+preplace netloc axi_bram_ctrl_0_bram_en_a 1 1 2 370 520 800
+preplace netloc axi_bram_ctrl_0_bram_we_a 1 1 1 410 700n
+preplace netloc BRAM_WE_SLICE2_Dout 1 2 1 750 380n
+preplace netloc AXI_FFT_CTRL_gpio2_io_o 1 2 7 720 1300 NJ 1300 NJ 1300 NJ 1300 2510 760 NJ 760 3220
+preplace netloc AXI_FFT_OUTSCALER_gpio_io_o 1 8 1 3200 1070n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 0 2 NJ 1070 NJ
+preplace netloc AXI_DEMUX_R_m_axis_out1 1 7 1 2810 840n
+preplace netloc AXI_MUX_R_m_axis 1 9 1 3510 1040n
+preplace netloc Ext_Mod_L_m_axis 1 6 1 2530 870n
+preplace netloc FFT_L_M_AXIS_DATA 1 5 1 N 850
+preplace netloc APPROX_LOG_MOD_R_m_axis_dout 1 8 1 3230 860n
+preplace netloc AXI_DEMUX_L_m_axis_out1 1 7 1 2820 1120n
+preplace netloc APPROX_LOG_MOD_L_m_axis_dout 1 8 1 3190 1140n
+preplace netloc Conn1 1 0 3 NJ 1000 NJ 1000 NJ
+preplace netloc Conn2 1 0 1 NJ 870
+preplace netloc AXI_MUX_L_m_axis 1 9 1 3520 1000n
+preplace netloc cordic_L_M_AXIS_DOUT 1 8 1 3250 1190n
+preplace netloc AXI_DEMUX_L_m_axis_out0 1 7 1 2810 1120n
+preplace netloc FFT_R_M_AXIS_DATA 1 5 1 2240 570n
+preplace netloc Ext_Mod_R_m_axis 1 6 1 2520 910n
+preplace netloc AXI_DEMUX_R_m_axis_out0 1 7 1 2840 930n
+preplace netloc cordic_R_M_AXIS_DOUT 1 8 1 3200 990n
+preplace netloc CORDIC_FIFO_L_M_AXIS 1 10 2 NJ 1020 3840
+preplace netloc CORDIC_FIFO_R_M_AXIS 1 10 2 3800 1080 NJ
+preplace netloc Conn3 1 0 8 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 NJ 1400 2800
+levelinfo -pg 1 -20 190 580 1050 1550 2030 2380 2670 3020 3380 3680 3820 4590 4950 5290 5470
+pagesize -pg 1 -db -bbox -sgen -240 0 5660 1500
 "
 }
 0

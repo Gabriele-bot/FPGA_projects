@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Progetti_vivado/FFT_VIDEO/FFT_VIDEO.runs/base_LR_Stream_2_AXI_I2S_0_0_synth_1'
+HD_PWD='G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_LR_Stream_2_AXI_I2S_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

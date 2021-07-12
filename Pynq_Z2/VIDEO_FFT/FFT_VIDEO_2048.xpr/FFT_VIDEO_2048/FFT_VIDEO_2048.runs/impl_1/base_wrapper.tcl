@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/impl_1/base_wrapper.tcl"
+  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/impl_1/base_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,23 +130,23 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
-  set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
-  set_property ip_repo_paths G:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip [current_project]
+  set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
+  set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
+  set_property ip_repo_paths G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip [current_project]
   update_ip_catalog
-  set_property ip_output_repo G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
+  set_property ip_output_repo G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/synth_1/base_wrapper.dcp
+  add_files -quiet G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/synth_1/base_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd
+  add_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc
-  read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc
+  read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc
+  read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

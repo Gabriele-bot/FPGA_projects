@@ -1,4 +1,0 @@
-
-*** Running vivado
-    with args -log base_CORDIC_FIFO_L_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_CORDIC_FIFO_L_0.tcl
-

@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Creator: Gabriele Bortolato 
 // 
 // Create Date: 17.03.2021 21:10:53
 // Design Name: 
@@ -16,7 +15,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// Module that will configure the FFT, comand is programmed via the jupyter notebook.
 //////////////////////////////////////////////////////////////////////////////////
 
 

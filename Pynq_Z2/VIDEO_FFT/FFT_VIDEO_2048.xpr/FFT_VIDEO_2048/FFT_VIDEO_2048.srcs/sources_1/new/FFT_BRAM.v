@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Creator: Gabriele Bortoalto 
 // 
 // Create Date: 15.03.2021 18:33:54
 // Design Name: 
 // Module Name: FFT_BRAM
 // Project Name: 
-// Target Devices: 
+// Target Devices: PYNQ Z2
 // Tool Versions: 
 // Description: 
 // 
@@ -16,7 +15,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// Module that stores the FFT output (L-R) in to a DPBRAM.
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -48,7 +47,6 @@ module FFT_BRAM
     output reg s_axis_r_tready,                               // Ready output
     input wire s_axis_r_tlast,                                // Axis Last input
     
-                               
     
                                                  
     output wire [OUT_WIDTH-1:0] out_data_l,

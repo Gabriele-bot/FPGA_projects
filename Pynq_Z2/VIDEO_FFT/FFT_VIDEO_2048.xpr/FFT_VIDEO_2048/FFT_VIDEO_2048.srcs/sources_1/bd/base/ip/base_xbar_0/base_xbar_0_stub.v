@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Fri Apr  9 18:04:27 2021
+// Date        : Sat Jul 10 16:59:50 2021
 // Host        : DESKTOP-4SFHT1M running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top base_xbar_0 -prefix
+//               base_xbar_0_ base_xbar_0_stub.v
 // Design      : base_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

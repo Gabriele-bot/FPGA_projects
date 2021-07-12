@@ -2,7 +2,11 @@
 
 // (c) fpga4fun.com & KNJN LLC 2013
 // edited/updated for vivado 2020.1 by Dominic Meads 10/2020
-
+// modified by Gabriele Bortolato (Vivado 2020.2) 02/2021
+// Creator: Gabriele Bortolato 
+// 
+// Additional Comments:
+// Module that reads the value of the FFT in teh DPBRAM and produce a spectrum in the HDMI output (two channels)
 ////////////////////////////////////////////////////////////////////////
 module HDMI_test
 #(

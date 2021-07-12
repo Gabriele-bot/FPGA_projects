@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Creator: Gabriele Bortolato 
 // 
-// Create Date: 01.04.2021 21:58:18
+// // Create Date: 01.04.2021 21:58:18
 // Design Name: 
 // Module Name: LR_Stream_2_AXI_I2S
 // Project Name: 
-// Target Devices: 
+// Target Devices: PYNQ Z2
 // Tool Versions: 
 // Description: 
 // 
@@ -16,7 +15,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// This module will recombine the left and right audio data stream (with relative information bits) in to and AXI_AUD_data to feed in to the I2S TX
 //////////////////////////////////////////////////////////////////////////////////
 
 

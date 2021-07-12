@@ -2,32 +2,319 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Apr 10 13:00:33 2021
-# Process ID: 14272
+# Start of session at: Mon Jul 12 18:57:00 2021
+# Process ID: 9524
 # Current directory: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13644
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8836
 # Log file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/vivado.log
 # Journal file: C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr
+open_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/archive_project_summary.txt'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1201.152 ; gain = 74.934
-archive_project G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO.xpr.zip -temp_dir C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M -force -include_local_ip_cache -include_config_settings
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1249.117 ; gain = 123.969
+update_compile_order -fileset sources_1
+open_bd_design {G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd}
+Reading block design file <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - bclk_mux
+Adding component instance block -- xilinx.com:user:audio_codec_ctrl:1.0 - audio_codec_ctrl_0
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - lrclk_mux
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - out_mux
+Adding component instance block -- xilinx.com:ip:i2s_receiver:1.0 - i2s_receiver_0
+Adding component instance block -- xilinx.com:ip:i2s_transmitter:1.0 - i2s_transmitter_0
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - L_FIFO
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - R_FIFO
+Adding component instance block -- xilinx.com:module_ref:AXI_aud_interface:1.0 - AXI_aud_interface_0_upgraded_ipi
+Adding component instance block -- xilinx.com:module_ref:LR_Stream_2_AXI_I2S:1.0 - LR_Stream_2_AXI_I2S_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_audio
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - mux_sel
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xfft:9.1 - FFT_L
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - Ready_AND
+Adding component instance block -- xilinx.com:ip:cordic:6.0 - cordic_R
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xfft:9.1 - FFT_R
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - CONFIG_PAR
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - CONFIG_DATA_VAILD
+Adding component instance block -- xilinx.com:ip:cordic:6.0 - cordic_L
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - AXI_FFT_CTRL
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_L_data
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_R_data
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_L_last
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_R_last
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_L_valid
+Adding component instance block -- xilinx.com:user:mux_vector:1.0 - FFT_R_valid
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - FFT_WINDOW_en
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - CORDIC_FIFO_L
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - CORDIC_FIFO_R
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - BRAM_ADDR_SLICE
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - BRAM_DIN_SLICE1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - BRAM_WE_SLICE2
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - AXI_FFT_OUTSCALER
+Adding component instance block -- xilinx.com:module_ref:HDMI_test:1.0 - HDMI_test_0
+Adding component instance block -- xilinx.com:module_ref:Ext_Mod:1.0 - Ext_Mod_L
+Adding component instance block -- xilinx.com:module_ref:FFT_config:1.0 - FFT_CONFIG
+Adding component instance block -- xilinx.com:module_ref:Packet_framer:1.0 - Packet_framer_L
+Adding component instance block -- xilinx.com:module_ref:Packet_framer:1.0 - Packet_framer_R
+Adding component instance block -- xilinx.com:module_ref:Ext_Mod:1.0 - Ext_Mod_R
+Adding component instance block -- xilinx.com:module_ref:Windowing:1.0 - Windowing_R
+Adding component instance block -- xilinx.com:module_ref:Windowing:1.0 - Windowing_L
+Adding component instance block -- xilinx.com:module_ref:AXI_DEMUX:1.0 - AXI_DEMUX_L
+Adding component instance block -- xilinx.com:module_ref:AXI_DEMUX:1.0 - AXI_DEMUX_R
+Adding component instance block -- xilinx.com:module_ref:AXI_MUX:1.0 - AXI_MUX_R
+Adding component instance block -- xilinx.com:module_ref:AXI_MUX:1.0 - AXI_MUX_L
+Adding component instance block -- xilinx.com:module_ref:FFT_BRAM:1.0 - FFT_BRAM_0
+Adding component instance block -- xilinx.com:module_ref:AXI_MULTIPLIER:1.0 - AXI_MULTIPLIER_L
+Adding component instance block -- xilinx.com:module_ref:AXI_MULTIPLIER:1.0 - AXI_MULTIPLIER_R
+Adding component instance block -- xilinx.com:module_ref:APPROX_LOG_MOD:1.0 - APPROX_LOG_MOD_R
+Adding component instance block -- xilinx.com:module_ref:APPROX_LOG_MOD:1.0 - APPROX_LOG_MOD_L
+Adding component instance block -- xilinx.com:module_ref:Pulse_LED_controller:1.0 - Pulse_LED_controller_0
+Successfully read diagram <base> from block design file <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1394.934 ; gain = 75.047
+delete_bd_objs [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_L_m_axis_out_tuser] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_L_m_axis_out_tlast] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_L_m_axis_tuser] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_L_m_axis_tvalid] [get_bd_nets HDMI_FFT_LR/FFT_BRAM_0_s_axis_l_tready] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_L_m_axis_tdata] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_L_s_axis_in_tready] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_L_m_axis_tlast] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_L_m_axis_out_tdata] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_L_m_axis_out_tvalid] [get_bd_cells HDMI_FFT_LR/AXI_MULTIPLIER_L]
+delete_bd_objs: Time (s): cpu = 00:00:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1616.895 ; gain = 24.207
+delete_bd_objs [get_bd_nets HDMI_FFT_LR/AXI_FFT_OUTSCALER_gpio_io_o] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_R_m_axis_tdata] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_R_m_axis_tvalid] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_R_m_axis_tlast] [get_bd_nets HDMI_FFT_LR/FFT_BRAM_0_s_axis_r_tready] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_R_m_axis_out_tlast] [get_bd_nets HDMI_FFT_LR/CORDIC_FIFO_R_m_axis_tuser] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_R_m_axis_out_tdata] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_R_m_axis_out_tvalid] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_R_s_axis_in_tready] [get_bd_nets HDMI_FFT_LR/AXI_MULTIPLIER_R_m_axis_out_tuser] [get_bd_cells HDMI_FFT_LR/AXI_MULTIPLIER_R]
+connect_bd_intf_net [get_bd_intf_pins HDMI_FFT_LR/FFT_BRAM_0/s_axis_l] [get_bd_intf_pins HDMI_FFT_LR/CORDIC_FIFO_L/M_AXIS]
+connect_bd_intf_net [get_bd_intf_pins HDMI_FFT_LR/FFT_BRAM_0/s_axis_r] [get_bd_intf_pins HDMI_FFT_LR/CORDIC_FIFO_R/M_AXIS]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets HDMI_FFT_LR/Conn3] [get_bd_cells HDMI_FFT_LR/AXI_FFT_OUTSCALER]
+delete_bd_objs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1637.328 ; gain = 0.000
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets HDMI_FFT_LR/Conn3] [get_bd_cells HDMI_FFT_LR/AXI_FFT_OUTSCALER]'
+update_module_reference {base_AXI_MUX_0_0 base_AXI_MUX_0_1}
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in0' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in1' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+Upgrading 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd'
+INFO: [IP_Flow 19-1972] Upgraded base_AXI_MUX_0_0 from AXI_MUX_v1_0 1.0 to AXI_MUX_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'scaler'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_AXI_MUX_0_0'. These changes may impact your design.
+INFO: [IP_Flow 19-1972] Upgraded base_AXI_MUX_0_1 from AXI_MUX_v1_0 1.0 to AXI_MUX_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'scaler'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'base_AXI_MUX_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'base_AXI_MUX_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'base_AXI_MUX_0_1' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <G:\Vivado\FFT_VIDEO\FFT_VIDEO_2048.xpr\FFT_VIDEO_2048\FFT_VIDEO_2048.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_eead9e87.ui> 
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.C_DOUT_DEFAULT {0x0000040}] [get_bd_cells HDMI_FFT_LR/AXI_FFT_OUTSCALER]
+endgroup
+connect_bd_net [get_bd_pins HDMI_FFT_LR/AXI_FFT_OUTSCALER/gpio_io_o] [get_bd_pins HDMI_FFT_LR/AXI_MUX_L/scaler]
+WARNING: [BD 41-1306] The connection to interface pin </HDMI_FFT_LR/AXI_FFT_OUTSCALER/gpio_io_o> is being overridden by the user with net <AXI_FFT_OUTSCALER_gpio_io_o>. This pin will not be connected as a part of interface connection <GPIO>.
+connect_bd_net [get_bd_pins HDMI_FFT_LR/AXI_FFT_OUTSCALER/gpio_io_o] [get_bd_pins HDMI_FFT_LR/AXI_MUX_R/scaler]
+save_bd_design
+Wrote  : <G:\Vivado\FFT_VIDEO\FFT_VIDEO_2048.xpr\FFT_VIDEO_2048\FFT_VIDEO_2048.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_eead9e87.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+CRITICAL WARNING: [BD 41-967] AXI interface pin /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0/m_axis_aud is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0/s_axis_l is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0/s_axis_r is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /HDMI_FFT_LR/FFT_BRAM_0/s_axis_l is not associated to any clock pin. It may not work correctly.
+CRITICAL WARNING: [BD 41-967] AXI interface pin /HDMI_FFT_LR/FFT_BRAM_0/s_axis_r is not associated to any clock pin. It may not work correctly.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_R data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_R input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_R data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_R input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-7] /HDMI_FFT_LR/cordic_L Setting Input Width to 48. S_AXIS_CARTESIAN_TDATA real input width: 48.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_L Input_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_L cartesian_tuser_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-7] /HDMI_FFT_LR/cordic_L Setting Input Width to 48. S_AXIS_CARTESIAN_TDATA real input width: 48.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_L Input_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_L cartesian_tuser_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /Audio_controller/clk_wiz_audio clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /Audio_controller/clk_wiz_audio clk_wiz propagate
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_L data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_L input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_L data_format has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:xfft:9.1-913] /HDMI_FFT_LR/FFT_L input_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-7] /HDMI_FFT_LR/cordic_R Setting Input Width to 48. S_AXIS_CARTESIAN_TDATA real input width: 48.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_R Input_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_R cartesian_tuser_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-7] /HDMI_FFT_LR/cordic_R Setting Input Width to 48. S_AXIS_CARTESIAN_TDATA real input width: 48.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_R Input_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:cordic:6.0-913] /HDMI_FFT_LR/cordic_R cartesian_tuser_width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /HDMI_FFT_LR/axi_bram_ctrl_0: PORT /HDMI_FFT_LR/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /HDMI_FFT_LR/axi_bram_ctrl_0: PORT /HDMI_FFT_LR/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /HDMI_FFT_LR/CORDIC_FIFO_R/S_AXIS(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}) and /HDMI_FFT_LR/AXI_MUX_R/m_axis(undef)
+WARNING: [BD 41-237] Bus Interface property LAYERED_METADATA does not match between /HDMI_FFT_LR/CORDIC_FIFO_L/S_AXIS(xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}) and /HDMI_FFT_LR/AXI_MUX_L/m_axis(undef)
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/Ext_Mod_L/s_axis have been updated from connected ip, but BD cell '/HDMI_FFT_LR/Ext_Mod_L' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98304} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98304} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_xn_re {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xn_re} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98280} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency frame_size format long minimum {} maximum {}} value 2048} stride {attribs {resolve_type generated dependency frame_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xn_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency xn_fractwidth format long minimum {} maximum {}} value 23} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}} field_xn_im {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xn_im} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98280} bitoffset {attribs {resolve_type generated dependency xn_im_offset format long minimum {} maximum {}} value 24} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency frame_size format long minimum {} maximum {}} value 2048} stride {attribs {resolve_type generated dependency frame_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xn_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency xn_fractwidth format long minimum {} maximum {}} value 23} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}}} TDATA_WIDTH 48 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 11} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_xk_index {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xk_index} enabled {attribs {resolve_type generated dependency xk_index_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xk_index_width format long minimum {} maximum {}} value 11} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_blk_exp {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value blk_exp} enabled {attribs {resolve_type generated dependency blk_exp_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 5} bitoffset {attribs {resolve_type generated dependency blk_exp_offset format long minimum {} maximum {}} value 16} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 5} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}} field_ovflo {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value ovflo} enabled {attribs {resolve_type generated dependency ovflo_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type generated dependency ovflo_offset format long minimum {} maximum {}} value 16} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/Ext_Mod_L> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/Ext_Mod_R/s_axis have been updated from connected ip, but BD cell '/HDMI_FFT_LR/Ext_Mod_R' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98304} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98304} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_xn_re {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xn_re} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98280} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency frame_size format long minimum {} maximum {}} value 2048} stride {attribs {resolve_type generated dependency frame_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xn_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency xn_fractwidth format long minimum {} maximum {}} value 23} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}} field_xn_im {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xn_im} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 98280} bitoffset {attribs {resolve_type generated dependency xn_im_offset format long minimum {} maximum {}} value 24} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency frame_size format long minimum {} maximum {}} value 2048} stride {attribs {resolve_type generated dependency frame_stride format long minimum {} maximum {}} value 48} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xn_width format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency xn_fractwidth format long minimum {} maximum {}} value 23} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}}}}}}} TDATA_WIDTH 48 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 11} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_xk_index {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value xk_index} enabled {attribs {resolve_type generated dependency xk_index_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency xk_index_width format long minimum {} maximum {}} value 11} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_blk_exp {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value blk_exp} enabled {attribs {resolve_type generated dependency blk_exp_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 5} bitoffset {attribs {resolve_type generated dependency blk_exp_offset format long minimum {} maximum {}} value 16} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 5} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}} field_ovflo {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value ovflo} enabled {attribs {resolve_type generated dependency ovflo_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type generated dependency ovflo_offset format long minimum {} maximum {}} value 16} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/Ext_Mod_R> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/FFT_BRAM_0/s_axis_l have been updated from connected ip, but BD cell '/HDMI_FFT_LR/FFT_BRAM_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/FFT_BRAM_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/FFT_BRAM_0/s_axis_r have been updated from connected ip, but BD cell '/HDMI_FFT_LR/FFT_BRAM_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/FFT_BRAM_0> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/AXI_MUX_R/s_axis_in0 have been updated from connected ip, but BD cell '/HDMI_FFT_LR/AXI_MUX_R' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/AXI_MUX_R> to completely resolve these warnings.
+WARNING: [BD 41-926] Following properties on interface pin /HDMI_FFT_LR/AXI_MUX_L/s_axis_in0 have been updated from connected ip, but BD cell '/HDMI_FFT_LR/AXI_MUX_L' does not accept parameter changes, so they may not be synchronized with cell properties:
+	LAYERED_METADATA = xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}
+
+Please resolve any mismatches by directly setting properties on BD cell </HDMI_FFT_LR/AXI_MUX_L> to completely resolve these warnings.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/HDMI_FFT_LR/FFT_BRAM_0/FFT_offset
+/HDMI_FFT_LR/FFT_BRAM_0/FFT_offset_valid
+
+Wrote  : <G:\Vivado\FFT_VIDEO\FFT_VIDEO_2048.xpr\FFT_VIDEO_2048\FFT_VIDEO_2048.srcs\sources_1\bd\base\base.bd> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_eead9e87.ui> 
+VHDL Output written to : G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/synth/base.v
+VHDL Output written to : G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/sim/base.v
+VHDL Output written to : G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/hdl/base_wrapper.v
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : <G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ui/bd_eead9e87.ui> 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_FFT_LR/AXI_MUX_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_FFT_LR/AXI_MUX_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_FFT_LR/AXI_FFT_OUTSCALER .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/auto_pc .
+Exporting to file G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/hw_handoff/base.hwh
+Generated Block Design Tcl file G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/hw_handoff/base_bd.tcl
+Generated Hardware Definition File G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/synth/base.hwdef
+WARNING: [BD 41-2265] Clock pin for protocol instance pin m_axis_aud could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0
+WARNING: [BD 41-2265] Clock pin for protocol instance pin s_axis_l could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0
+WARNING: [BD 41-2265] Clock pin for protocol instance pin s_axis_r could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /Audio_controller/i2s_audio_stream/LR_Stream_2_AXI_I2S_0
+WARNING: [BD 41-2265] Clock pin for protocol instance pin s_axis_l could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /HDMI_FFT_LR/FFT_BRAM_0
+WARNING: [BD 41-2265] Clock pin for protocol instance pin s_axis_r could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /HDMI_FFT_LR/FFT_BRAM_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_2
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_3
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_4
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_5
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_6
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_auto_pc_7
+INFO: [IP_Flow 19-7066] Running IP cache check for IP base_axi_gpio_0_3
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_0, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_1, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_2, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_3, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_4, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_5, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_6, cache-ID = 9dc57d5617e81bf2; cache size = 136.051 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_7, cache-ID = 35725c0547d67d7e; cache size = 136.051 MB.
+[Mon Jul 12 20:18:59 2021] Launched base_AXI_MUX_0_0_synth_1, base_AXI_MUX_0_1_synth_1, base_axi_gpio_0_3_synth_1, synth_1...
+Run output will be captured here:
+base_AXI_MUX_0_0_synth_1: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_AXI_MUX_0_0_synth_1/runme.log
+base_AXI_MUX_0_1_synth_1: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_AXI_MUX_0_1_synth_1/runme.log
+base_axi_gpio_0_3_synth_1: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_axi_gpio_0_3_synth_1/runme.log
+synth_1: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/synth_1/runme.log
+[Mon Jul 12 20:18:59 2021] Launched impl_1...
+Run output will be captured here: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:40 ; elapsed = 00:01:14 . Memory (MB): peak = 1950.906 ; gain = 252.184
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2206.637 ; gain = 0.344
+INFO: [Netlist 29-17] Analyzing 1498 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'base_i/Audio_controller/clk_wiz_audio/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3054.145 ; gain = 6.125
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3054.145 ; gain = 6.125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3054.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:33 . Memory (MB): peak = 3219.758 ; gain = 1221.996
+open_report: Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 3318.980 ; gain = 99.223
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+write_hw_platform -fixed -include_bit -force -file D:/Progetti_vivado/EXPORT_FILES/FFT_LOG_2.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Progetti_vivado/EXPORT_FILES/FFT_LOG_2.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Vivado/Vivado/2020.2/data\embeddedsw) loading 1 seconds
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Progetti_vivado/EXPORT_FILES/FFT_LOG_2.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 4794.656 ; gain = 0.000
+archive_project G:/Vivado/FFT_VIDEO/Last_version/FFT_VIDEO_2048.xpr.zip -temp_dir C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9524-DESKTOP-4SFHT1M -force -include_local_ip_cache -include_config_settings
 INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M' for archiving project
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9524-DESKTOP-4SFHT1M' for archiving project
+CRITICAL WARNING: [Project 1-19] Could not find the file 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/archive_project_summary.txt'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
 INFO: [Coretcl 2-1211] Creating project copy for archival...
 INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14272-DESKTOP-4SFHT1M/PrjAr/_X_'.
+Current project path is 'C:/Users/Gabri/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9524-DESKTOP-4SFHT1M/PrjAr/_X_'.
+WARNING: [IP_Flow 19-3571] IP 'base_APPROX_LOG_MOD_0_3' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'base_AXI_DEMUX_0_1' is restricted:
+* Module reference is stale and needs refreshing.
+WARNING: [IP_Flow 19-3571] IP 'base_AXI_MUX_0_1' is restricted:
+* Module reference is stale and needs refreshing.
 WARNING: [IP_Flow 19-3571] IP 'base_Ext_Mod_L_0' is restricted:
 * Module reference is stale and needs refreshing.
 WARNING: [IP_Flow 19-3571] IP 'base_Packet_framer_L_0' is restricted:
@@ -43,7 +330,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface para
 INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axis_aud'.
 INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -64,7 +351,7 @@ WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r_fir': FREQ_HZ bus parameter m
 CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'm_axis_aud_aclk': FREQ_HZ bus parameter is missing for output clock interface.
 WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -75,7 +362,65 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_dout' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_din' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_dout'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_dout' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_din' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_dout'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_out0' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_out1' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_out0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_out0' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_out1' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_out0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in0' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in1' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in0' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_in1' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -85,7 +430,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface para
 INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axis_aud'.
 INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -96,7 +441,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -107,7 +452,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_l' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_l' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_r' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
@@ -119,20 +464,20 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_l': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
 WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_btn'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_btn'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_fftconfig' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_fftconfig'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'outwindow'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'outwindow'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
 WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_l_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aud' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -147,7 +492,7 @@ WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_l': FREQ_HZ bus parameter missi
 WARNING: [IP_Flow 19-3158] Bus Interface 's_axis_r': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
 WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -158,7 +503,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'wait_for_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -169,7 +514,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_L' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next_L' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr_R' has a dependency on the module local parameter or undefined parameter 'wait_for_tvalid'.
@@ -180,7 +525,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aresetn': Added interface para
 INFO: [IP_Flow 19-4728] Bus Interface 's_axis_aud_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axis_aud_aresetn'.
 WARNING: [IP_Flow 19-5661] Bus Interface 's_axis_aud_aclk' does not have any bus interfaces associated with it.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'get_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'get_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -191,7 +536,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS_DATA'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Curr' has a dependency on the module local parameter or undefined parameter 'get_data'.
 WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state_Next' has a dependency on the module local parameter or undefined parameter 'get_data'.
 INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS_DATA' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
@@ -202,7 +547,7 @@ INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLA
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXIS_DATA'.
 INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 INFO: [Coretcl 2-1213] Including run results for 'synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_audio_codec_ctrl_0_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_rst_ps7_0_fclk0_1_synth_1'
@@ -221,16 +566,8 @@ INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_i2s_transmitter_0_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_1_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_FFT_config_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_LR_Stream_2_AXI_I2S_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_AXI_aud_interface_0_upgraded_ipi_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Pulse_LED_controller_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_L_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_util_vector_logic_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_L_0_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_mux_vector_0_2_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_last_1_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_mux_vector_0_3_synth_1'
@@ -240,11 +577,26 @@ INFO: [Coretcl 2-1213] Including run results for 'base_FFT_L_last_2_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_2_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_axis_data_fifo_0_1_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_CORDIC_FIFO_L_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_FFT_BRAM_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_HDMI_test_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_0_synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_1_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'base_axi_bram_ctrl_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_HDMI_test_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Pulse_LED_controller_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_aud_interface_0_upgraded_ipi_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_DEMUX_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Ext_Mod_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_BRAM_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_DEMUX_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Windowing_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_FFT_config_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_LR_Stream_2_AXI_I2S_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_Packet_framer_L_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_APPROX_LOG_MOD_0_3_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_APPROX_LOG_MOD_0_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_MUX_0_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_AXI_MUX_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'base_axi_gpio_0_3_synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'impl_1'
 INFO: [Coretcl 2-133] re-setting run 'base_audio_codec_ctrl_0_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_rst_ps7_0_fclk0_1_impl_1'...
@@ -263,16 +615,8 @@ INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_i2s_transmitter_0_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_1_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_FFT_config_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_LR_Stream_2_AXI_I2S_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_AXI_aud_interface_0_upgraded_ipi_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Pulse_LED_controller_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_L_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_util_vector_logic_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_L_0_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_mux_vector_0_2_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_last_1_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_mux_vector_0_3_impl_1'...
@@ -282,12 +626,40 @@ INFO: [Coretcl 2-133] re-setting run 'base_FFT_L_last_2_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_2_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_axis_data_fifo_0_1_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_CORDIC_FIFO_L_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_FFT_BRAM_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_HDMI_test_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_0_impl_1'...
-INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_1_impl_1'...
 INFO: [Coretcl 2-133] re-setting run 'base_axi_bram_ctrl_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_HDMI_test_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Pulse_LED_controller_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_aud_interface_0_upgraded_ipi_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_DEMUX_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Ext_Mod_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_BRAM_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_DEMUX_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Windowing_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_FFT_config_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_LR_Stream_2_AXI_I2S_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_Packet_framer_L_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_APPROX_LOG_MOD_0_3_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_APPROX_LOG_MOD_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_MUX_0_0_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_AXI_MUX_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'base_axi_gpio_0_3_impl_1'...
+WARNING: [Coretcl 2-52] File 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/archive_project_summary.txt' does not exist
 INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_APPROX_LOG_MOD_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_APPROX_LOG_MOD_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_APPROX_LOG_MOD_0_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_APPROX_LOG_MOD_0_3'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_DEMUX_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_DEMUX_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_DEMUX_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_DEMUX_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_MUX_0_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_MUX_0_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_MUX_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_MUX_0_1'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_AXI_aud_interface_0_upgraded_ipi_0'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_AXI_aud_interface_0_upgraded_ipi_0'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_CORDIC_FIFO_L_0'
@@ -334,6 +706,8 @@ INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_g
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_1'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_gpio_0_2'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axi_gpio_0_3'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axi_gpio_0_3'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axis_data_fifo_0_0'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_axis_data_fifo_0_0'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_axis_data_fifo_0_1'
@@ -372,7 +746,6 @@ INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'base_xfft_
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'base_xfft_0_0'
 INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/archive_project_summary.txt

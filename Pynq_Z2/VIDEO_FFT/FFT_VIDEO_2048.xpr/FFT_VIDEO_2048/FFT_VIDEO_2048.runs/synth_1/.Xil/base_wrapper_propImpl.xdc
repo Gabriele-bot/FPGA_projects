@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc rfile:../../../FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc rfile:../../../FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN U9 IOSTANDARD LVCMOS33} [get_ports IIC_1_scl_io]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

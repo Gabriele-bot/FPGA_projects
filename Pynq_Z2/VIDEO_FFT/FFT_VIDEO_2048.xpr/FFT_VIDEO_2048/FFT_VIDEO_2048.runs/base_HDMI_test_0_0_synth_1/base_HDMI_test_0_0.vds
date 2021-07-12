@@ -2,16 +2,17 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Apr  8 16:06:47 2021
-# Process ID: 26756
-# Current directory: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1
+# Start of session at: Sat Jul 10 21:14:21 2021
+# Process ID: 15604
+# Current directory: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1
 # Command line: vivado.exe -log base_HDMI_test_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source base_HDMI_test_0_0.tcl
-# Log file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.vds
-# Journal file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1\vivado.jou
+# Log file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.vds
+# Journal file: G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source base_HDMI_test_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.180 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
 Command: synth_design -top base_HDMI_test_0_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
@@ -22,12 +23,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26852
+INFO: [Synth 8-7075] Helper process launched with PID 30288
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1177.359 ; gain = 31.770
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1175.949 ; gain = 65.770
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'base_HDMI_test_0_0' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_HDMI_test_0_0/synth/base_HDMI_test_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'HDMI_test' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:7]
+INFO: [Synth 8-6157] synthesizing module 'base_HDMI_test_0_0' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_HDMI_test_0_0/synth/base_HDMI_test_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_test' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:11]
 	Parameter DATA_WIDTH bound to: 24 - type: integer 
 	Parameter BRAM_ADDR_WIDTH bound to: 10 - type: integer 
 	Parameter color bound to: 24'b000000001010101000000000 
@@ -65,40 +66,40 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [D:/Vivado/Vivado/2020.2/
 	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
 	Parameter STARTUP_WAIT bound to: TRUE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (1#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:40118]
-WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'LOCKED' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
-WARNING: [Synth 8-7023] instance 'MMCME2_BASE_INST' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:72]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT2' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT3' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT4' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT5' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'LOCKED' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7071] port 'PWRDWN' of module 'MMCME2_BASE' is unconnected for instance 'MMCME2_BASE_INST' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
+WARNING: [Synth 8-7023] instance 'MMCME2_BASE_INST' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:76]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [D:/Vivado/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:180]
-INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:229]
-WARNING: [Synth 8-567] referenced signal 'CounterX_l' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:221]
-WARNING: [Synth 8-567] referenced signal 'CounterX_r' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:221]
-INFO: [Synth 8-6155] done synthesizing module 'HDMI_test' (3#1) [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'base_HDMI_test_0_0' (4#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_HDMI_test_0_0/synth/base_HDMI_test_0_0.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:233]
+WARNING: [Synth 8-567] referenced signal 'CounterX_l' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:225]
+WARNING: [Synth 8-567] referenced signal 'CounterX_r' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:225]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_test' (3#1) [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/HDMI_out_module.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'base_HDMI_test_0_0' (4#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_HDMI_test_0_0/synth/base_HDMI_test_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1234.270 ; gain = 88.680
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1233.008 ; gain = 122.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.270 ; gain = 88.680
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1233.008 ; gain = 122.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1234.270 ; gain = 88.680
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1233.008 ; gain = 122.828
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1234.270 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1233.008 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -107,27 +108,27 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.535 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1327.414 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1335.574 ; gain = 0.039
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.579 . Memory (MB): peak = 1327.418 ; gain = 0.004
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_Curr_reg' in module 'HDMI_test'
 ---------------------------------------------------------------------------------------------------
@@ -139,7 +140,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_Curr_reg' in module '
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_Curr_reg' using encoding 'one-hot' in module 'HDMI_test'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -175,25 +176,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:39 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1335.574 ; gain = 189.984
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1327.418 ; gain = 217.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:47 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -211,37 +212,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -270,18 +271,18 @@ Report Cell Usage:
 |11    |FDSE        |     3|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1351.734 ; gain = 104.840
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1351.734 ; gain = 206.145
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 1346.758 ; gain = 142.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1346.758 ; gain = 236.578
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1351.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1346.758 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1369.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1359.719 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   MMCME2_BASE => MMCME2_ADV: 1 instance 
@@ -289,9 +290,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 31 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1369.066 ; gain = 223.477
-INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 1359.719 ; gain = 249.539
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_HDMI_test_0_0_synth_1/base_HDMI_test_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file base_HDMI_test_0_0_utilization_synth.rpt -pb base_HDMI_test_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr  8 16:07:18 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 10 21:15:46 2021...

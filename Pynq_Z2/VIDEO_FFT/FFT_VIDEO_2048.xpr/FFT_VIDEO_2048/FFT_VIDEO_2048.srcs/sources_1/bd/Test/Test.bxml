@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="Test" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1617309322"/>
-    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1617309322"/>
-    <Generation Name="SIMULATION" State="RESET" Timestamp="1617309322"/>
-    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1617309322"/>
+    <Generation Name="SYNTHESIS" State="RESET" Timestamp="1625940965"/>
+    <Generation Name="IMPLEMENTATION" State="RESET" Timestamp="1625940965"/>
+    <Generation Name="SIMULATION" State="RESET" Timestamp="1625940965"/>
+    <Generation Name="HW_HANDOFF" State="RESET" Timestamp="1625940965"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\Test_cordic_0_0\Test_cordic_0_0.xci" Type="IP">
         <Instance HierarchyPath="cordic_0"/>

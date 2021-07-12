@@ -1,8 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Creator: Gabriele Bortolato 
+//
 // Create Date: 02.04.2021 15:41:13
 // Design Name: 
 // Module Name: Packet_framer
@@ -16,7 +15,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// Module that produces a packet with tvalid-tlast-tready.
 //////////////////////////////////////////////////////////////////////////////////
 
 

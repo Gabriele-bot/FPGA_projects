@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# Pulse_LED_controller, Ext_Mod, Ext_Mod, FFT_BRAM, FFT_config, HDMI_test, Packet_framer, Packet_framer, Windowing, Windowing, AXI_aud_interface, LR_Stream_2_AXI_I2S
+# Pulse_LED_controller, APPROX_LOG_MOD, APPROX_LOG_MOD, AXI_DEMUX, AXI_DEMUX, AXI_MUX, AXI_MUX, Ext_Mod, Ext_Mod, FFT_BRAM, FFT_config, HDMI_test, Packet_framer, Packet_framer, Windowing, Windowing, AXI_aud_interface, LR_Stream_2_AXI_I2S
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -307,6 +307,8 @@ proc create_hier_cell_HDMI_FFT_LR { parentCell nameHier } {
   # Create interface pins
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_FFT_CTRL
 
+  create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_FFT_OUTSCALER
+
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_WND
 
   create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_WND_BRAM
@@ -325,15 +327,95 @@ proc create_hier_cell_HDMI_FFT_LR { parentCell nameHier } {
   create_bd_pin -dir I -from 23 -to 0 s_axis_r_tdata
   create_bd_pin -dir I s_axis_r_tvalid
 
+  # Create instance: APPROX_LOG_MOD_L, and set properties
+  set block_name APPROX_LOG_MOD
+  set block_cell_name APPROX_LOG_MOD_L
+  if { [catch {set APPROX_LOG_MOD_L [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $APPROX_LOG_MOD_L eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: APPROX_LOG_MOD_R, and set properties
+  set block_name APPROX_LOG_MOD
+  set block_cell_name APPROX_LOG_MOD_R
+  if { [catch {set APPROX_LOG_MOD_R [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $APPROX_LOG_MOD_R eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: AXI_DEMUX_L, and set properties
+  set block_name AXI_DEMUX
+  set block_cell_name AXI_DEMUX_L
+  if { [catch {set AXI_DEMUX_L [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $AXI_DEMUX_L eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: AXI_DEMUX_R, and set properties
+  set block_name AXI_DEMUX
+  set block_cell_name AXI_DEMUX_R
+  if { [catch {set AXI_DEMUX_R [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $AXI_DEMUX_R eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: AXI_FFT_CTRL, and set properties
   set AXI_FFT_CTRL [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 AXI_FFT_CTRL ]
   set_property -dict [ list \
    CONFIG.C_ALL_OUTPUTS {1} \
    CONFIG.C_ALL_OUTPUTS_2 {1} \
-   CONFIG.C_GPIO2_WIDTH {11} \
+   CONFIG.C_GPIO2_WIDTH {1} \
    CONFIG.C_GPIO_WIDTH {17} \
    CONFIG.C_IS_DUAL {1} \
  ] $AXI_FFT_CTRL
+
+  # Create instance: AXI_FFT_OUTSCALER, and set properties
+  set AXI_FFT_OUTSCALER [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 AXI_FFT_OUTSCALER ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_OUTPUTS {1} \
+   CONFIG.C_DOUT_DEFAULT {0x00000040} \
+   CONFIG.C_GPIO_WIDTH {8} \
+ ] $AXI_FFT_OUTSCALER
+
+  # Create instance: AXI_MUX_L, and set properties
+  set block_name AXI_MUX
+  set block_cell_name AXI_MUX_L
+  if { [catch {set AXI_MUX_L [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $AXI_MUX_L eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+    set_property -dict [ list \
+   CONFIG.DATA_WIDTH {32} \
+ ] $AXI_MUX_L
+
+  # Create instance: AXI_MUX_R, and set properties
+  set block_name AXI_MUX
+  set block_cell_name AXI_MUX_R
+  if { [catch {set AXI_MUX_R [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $AXI_MUX_R eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+    set_property -dict [ list \
+   CONFIG.DATA_WIDTH {32} \
+ ] $AXI_MUX_R
 
   # Create instance: BRAM_ADDR_SLICE, and set properties
   set BRAM_ADDR_SLICE [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 BRAM_ADDR_SLICE ]
@@ -541,23 +623,6 @@ proc create_hier_cell_HDMI_FFT_LR { parentCell nameHier } {
    CONFIG.BRAM_ADDR_WIDTH {10} \
  ] $HDMI_test_0
 
-  # Create instance: OFFSET, and set properties
-  set OFFSET [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 OFFSET ]
-  set_property -dict [ list \
-   CONFIG.DIN_FROM {9} \
-   CONFIG.DIN_WIDTH {11} \
-   CONFIG.DOUT_WIDTH {10} \
- ] $OFFSET
-
-  # Create instance: OFFSET_VALID, and set properties
-  set OFFSET_VALID [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 OFFSET_VALID ]
-  set_property -dict [ list \
-   CONFIG.DIN_FROM {10} \
-   CONFIG.DIN_TO {10} \
-   CONFIG.DIN_WIDTH {11} \
-   CONFIG.DOUT_WIDTH {1} \
- ] $OFFSET_VALID
-
   # Create instance: Packet_framer_L, and set properties
   set block_name Packet_framer
   set block_cell_name Packet_framer_L
@@ -683,19 +748,30 @@ proc create_hier_cell_HDMI_FFT_LR { parentCell nameHier } {
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
 
   # Create interface connections
+  connect_bd_intf_net -intf_net APPROX_LOG_MOD_L_m_axis_dout [get_bd_intf_pins APPROX_LOG_MOD_L/m_axis_dout] [get_bd_intf_pins AXI_MUX_L/s_axis_in1]
+  connect_bd_intf_net -intf_net APPROX_LOG_MOD_R_m_axis_dout [get_bd_intf_pins APPROX_LOG_MOD_R/m_axis_dout] [get_bd_intf_pins AXI_MUX_R/s_axis_in1]
+  connect_bd_intf_net -intf_net AXI_DEMUX_L_m_axis_out0 [get_bd_intf_pins AXI_DEMUX_L/m_axis_out0] [get_bd_intf_pins cordic_L/S_AXIS_CARTESIAN]
+  connect_bd_intf_net -intf_net AXI_DEMUX_L_m_axis_out1 [get_bd_intf_pins APPROX_LOG_MOD_L/s_axis_din] [get_bd_intf_pins AXI_DEMUX_L/m_axis_out1]
+  connect_bd_intf_net -intf_net AXI_DEMUX_R_m_axis_out0 [get_bd_intf_pins AXI_DEMUX_R/m_axis_out0] [get_bd_intf_pins cordic_R/S_AXIS_CARTESIAN]
+  connect_bd_intf_net -intf_net AXI_DEMUX_R_m_axis_out1 [get_bd_intf_pins APPROX_LOG_MOD_R/s_axis_din] [get_bd_intf_pins AXI_DEMUX_R/m_axis_out1]
+  connect_bd_intf_net -intf_net AXI_MUX_L_m_axis [get_bd_intf_pins AXI_MUX_L/m_axis] [get_bd_intf_pins CORDIC_FIFO_L/S_AXIS]
+  connect_bd_intf_net -intf_net AXI_MUX_R_m_axis [get_bd_intf_pins AXI_MUX_R/m_axis] [get_bd_intf_pins CORDIC_FIFO_R/S_AXIS]
   connect_bd_intf_net -intf_net CORDIC_FIFO_L_M_AXIS [get_bd_intf_pins CORDIC_FIFO_L/M_AXIS] [get_bd_intf_pins FFT_BRAM_0/s_axis_l]
   connect_bd_intf_net -intf_net CORDIC_FIFO_R_M_AXIS [get_bd_intf_pins CORDIC_FIFO_R/M_AXIS] [get_bd_intf_pins FFT_BRAM_0/s_axis_r]
   connect_bd_intf_net -intf_net Conn1 [get_bd_intf_pins S_AXI_WND] [get_bd_intf_pins FFT_WINDOW_en/S_AXI]
   connect_bd_intf_net -intf_net Conn2 [get_bd_intf_pins S_AXI_WND_BRAM] [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
-  connect_bd_intf_net -intf_net Ext_Mod_0_m_axis [get_bd_intf_pins Ext_Mod_L/m_axis] [get_bd_intf_pins cordic_L/S_AXIS_CARTESIAN]
-  connect_bd_intf_net -intf_net Ext_Mod_R_m_axis [get_bd_intf_pins Ext_Mod_R/m_axis] [get_bd_intf_pins cordic_R/S_AXIS_CARTESIAN]
+  connect_bd_intf_net -intf_net Conn3 [get_bd_intf_pins S_AXI_FFT_OUTSCALER] [get_bd_intf_pins AXI_FFT_OUTSCALER/S_AXI]
+  connect_bd_intf_net -intf_net Ext_Mod_L_m_axis [get_bd_intf_pins AXI_DEMUX_L/s_axis] [get_bd_intf_pins Ext_Mod_L/m_axis]
+  connect_bd_intf_net -intf_net Ext_Mod_R_m_axis [get_bd_intf_pins AXI_DEMUX_R/s_axis] [get_bd_intf_pins Ext_Mod_R/m_axis]
   connect_bd_intf_net -intf_net FFT_L_M_AXIS_DATA [get_bd_intf_pins Ext_Mod_L/s_axis] [get_bd_intf_pins FFT_L/M_AXIS_DATA]
   connect_bd_intf_net -intf_net FFT_R_M_AXIS_DATA [get_bd_intf_pins Ext_Mod_R/s_axis] [get_bd_intf_pins FFT_R/M_AXIS_DATA]
-  connect_bd_intf_net -intf_net cordic_L_M_AXIS_DOUT [get_bd_intf_pins CORDIC_FIFO_L/S_AXIS] [get_bd_intf_pins cordic_L/M_AXIS_DOUT]
-  connect_bd_intf_net -intf_net cordic_R_M_AXIS_DOUT [get_bd_intf_pins CORDIC_FIFO_R/S_AXIS] [get_bd_intf_pins cordic_R/M_AXIS_DOUT]
+  connect_bd_intf_net -intf_net cordic_L_M_AXIS_DOUT [get_bd_intf_pins AXI_MUX_L/s_axis_in0] [get_bd_intf_pins cordic_L/M_AXIS_DOUT]
+  connect_bd_intf_net -intf_net cordic_R_M_AXIS_DOUT [get_bd_intf_pins AXI_MUX_R/s_axis_in0] [get_bd_intf_pins cordic_R/M_AXIS_DOUT]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins S_AXI_FFT_CTRL] [get_bd_intf_pins AXI_FFT_CTRL/S_AXI]
 
   # Create port connections
+  connect_bd_net -net AXI_FFT_CTRL_gpio2_io_o [get_bd_pins AXI_DEMUX_L/sel] [get_bd_pins AXI_DEMUX_R/sel] [get_bd_pins AXI_FFT_CTRL/gpio2_io_o] [get_bd_pins AXI_MUX_L/sel] [get_bd_pins AXI_MUX_R/sel]
+  connect_bd_net -net AXI_FFT_OUTSCALER_gpio_io_o [get_bd_pins AXI_FFT_OUTSCALER/gpio_io_o] [get_bd_pins AXI_MUX_L/scaler] [get_bd_pins AXI_MUX_R/scaler]
   connect_bd_net -net Audio_controller_L_Data [get_bd_pins s_axis_l_tdata] [get_bd_pins Packet_framer_L/s_axis_tdata] [get_bd_pins Windowing_L/S_AXIS_DATA_tdata]
   connect_bd_net -net Audio_controller_L_Data_valid [get_bd_pins s_axis_l_tvalid] [get_bd_pins Packet_framer_L/s_axis_tvalid] [get_bd_pins Windowing_L/S_AXIS_DATA_tvalid]
   connect_bd_net -net Audio_controller_R_Data [get_bd_pins s_axis_r_tdata] [get_bd_pins Packet_framer_R/s_axis_tdata] [get_bd_pins Windowing_R/S_AXIS_DATA_tdata]
@@ -741,19 +817,16 @@ proc create_hier_cell_HDMI_FFT_LR { parentCell nameHier } {
   connect_bd_net -net axi_bram_ctrl_0_bram_en_a [get_bd_pins Windowing_L/ena] [get_bd_pins Windowing_R/ena] [get_bd_pins axi_bram_ctrl_0/bram_en_a]
   connect_bd_net -net axi_bram_ctrl_0_bram_we_a [get_bd_pins BRAM_WE_SLICE2/Din] [get_bd_pins axi_bram_ctrl_0/bram_we_a]
   connect_bd_net -net axi_bram_ctrl_0_bram_wrdata_a [get_bd_pins BRAM_DIN_SLICE1/Din] [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a]
-  connect_bd_net -net axi_gpio_0_gpio2_io_o [get_bd_pins AXI_FFT_CTRL/gpio2_io_o] [get_bd_pins OFFSET/Din] [get_bd_pins OFFSET_VALID/Din]
   connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins AXI_FFT_CTRL/gpio_io_o] [get_bd_pins CONFIG_DATA_VAILD/Din] [get_bd_pins CONFIG_PAR/Din]
-  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins aclk] [get_bd_pins AXI_FFT_CTRL/s_axi_aclk] [get_bd_pins CORDIC_FIFO_L/s_axis_aclk] [get_bd_pins CORDIC_FIFO_R/s_axis_aclk] [get_bd_pins Ext_Mod_L/aclk] [get_bd_pins Ext_Mod_R/aclk] [get_bd_pins FFT_BRAM_0/aclk_a] [get_bd_pins FFT_CONFIG/aclk] [get_bd_pins FFT_L/aclk] [get_bd_pins FFT_R/aclk] [get_bd_pins FFT_WINDOW_en/s_axi_aclk] [get_bd_pins HDMI_test_0/clk] [get_bd_pins Packet_framer_L/aclk] [get_bd_pins Packet_framer_R/aclk] [get_bd_pins Windowing_L/aclk] [get_bd_pins Windowing_R/aclk] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins cordic_L/aclk] [get_bd_pins cordic_R/aclk]
+  connect_bd_net -net ps7_0_FCLK_CLK0 [get_bd_pins aclk] [get_bd_pins APPROX_LOG_MOD_L/aclk] [get_bd_pins APPROX_LOG_MOD_R/aclk] [get_bd_pins AXI_DEMUX_L/aclk] [get_bd_pins AXI_DEMUX_R/aclk] [get_bd_pins AXI_FFT_CTRL/s_axi_aclk] [get_bd_pins AXI_FFT_OUTSCALER/s_axi_aclk] [get_bd_pins AXI_MUX_L/aclk] [get_bd_pins AXI_MUX_R/aclk] [get_bd_pins CORDIC_FIFO_L/s_axis_aclk] [get_bd_pins CORDIC_FIFO_R/s_axis_aclk] [get_bd_pins Ext_Mod_L/aclk] [get_bd_pins Ext_Mod_R/aclk] [get_bd_pins FFT_BRAM_0/aclk_a] [get_bd_pins FFT_CONFIG/aclk] [get_bd_pins FFT_L/aclk] [get_bd_pins FFT_R/aclk] [get_bd_pins FFT_WINDOW_en/s_axi_aclk] [get_bd_pins HDMI_test_0/clk] [get_bd_pins Packet_framer_L/aclk] [get_bd_pins Packet_framer_R/aclk] [get_bd_pins Windowing_L/aclk] [get_bd_pins Windowing_R/aclk] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins cordic_L/aclk] [get_bd_pins cordic_R/aclk]
   connect_bd_net -net rgb2dvi_0_TMDS_Clk_n [get_bd_pins hdmi_out_clk_n] [get_bd_pins rgb2dvi_0/TMDS_Clk_n]
   connect_bd_net -net rgb2dvi_0_TMDS_Clk_p [get_bd_pins hdmi_out_clk_p] [get_bd_pins rgb2dvi_0/TMDS_Clk_p]
   connect_bd_net -net rgb2dvi_0_TMDS_Data_n [get_bd_pins hdmi_out_data_n] [get_bd_pins rgb2dvi_0/TMDS_Data_n]
   connect_bd_net -net rgb2dvi_0_TMDS_Data_p [get_bd_pins hdmi_out_data_p] [get_bd_pins rgb2dvi_0/TMDS_Data_p]
-  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins aRst_n] [get_bd_pins AXI_FFT_CTRL/s_axi_aresetn] [get_bd_pins CORDIC_FIFO_L/s_axis_aresetn] [get_bd_pins CORDIC_FIFO_R/s_axis_aresetn] [get_bd_pins Ext_Mod_L/aresetn] [get_bd_pins Ext_Mod_R/aresetn] [get_bd_pins FFT_BRAM_0/aresetn] [get_bd_pins FFT_L/aresetn] [get_bd_pins FFT_R/aresetn] [get_bd_pins FFT_WINDOW_en/s_axi_aresetn] [get_bd_pins Packet_framer_L/aresetn] [get_bd_pins Packet_framer_R/aresetn] [get_bd_pins Windowing_L/aresetn] [get_bd_pins Windowing_R/aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins cordic_L/aresetn] [get_bd_pins cordic_R/aresetn] [get_bd_pins rgb2dvi_0/aRst_n]
+  connect_bd_net -net rst_ps7_0_fclk0_peripheral_aresetn [get_bd_pins aRst_n] [get_bd_pins APPROX_LOG_MOD_L/aresetn] [get_bd_pins APPROX_LOG_MOD_R/aresetn] [get_bd_pins AXI_DEMUX_L/aresetn] [get_bd_pins AXI_DEMUX_R/aresetn] [get_bd_pins AXI_FFT_CTRL/s_axi_aresetn] [get_bd_pins AXI_FFT_OUTSCALER/s_axi_aresetn] [get_bd_pins AXI_MUX_L/aresetn] [get_bd_pins AXI_MUX_R/aresetn] [get_bd_pins CORDIC_FIFO_L/s_axis_aresetn] [get_bd_pins CORDIC_FIFO_R/s_axis_aresetn] [get_bd_pins Ext_Mod_L/aresetn] [get_bd_pins Ext_Mod_R/aresetn] [get_bd_pins FFT_BRAM_0/aresetn] [get_bd_pins FFT_L/aresetn] [get_bd_pins FFT_R/aresetn] [get_bd_pins FFT_WINDOW_en/s_axi_aresetn] [get_bd_pins Packet_framer_L/aresetn] [get_bd_pins Packet_framer_R/aresetn] [get_bd_pins Windowing_L/aresetn] [get_bd_pins Windowing_R/aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins cordic_L/aresetn] [get_bd_pins cordic_R/aresetn] [get_bd_pins rgb2dvi_0/aRst_n]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins hdmi_out_hpd] [get_bd_pins xlconstant_1/dout]
-  connect_bd_net -net xlslice_0_Dout [get_bd_pins FFT_BRAM_0/FFT_offset] [get_bd_pins OFFSET/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins CONFIG_PAR/Dout] [get_bd_pins FFT_CONFIG/FFT_par]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins CONFIG_DATA_VAILD/Dout] [get_bd_pins FFT_CONFIG/btn]
-  connect_bd_net -net xlslice_3_Dout [get_bd_pins FFT_BRAM_0/FFT_offset_valid] [get_bd_pins OFFSET_VALID/Dout]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -1910,6 +1983,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins Audio_controller/s_axi_tx_ctrl] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins Audio_controller/S_AXI_SEL] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins HDMI_FFT_LR/S_AXI_FFT_CTRL] [get_bd_intf_pins ps7_0_axi_periph/M05_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M06_AXI [get_bd_intf_pins HDMI_FFT_LR/S_AXI_FFT_OUTSCALER] [get_bd_intf_pins ps7_0_axi_periph/M06_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M07_AXI [get_bd_intf_pins HDMI_FFT_LR/S_AXI_WND] [get_bd_intf_pins ps7_0_axi_periph/M07_AXI]
 
   # Create port connections
@@ -1940,6 +2014,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net xlconstant_1_dout [get_bd_ports hdmi_out_hpd] [get_bd_pins HDMI_FFT_LR/hdmi_out_hpd]
 
   # Create address segments
+  assign_bd_address -offset 0x41210000 -range 0x00010000 -target_address_space [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs HDMI_FFT_LR/AXI_FFT_OUTSCALER/S_AXI/Reg] -force
   assign_bd_address -offset 0x41220000 -range 0x00010000 -target_address_space [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs HDMI_FFT_LR/FFT_WINDOW_en/S_AXI/Reg] -force
   assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs Audio_controller/audio_codec_ctrl_0/S_AXI/reg0] -force
   assign_bd_address -offset 0x42000000 -range 0x00002000 -target_address_space [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs HDMI_FFT_LR/axi_bram_ctrl_0/S_AXI/Mem0] -force

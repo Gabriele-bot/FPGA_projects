@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Creator: Gabriele Bortolato 
 // 
 // Create Date: 30.03.2021 16:10:17
 // Design Name: 
 // Module Name: AXI_AUD_DeMux
 // Project Name: 
-// Target Devices: 
+// Target Devices: PYNQ Z2
 // Tool Versions: 
 // Description: 
 // 
@@ -16,7 +15,8 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// This module will demux the axi_audio stream in two data streams (left and right)
+// The module "AXI_aud_interface" will preform the same task, but with some satae machines; it is slower.
 //////////////////////////////////////////////////////////////////////////////////
 
 

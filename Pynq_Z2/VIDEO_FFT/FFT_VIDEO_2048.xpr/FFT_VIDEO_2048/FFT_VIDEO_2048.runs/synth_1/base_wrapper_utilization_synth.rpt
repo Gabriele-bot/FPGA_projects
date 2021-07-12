@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Apr  9 19:19:21 2021
+| Date         : Mon Jul 12 20:20:30 2021
 | Host         : DESKTOP-4SFHT1M running 64-bit major release  (build 9200)
 | Command      : report_utilization -file base_wrapper_utilization_synth.rpt -pb base_wrapper_utilization_synth.pb
 | Design       : base_wrapper
@@ -178,10 +178,12 @@ Table of Contents
 | base_axis_data_fifo_1_0                 |    1 |
 | base_axis_data_fifo_0_1                 |    1 |
 | base_axis_data_fifo_0_0                 |    1 |
+| base_axi_gpio_0_3                       |    1 |
 | base_axi_gpio_0_2                       |    1 |
 | base_axi_gpio_0_1                       |    1 |
 | base_axi_gpio_0_0                       |    1 |
 | base_axi_bram_ctrl_0_0                  |    1 |
+| base_auto_pc_7                          |    1 |
 | base_auto_pc_6                          |    1 |
 | base_auto_pc_5                          |    1 |
 | base_auto_pc_4                          |    1 |
@@ -208,6 +210,12 @@ Table of Contents
 | base_Ext_Mod_0_0                        |    1 |
 | base_CORDIC_FIFO_L_0                    |    1 |
 | base_AXI_aud_interface_0_upgraded_ipi_0 |    1 |
+| base_AXI_MUX_0_1                        |    1 |
+| base_AXI_MUX_0_0                        |    1 |
+| base_AXI_DEMUX_0_1                      |    1 |
+| base_AXI_DEMUX_0_0                      |    1 |
+| base_APPROX_LOG_MOD_0_3                 |    1 |
+| base_APPROX_LOG_MOD_0_2                 |    1 |
 +-----------------------------------------+------+
 
 

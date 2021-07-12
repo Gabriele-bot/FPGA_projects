@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Creator: Gabriele Bortolato 
 // 
 // Create Date: 15.03.2021 16:38:17
 // Design Name: 
@@ -16,7 +15,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// Extract the square modululus of a complex number (RE and IM inputs)
 //////////////////////////////////////////////////////////////////////////////////
 
 

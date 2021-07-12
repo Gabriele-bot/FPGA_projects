@@ -1,6 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-
+// Creator: Gabriele Bortolato 
+//
+// Create Date: 01.02.2021 16:21:42
+// Design Name: 
+// Module Name: Packet_framer
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// Module that takes the audio data streams and transalte in to a led pulsing pattern.
 //////////////////////////////////////////////////////////////////////////////////
 
 

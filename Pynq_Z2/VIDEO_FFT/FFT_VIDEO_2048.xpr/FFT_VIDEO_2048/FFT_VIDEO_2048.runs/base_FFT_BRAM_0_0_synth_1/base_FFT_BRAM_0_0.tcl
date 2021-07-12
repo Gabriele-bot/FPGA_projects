@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.tcl"
+  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,7 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "base_FFT_BRAM_0_0_synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -80,23 +80,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
-set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
+set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
+set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip [current_project]
+set_property ip_repo_paths g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip [current_project]
 update_ip_catalog
-set_property ip_output_repo g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
+set_property ip_output_repo g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/No_window_2048.mem
-  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/Hann_func_2048.mem
+  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/No_window_2048.mem
+  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/Hann_func_2048.mem
 }
-read_verilog -library xil_defaultlib G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/FFT_BRAM.v
-read_ip -quiet G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.xci
+read_verilog -library xil_defaultlib G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/new/FFT_BRAM.v
+read_ip -quiet G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,7 +110,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cached_ip [config_ip_cache -export -no_bom  -dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1 -new_name base_FFT_BRAM_0_0 -ip [get_ips base_FFT_BRAM_0_0]]
+set cached_ip [config_ip_cache -export -no_bom  -dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1 -new_name base_FFT_BRAM_0_0 -ip [get_ips base_FFT_BRAM_0_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cached_ip eq {} } {
@@ -165,32 +165,32 @@ create_report "base_FFT_BRAM_0_0_synth_1_synth_report_utilization_0" "report_uti
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.dcp g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.dcp
+  file copy -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.dcp g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v
+  write_verilog -force -mode synth_stub g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -200,47 +200,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.dcp g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.dcp
+  file copy -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0.dcp g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_stub.v g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v
+  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_stub.v g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_stub.vhdl g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl
+  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_stub.vhdl g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_sim_netlist.v g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.v
+  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_sim_netlist.v g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_sim_netlist.vhdl g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.vhdl
+  file rename -force G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_FFT_BRAM_0_0_synth_1/base_FFT_BRAM_0_0_sim_netlist.vhdl g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0]} {
+if {[file isdir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0]} {
   catch { 
-    file copy -force g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0
+    file copy -force g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.v G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0
   }
 }
 
-if {[file isdir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0]} {
+if {[file isdir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0]} {
   catch { 
-    file copy -force g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0
+    file copy -force g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_BRAM_0_0/base_FFT_BRAM_0_0_stub.vhdl G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ip_user_files/ip/base_FFT_BRAM_0_0
   }
 }
 file delete __synthesis_is_running__

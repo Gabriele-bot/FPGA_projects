@@ -98,12 +98,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_axis_d
 # IP: bd/base/ip/base_LR_Stream_2_AXI_I2S_0_0/base_LR_Stream_2_AXI_I2S_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_LR_Stream_2_AXI_I2S_0_0 || ORIG_REF_NAME==base_LR_Stream_2_AXI_I2S_0_0} -quiet] -quiet
 
-# IP: bd/base/ip/base_xlslice_0_0/base_xlslice_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_xlslice_0_0 || ORIG_REF_NAME==base_xlslice_0_0} -quiet] -quiet
-
-# IP: bd/base/ip/base_xlslice_3_0/base_xlslice_3_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_xlslice_3_0 || ORIG_REF_NAME==base_xlslice_3_0} -quiet] -quiet
-
 # IP: bd/base/ip/base_Packet_framer_0_0/base_Packet_framer_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_Packet_framer_0_0 || ORIG_REF_NAME==base_Packet_framer_0_0} -quiet] -quiet
 
@@ -167,8 +161,29 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_BRAM_A
 # IP: bd/base/ip/base_BRAM_DIN_SLICE1_0/base_BRAM_DIN_SLICE1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_BRAM_DIN_SLICE1_0 || ORIG_REF_NAME==base_BRAM_DIN_SLICE1_0} -quiet] -quiet
 
-# IP: bd/base/ip/base_auto_pc_6/base_auto_pc_6.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_pc_6 || ORIG_REF_NAME==base_auto_pc_6} -quiet] -quiet
+# IP: bd/base/ip/base_AXI_DEMUX_0_0/base_AXI_DEMUX_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_AXI_DEMUX_0_0 || ORIG_REF_NAME==base_AXI_DEMUX_0_0} -quiet] -quiet
+
+# IP: bd/base/ip/base_AXI_DEMUX_0_1/base_AXI_DEMUX_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_AXI_DEMUX_0_1 || ORIG_REF_NAME==base_AXI_DEMUX_0_1} -quiet] -quiet
+
+# IP: bd/base/ip/base_AXI_MUX_0_0/base_AXI_MUX_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_AXI_MUX_0_0 || ORIG_REF_NAME==base_AXI_MUX_0_0} -quiet] -quiet
+
+# IP: bd/base/ip/base_AXI_MUX_0_1/base_AXI_MUX_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_AXI_MUX_0_1 || ORIG_REF_NAME==base_AXI_MUX_0_1} -quiet] -quiet
+
+# IP: bd/base/ip/base_axi_gpio_0_3/base_axi_gpio_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_axi_gpio_0_3 || ORIG_REF_NAME==base_axi_gpio_0_3} -quiet] -quiet
+
+# IP: bd/base/ip/base_APPROX_LOG_MOD_0_2/base_APPROX_LOG_MOD_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_APPROX_LOG_MOD_0_2 || ORIG_REF_NAME==base_APPROX_LOG_MOD_0_2} -quiet] -quiet
+
+# IP: bd/base/ip/base_APPROX_LOG_MOD_0_3/base_APPROX_LOG_MOD_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_APPROX_LOG_MOD_0_3 || ORIG_REF_NAME==base_APPROX_LOG_MOD_0_3} -quiet] -quiet
+
+# IP: bd/base/ip/base_auto_pc_7/base_auto_pc_7.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_pc_7 || ORIG_REF_NAME==base_auto_pc_7} -quiet] -quiet
 
 # IP: bd/base/ip/base_auto_pc_0/base_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_pc_0 || ORIG_REF_NAME==base_auto_pc_0} -quiet] -quiet
@@ -187,5 +202,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_p
 
 # IP: bd/base/ip/base_auto_pc_5/base_auto_pc_5.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_pc_5 || ORIG_REF_NAME==base_auto_pc_5} -quiet] -quiet
+
+# IP: bd/base/ip/base_auto_pc_6/base_auto_pc_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==base_auto_pc_6 || ORIG_REF_NAME==base_auto_pc_6} -quiet] -quiet
 
 # XDC: bd/base/base_ooc.xdc

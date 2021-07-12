@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-500,-47",
+   "Default View_TopLeft":"-500,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -33,8 +33,8 @@ preplace inst out_mux -pg 1 -lvl 2 -x 490 -y 380 -defaultsOSRD
 preplace inst i2s_audio_stream -pg 1 -lvl 1 -x 190 -y 440 -defaultsOSRD
 preplace inst clk_wiz_audio -pg 1 -lvl 1 -x 190 -y 640 -defaultsOSRD
 preplace inst mux_sel -pg 1 -lvl 1 -x 190 -y 80 -defaultsOSRD
-preplace netloc audio_codec_ctrl_0_bclk 1 1 1 330 60n
-preplace netloc i2s_receiver_0_sclk_out 1 1 1 350 80n
+preplace netloc audio_codec_ctrl_0_bclk 1 1 1 340 60n
+preplace netloc i2s_receiver_0_sclk_out 1 1 1 360 80n
 preplace netloc axi_gpio_0_gpio_io_o 1 1 1 400 90n
 preplace netloc audio_codec_ctrl_0_lrclk 1 1 1 N 220
 preplace netloc audio_codec_ctrl_0_sdata_o 1 1 1 370 240n
@@ -42,24 +42,24 @@ preplace netloc i2s_receiver_0_lrclk_out 1 1 1 380 240n
 preplace netloc i2s_transmitter_0_sdata_0_out 1 1 1 390 380n
 preplace netloc bclk_mux_y 1 2 1 NJ 80
 preplace netloc Net 1 0 1 40 220n
-preplace netloc audio_codec_ctrl_0_codec_address 1 1 2 340J 160 NJ
+preplace netloc audio_codec_ctrl_0_codec_address 1 1 2 350J 160 NJ
 preplace netloc ps7_0_FCLK_CLK0 1 0 1 30 80n
 preplace netloc rst_ps7_0_fclk0_peripheral_aresetn 1 0 1 20 100n
 preplace netloc lrclk_mux_y 1 2 1 NJ 240
 preplace netloc clk_wiz_18_432MHz_clk_out1 1 0 3 50 570 370 580 NJ
 preplace netloc mux_vector_0_y 1 2 1 NJ 380
 preplace netloc rst_ps7_0_fclk1_peripheral_reset 1 0 1 NJ 480
-preplace netloc i2s_receiver_0_irq 1 1 2 360J 540 NJ
-preplace netloc i2s_transmitter_0_irq 1 1 2 330J 560 NJ
+preplace netloc i2s_receiver_0_irq 1 1 2 350J 540 NJ
+preplace netloc i2s_transmitter_0_irq 1 1 2 340J 510 580J
 preplace netloc i2s_audio_stream_L_Data 1 1 2 NJ 460 NJ
-preplace netloc i2s_audio_stream_R_Data 1 1 2 340J 500 NJ
-preplace netloc i2s_audio_stream_L_Data_valid 1 1 2 390J 480 NJ
+preplace netloc i2s_audio_stream_R_Data 1 1 2 330J 500 NJ
+preplace netloc i2s_audio_stream_L_Data_valid 1 1 2 380J 480 NJ
 preplace netloc i2s_audio_stream_R_Data_valid 1 1 2 NJ 520 NJ
 preplace netloc clk_wiz_12_288MHz_clk_10 1 1 2 NJ 650 NJ
 preplace netloc ps7_0_axi_periph_M03_AXI 1 0 1 NJ 400
 preplace netloc ps7_0_axi_periph_M00_AXI 1 0 1 NJ 200
-preplace netloc ps7_0_axi_periph_M02_AXI 1 0 1 NJ 380
 preplace netloc ps7_0_axi_periph_M04_AXI 1 0 1 NJ 60
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 1 NJ 380
 levelinfo -pg 1 0 190 490 600
 pagesize -pg 1 -db -bbox -sgen -140 0 770 710
 "

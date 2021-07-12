@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Apr  9 19:17:49 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul 12 20:18:37 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="base" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -68,36 +68,6 @@
     <PORT DIR="O" LEFT="0" NAME="hdmi_out_hpd" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_xlconstant_1_dout">
       <CONNECTIONS>
         <CONNECTION INSTANCE="HDMI_FFT_LR_xlconstant_1" PORT="dout"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_MIO">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="MIO"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="ps7_0_DDR_VRN">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRN"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="ps7_0_DDR_VRP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRP"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="ps7_0_PS_SRSTB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_SRSTB"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="ps7_0_PS_CLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_CLK"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="ps7_0_PS_PORB">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="ps7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="IIC_1_sda_i" SIGIS="undef" SIGNAME="ps7_0_I2C1_SDA_I">
@@ -203,6 +173,36 @@
     <PORT DIR="IO" LEFT="3" NAME="DDR_dqs_p" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_DDR_DQS">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ps7_0" PORT="DDR_DQS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_MIO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="MIO"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrn" SIGIS="undef" SIGNAME="ps7_0_DDR_VRN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ddr_vrp" SIGIS="undef" SIGNAME="ps7_0_DDR_VRP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="DDR_VRP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef" SIGNAME="ps7_0_PS_SRSTB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_SRSTB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef" SIGNAME="ps7_0_PS_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="ps7_0_PS_PORB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps7_0" PORT="PS_PORB"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -1142,34 +1142,34 @@
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="L_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="L_Data"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="s_axis_tdata"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_L" PORT="S_AXIS_DATA_tdata"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="L_Data"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_L_FIFO" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="R_Data" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="R_Data"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="s_axis_tdata"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_R" PORT="S_AXIS_DATA_tdata"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="R_Data"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_R_FIFO" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="L_Data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_L_Data_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="L_Data_valid"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="s_axis_tvalid"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_L" PORT="S_AXIS_DATA_tvalid"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="L_Data_valid"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_L_FIFO" PORT="s_axis_tvalid"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="L_data_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="R_Data_valid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi_R_Data_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="R_Data_valid"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="s_axis_tvalid"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_R" PORT="S_AXIS_DATA_tvalid"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="R_Data_valid"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_R_FIFO" PORT="s_axis_tvalid"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="R_data_valid"/>
           </CONNECTIONS>
@@ -2523,6 +2523,580 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/APPROX_LOG_MOD_L" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="APPROX_LOG_MOD" VLNV="xilinx.com:module_ref:APPROX_LOG_MOD:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_IN_WIDTH" VALUE="48"/>
+        <PARAMETER NAME="DATA_OUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="PADDING" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_APPROX_LOG_MOD_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="s_axis_din_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out1_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_din_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out1_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_din_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out1_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_din_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out1_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_din_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out1_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in1_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in1_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in1_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in1_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in1_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout" NAME="m_axis_dout" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_dout_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_dout_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_dout_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_dout_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_dout_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out1" NAME="s_axis_din" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_din_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_din_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_din_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_din_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_din_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/APPROX_LOG_MOD_R" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="APPROX_LOG_MOD" VLNV="xilinx.com:module_ref:APPROX_LOG_MOD:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_IN_WIDTH" VALUE="48"/>
+        <PARAMETER NAME="DATA_OUT_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="PADDING" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_APPROX_LOG_MOD_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="s_axis_din_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out1_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_din_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out1_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_din_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out1_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_din_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out1_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_din_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out1_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in1_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in1_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in1_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in1_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in1_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout" NAME="m_axis_dout" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_dout_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_dout_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_dout_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_dout_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_dout_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out1" NAME="s_axis_din" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_din_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_din_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_din_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_din_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_din_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/AXI_DEMUX_L" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_DEMUX" VLNV="xilinx.com:module_ref:AXI_DEMUX:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="48"/>
+        <PARAMETER NAME="USER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_AXI_DEMUX_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="m_axis_out0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out0_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_out0_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out0_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_out0_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="m_axis_out1_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="s_axis_din_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out1_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="s_axis_din_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_out1_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="s_axis_din_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out1_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="s_axis_din_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_out1_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_s_axis_din_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="s_axis_din_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sel" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0" NAME="m_axis_out0" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_out0_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_out0_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_out0_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_out0_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_out0_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out1" NAME="m_axis_out1" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_out1_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_out1_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_out1_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_out1_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_out1_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis" NAME="s_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/AXI_DEMUX_R" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_DEMUX" VLNV="xilinx.com:module_ref:AXI_DEMUX:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="48"/>
+        <PARAMETER NAME="USER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_AXI_DEMUX_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="47" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="m_axis_out0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out0_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_out0_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out0_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_out0_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="m_axis_out1_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="s_axis_din_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out1_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="s_axis_din_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_out1_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="s_axis_din_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_out1_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="s_axis_din_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_out1_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_s_axis_din_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="s_axis_din_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sel" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0" NAME="m_axis_out0" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_out0_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_out0_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_out0_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_out0_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_out0_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out1" NAME="m_axis_out1" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_out1_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_out1_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_out1_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_out1_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_out1_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis" NAME="s_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE COREREVISION="24" FULLNAME="/HDMI_FFT_LR/AXI_FFT_CTRL" HWVERSION="2.0" INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_gpio" VLNV="xilinx.com:ip:axi_gpio:2.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_gpio;v=v2_0;d=pg144-axi-gpio.pdf"/>
@@ -2573,7 +3147,7 @@
             <REGISTER NAME="GPIO2_DATA">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-2 AXI GPIO Data register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x8"/>
-              <PROPERTY NAME="SIZE" VALUE="11"/>
+              <PROPERTY NAME="SIZE" VALUE="1"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -2586,14 +3160,14 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="11"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
             <REGISTER NAME="GPIO2_TRI">
               <PROPERTY NAME="DESCRIPTION" VALUE="Channel-2 AXI GPIO 3-State Control register"/>
               <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0xC"/>
-              <PROPERTY NAME="SIZE" VALUE="11"/>
+              <PROPERTY NAME="SIZE" VALUE="1"/>
               <PROPERTY NAME="ACCESS" VALUE="read-write"/>
               <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
               <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
@@ -2606,7 +3180,7 @@
                   <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
                   <PROPERTY NAME="READ_ACTION" VALUE=""/>
                   <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
-                  <PROPERTY NAME="BIT_WIDTH" VALUE="11"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
                 </FIELD>
               </FIELDS>
             </REGISTER>
@@ -2698,7 +3272,7 @@
         <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_GPIO_WIDTH" VALUE="17"/>
-        <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="11"/>
+        <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_ALL_INPUTS" VALUE="0"/>
         <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="0"/>
         <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="1"/>
@@ -2819,10 +3393,12 @@
             <CONNECTION INSTANCE="HDMI_FFT_LR_CONFIG_DATA_VAILD" PORT="Din"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="10" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
+        <PORT DIR="O" LEFT="0" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_OFFSET" PORT="Din"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_OFFSET_VALID" PORT="Din"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="sel"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="sel"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="sel"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="sel"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -2887,6 +3463,711 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO2" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio2_io_o"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="24" FULLNAME="/HDMI_FFT_LR/AXI_FFT_OUTSCALER" HWVERSION="2.0" INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_gpio" VLNV="xilinx.com:ip:axi_gpio:2.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_gpio;v=v2_0;d=pg144-axi-gpio.pdf"/>
+      </DOCUMENTS>
+      <ADDRESSBLOCKS>
+        <ADDRESSBLOCK ACCESS="read-write" INTERFACE="S_AXI" NAME="Reg" RANGE="4096" USAGE="register">
+          <REGISTERS>
+            <REGISTER NAME="GPIO_DATA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO Data register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x0"/>
+              <PROPERTY NAME="SIZE" VALUE="8"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_1_GPIO_DATA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="AXI GPIO Data Register.&#xA;For each I/O bit programmed as input&#xA;  R - Reads value on the input pin.&#xA;  W - No effect.&#xA;For each I/O bit programmed as output&#xA;  R - Reads value on GPIO_O pins&#xA;  W - Writes value to the corresponding AXI GPIO &#xA;      data register bit and output pin&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GPIO_TRI">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Channel-1 AXI GPIO 3-State Control register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x4"/>
+              <PROPERTY NAME="SIZE" VALUE="8"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_1_GPIO_TRI">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="AXI GPIO 3-State Control Register&#xA;Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="8"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GPIO2_DATA">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Channel-2 AXI GPIO Data register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x8"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_2_GPIO_DATA">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="AXI GPIO Data Register.&#xA;For each I/O bit programmed as input&#xA;  R - Reads value on the input pin.&#xA;  W - No effect.&#xA;For each I/O bit programmed as output&#xA;  R - Reads value on GPIO_O pins&#xA;  W - Writes value to the corresponding AXI GPIO &#xA;      data register bit and output pin&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GPIO2_TRI">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Channel-2 AXI GPIO 3-State Control register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0xC"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_2_GPIO_TRI">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="AXI GPIO 3-State Control Register&#xA;Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="32"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="GIER">
+              <PROPERTY NAME="DESCRIPTION" VALUE="Global_Interrupt_Enable register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x11C"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Global_Interrupt_Enable">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Master enable for the device interrupt output&#xA;  0 - Disabled&#xA;  1 - Enabled&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="31"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="IP_IER">
+              <PROPERTY NAME="DESCRIPTION" VALUE="IP Interrupt Enable register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x128"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_1_Interrupt_Enable">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Enable Channel 1 Interrupt&#xA;  0 - Disabled (masked)&#xA;  1 - Enabled&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="Channel_2_Interrupt_Enable">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Enable Channel 2 Interrupt&#xA;  0 - Disabled (masked)&#xA;  1 - Enabled&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE=""/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+            <REGISTER NAME="IP_ISR">
+              <PROPERTY NAME="DESCRIPTION" VALUE="IP Interrupt Status register"/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x120"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+              <PROPERTY NAME="RESET_VALUE" VALUE="0x0"/>
+              <FIELDS>
+                <FIELD NAME="Channel_1_Interrupt_Status">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Channel 1 Interrupt Status&#xA;  0 - No Channel 1 input interrupt&#xA;  1 - Channel 1 input interrupt&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="0"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+                <FIELD NAME="Channel_2_Interrupt_Status">
+                  <PROPERTY NAME="DESCRIPTION" VALUE="Channel 2 Interrupt Status&#xA;  0 - No Channel 2 input interrupt&#xA;  1 - Channel 2 input interrupt&#xA;"/>
+                  <PROPERTY NAME="ADDRESS_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="ACCESS" VALUE="read-write"/>
+                  <PROPERTY NAME="MODIFIED_READ_VALUES" VALUE="oneToToggle"/>
+                  <PROPERTY NAME="WRITE_CONSTRAINT" VALUE="0"/>
+                  <PROPERTY NAME="READ_ACTION" VALUE=""/>
+                  <PROPERTY NAME="BIT_OFFSET" VALUE="1"/>
+                  <PROPERTY NAME="BIT_WIDTH" VALUE="1"/>
+                </FIELD>
+              </FIELDS>
+            </REGISTER>
+          </REGISTERS>
+        </ADDRESSBLOCK>
+      </ADDRESSBLOCKS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_GPIO_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_GPIO2_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_ALL_INPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="0"/>
+        <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="1"/>
+        <PARAMETER NAME="C_ALL_OUTPUTS_2" VALUE="0"/>
+        <PARAMETER NAME="C_INTERRUPT_PRESENT" VALUE="0"/>
+        <PARAMETER NAME="C_DOUT_DEFAULT" VALUE="0x00000040"/>
+        <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
+        <PARAMETER NAME="C_IS_DUAL" VALUE="0"/>
+        <PARAMETER NAME="C_DOUT_DEFAULT_2" VALUE="0x00000000"/>
+        <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_axi_gpio_0_3"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x41210000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x4121FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_awvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_awready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="s_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_wvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_wready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_bvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_bready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="s_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_arvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_arready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="s_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="s_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axi_rvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axi_rready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="scaler"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="scaler"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M06_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="0"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="8"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="s_axi_araddr"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="s_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="s_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="s_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="s_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="s_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="s_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="s_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="s_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="s_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="s_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="s_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="s_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="s_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="s_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="s_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_io_o"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/AXI_MUX_L" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_AXI_MUX_L" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_MUX" VLNV="xilinx.com:module_ref:AXI_MUX:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="USER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_AXI_MUX_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="scaler" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="gpio_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_in0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in0_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_in0_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in0_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_in0_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_in1_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="m_axis_dout_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in1_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="m_axis_dout_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_in1_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="m_axis_dout_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in1_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="m_axis_dout_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_in1_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="m_axis_dout_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sel" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_L_M_AXIS_DOUT" NAME="s_axis_in0" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_in0_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_in0_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_in0_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_in0_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_in0_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_APPROX_LOG_MOD_L_m_axis_dout" NAME="s_axis_in1" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_in1_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_in1_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_in1_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_in1_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_in1_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/AXI_MUX_R" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_AXI_MUX_R" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_MUX" VLNV="xilinx.com:module_ref:AXI_MUX:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="USER_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="base_AXI_MUX_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_fclk0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="ps7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="scaler" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="gpio_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_in0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in0_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_in0_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in0_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_in0_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_in1_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="m_axis_dout_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in1_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="m_axis_dout_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_in1_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="m_axis_dout_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_in1_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="m_axis_dout_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_in1_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="m_axis_dout_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sel" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_R_M_AXIS_DOUT" NAME="s_axis_in0" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_real {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value real} enabled {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency real_width format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TDATA_WIDTH 32 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_cartesian_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value cartesian_tuser} enabled {attribs {resolve_type generated dependency cart_enabled format bool minimum {} maximum {}} value true} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency cart_width format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_phase_tuser {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value phase_tuser} enabled {attribs {resolve_type generated dependency phase_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency phase_width format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency phase_offset format long minimum {} maximum {}} value 16} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}} TUSER_WIDTH 16}"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_in0_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_in0_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_in0_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_in0_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_in0_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_APPROX_LOG_MOD_R_m_axis_dout" NAME="s_axis_in1" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="16"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="base_ps7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_in1_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_in1_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_in1_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_in1_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_in1_tready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -3073,29 +4354,29 @@
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tuser">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="m_axis_dout_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="m_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_m_axis_tvalid">
@@ -3125,7 +4406,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_L_M_AXIS_DOUT" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_MUX_L_m_axis" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -3230,29 +4511,29 @@
             <CONNECTION INSTANCE="ps7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tready">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tuser">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="m_axis_dout_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="m_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_m_axis_tvalid">
@@ -3282,7 +4563,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_R_M_AXIS_DOUT" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_MUX_R_m_axis" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -3375,29 +4656,29 @@
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_L" PORT="m_axis_data_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tdata">
+        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tuser">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="s_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tready">
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="s_axis_cartesian_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3495,29 +4776,29 @@
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_R" PORT="m_axis_data_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tdata">
+        <PORT DIR="O" LEFT="47" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tuser">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="s_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tready">
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="s_axis_cartesian_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -3654,16 +4935,8 @@
             <CONNECTION INSTANCE="HDMI_FFT_LR_HDMI_test_0" PORT="data_r"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="10" NAME="FFT_offset" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_OFFSET_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_OFFSET" PORT="Dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="FFT_offset_valid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_OFFSET_VALID_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_OFFSET_VALID" PORT="Dout"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" LEFT="10" NAME="FFT_offset" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="FFT_offset_valid" SIGIS="undef"/>
         <PORT DIR="I" NAME="ren" SIGIS="undef" SIGNAME="HDMI_FFT_LR_HDMI_test_0_ren">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_FFT_LR_HDMI_test_0" PORT="ren"/>
@@ -4823,54 +6096,6 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2" FULLNAME="/HDMI_FFT_LR/OFFSET" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_OFFSET" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
-        <PARAMETER NAME="DIN_TO" VALUE="0"/>
-        <PARAMETER NAME="Component_Name" VALUE="base_xlslice_0_0"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_OFFSET_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="FFT_offset"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="2" FULLNAME="/HDMI_FFT_LR/OFFSET_VALID" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_OFFSET_VALID" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DIN_WIDTH" VALUE="11"/>
-        <PARAMETER NAME="DIN_FROM" VALUE="10"/>
-        <PARAMETER NAME="DIN_TO" VALUE="10"/>
-        <PARAMETER NAME="Component_Name" VALUE="base_xlslice_3_0"/>
-        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="10" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_CTRL_gpio2_io_o">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="gpio2_io_o"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_OFFSET_VALID_Dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="FFT_offset_valid"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/HDMI_FFT_LR/Packet_framer_L" HWVERSION="1.0" INSTANCE="HDMI_FFT_LR_Packet_framer_L" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Packet_framer" VLNV="xilinx.com:module_ref:Packet_framer:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -6012,59 +7237,59 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out0_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tready">
+        <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out0_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tuser">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out0_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out0_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="47" NAME="s_axis_cartesian_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis_tdata">
+        <PORT DIR="I" LEFT="47" NAME="s_axis_cartesian_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="m_axis_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="m_axis_out0_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in0_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tready">
+        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in0_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tuser">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in0_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in0_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_L_s_axis_tdata">
+        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_L_s_axis_in0_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="s_axis_in0_tdata"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_Ext_Mod_L_m_axis" NAME="S_AXIS_CARTESIAN" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_L_m_axis_out0" NAME="S_AXIS_CARTESIAN" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -6086,7 +7311,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_cartesian_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_L_M_AXIS_DOUT" NAME="M_AXIS_DOUT" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_L_M_AXIS_DOUT" NAME="M_AXIS_DOUT" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -6183,59 +7408,59 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tvalid">
+        <PORT DIR="I" NAME="s_axis_cartesian_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out0_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tready">
+        <PORT DIR="O" NAME="s_axis_cartesian_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out0_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tuser">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_cartesian_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out0_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tlast">
+        <PORT DIR="I" NAME="s_axis_cartesian_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out0_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="47" NAME="s_axis_cartesian_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis_tdata">
+        <PORT DIR="I" LEFT="47" NAME="s_axis_cartesian_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="m_axis_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="m_axis_out0_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tvalid">
+        <PORT DIR="O" NAME="m_axis_dout_tvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tvalid"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in0_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tready">
+        <PORT DIR="I" NAME="m_axis_dout_tready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tready"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in0_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tuser">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_dout_tuser" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tuser"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in0_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tlast">
+        <PORT DIR="O" NAME="m_axis_dout_tlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in0_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_CORDIC_FIFO_R_s_axis_tdata">
+        <PORT DIR="O" LEFT="31" NAME="m_axis_dout_tdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_MUX_R_s_axis_in0_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_tdata"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="s_axis_in0_tdata"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_Ext_Mod_R_m_axis" NAME="S_AXIS_CARTESIAN" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_AXI_DEMUX_R_m_axis_out0" NAME="S_AXIS_CARTESIAN" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -6257,7 +7482,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_cartesian_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_R_M_AXIS_DOUT" NAME="M_AXIS_DOUT" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="HDMI_FFT_LR_cordic_R_M_AXIS_DOUT" NAME="M_AXIS_DOUT" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -6283,7 +7508,7 @@
     </MODULE>
     <MODULE COREREVISION="7" FULLNAME="/HDMI_FFT_LR/rgb2dvi_0" HWVERSION="1.2" INSTANCE="HDMI_FFT_LR_rgb2dvi_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2dvi" VLNV="digilentinc.com:ip:rgb2dvi:1.2">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip/rgb2dvi_v1_2/docs/rgb2dvi_v1_2.pdf"/>
+        <DOCUMENT SOURCE="g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip/rgb2dvi_v1_2/docs/rgb2dvi_v1_2.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kGenerateSerialClk" VALUE="true"/>
@@ -7623,8 +8848,8 @@
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_L_FIFO" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_R_FIFO" PORT="s_axis_aclk"/>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="s_axis_aud_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_aclk"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="s_axis_aud_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="Audio_controller_clk_wiz_audio" PORT="clk_in1"/>
             <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_aclk"/>
@@ -7638,25 +8863,32 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M05_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ACLK"/>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="s_axis_aud_aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_L" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="s_axi_aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_R" PORT="aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_CONFIG" PORT="aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_aclk"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="aclk_a"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_HDMI_test_0" PORT="clk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_HDMI_test_0" PORT="clk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_CONFIG" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_R" PORT="aclk"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="aclk_a"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="aclk"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="aclk"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="s_axis_aud_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="ps7_0_FCLK_RESET0_N">
@@ -7917,6 +9149,7 @@
       <MEMORYMAP>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x40000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4000FFFF" INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi_ctrl"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
+        <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41210000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4121FFFF" INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41220000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4122FFFF" INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41260000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4126FFFF" INSTANCE="Audio_controller_mux_sel" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Mem0" BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x42000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x42001FFF" INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="MEMORY" SLAVEBUSINTERFACE="S_AXI"/>
@@ -7926,6 +9159,7 @@
       <PERIPHERALS>
         <PERIPHERAL INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0"/>
         <PERIPHERAL INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL"/>
+        <PERIPHERAL INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER"/>
         <PERIPHERAL INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en"/>
         <PERIPHERAL INSTANCE="Audio_controller_mux_sel"/>
         <PERIPHERAL INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0"/>
@@ -8356,354 +9590,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_fclk0" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="ps7_0_M_AXI_GP0_AWID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_AWID"/>
@@ -8894,6 +9780,93 @@
             <CONNECTION INSTANCE="ps7_0" PORT="M_AXI_GP0_RREADY"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_audio_codec_ctrl_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="M07_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_FFT_WINDOW_en_s_axi_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en" PORT="s_axi_awaddr"/>
@@ -8979,6 +9952,331 @@
         <PORT DIR="O" NAME="M07_AXI_rready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_FFT_WINDOW_en_s_axi_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="M01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="M01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_awlock" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_awqos" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="M01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="M01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_arlock" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_arqos" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_receiver_0_s_axi_ctrl_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_awprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_wstrb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_arprot" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="Audio_controller_i2s_audio_stream_i2s_transmitter_0_s_axi_ctrl_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_transmitter_0" PORT="s_axi_ctrl_rready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="M04_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Audio_controller_mux_sel_s_axi_awaddr">
@@ -9155,83 +10453,91 @@
             <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M06_AXI_awaddr" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="M06_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wdata" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wstrb" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_bresp" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_araddr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M06_AXI_awvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_AXI_awready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M06_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M06_AXI_wvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_AXI_wready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M06_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M06_AXI_bvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M06_AXI_bready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M06_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="M06_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rdata" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rresp" SIGIS="undef"/>
-        <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="M01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arburst">
+        <PORT DIR="O" NAME="M06_AXI_arvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arburst"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arcache">
+        <PORT DIR="I" NAME="M06_AXI_arready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arcache"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="M01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arlen">
+        <PORT DIR="I" LEFT="31" NAME="M06_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arlen"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M01_AXI_arlock" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arlock">
+        <PORT DIR="I" LEFT="1" NAME="M06_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arlock"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_arsize">
+        <PORT DIR="I" NAME="M06_AXI_rvalid" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_arsize"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="M01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awburst">
+        <PORT DIR="O" NAME="M06_AXI_rready" SIGIS="undef" SIGNAME="HDMI_FFT_LR_AXI_FFT_OUTSCALER_s_axi_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awburst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awcache">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awcache"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="7" NAME="M01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awlen">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awlen"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_awlock" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awlock">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awlock"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_awsize">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_awsize"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_rlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_rlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef" SIGNAME="HDMI_FFT_LR_axi_bram_ctrl_0_s_axi_wlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_wlast"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -9304,36 +10610,40 @@
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="M01_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M01_AXI_awaddr"/>
+            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M01_AXI_awlen"/>
+            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M01_AXI_awsize"/>
+            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M01_AXI_awburst"/>
+            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M01_AXI_awlock"/>
+            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M01_AXI_awcache"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M01_AXI_awprot"/>
+            <PORTMAP LOGICAL="AWREGION" PHYSICAL="M01_AXI_awregion"/>
+            <PORTMAP LOGICAL="AWQOS" PHYSICAL="M01_AXI_awqos"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M01_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M01_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M01_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M01_AXI_wstrb"/>
+            <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M01_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M01_AXI_wready"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M01_AXI_bresp"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M01_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M01_AXI_bready"/>
             <PORTMAP LOGICAL="ARADDR" PHYSICAL="M01_AXI_araddr"/>
+            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M01_AXI_arlen"/>
+            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M01_AXI_arsize"/>
+            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M01_AXI_arburst"/>
+            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M01_AXI_arlock"/>
+            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M01_AXI_arcache"/>
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M01_AXI_arprot"/>
+            <PORTMAP LOGICAL="ARREGION" PHYSICAL="M01_AXI_arregion"/>
+            <PORTMAP LOGICAL="ARQOS" PHYSICAL="M01_AXI_arqos"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M01_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M01_AXI_arready"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M01_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M01_AXI_rresp"/>
+            <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
-            <PORTMAP LOGICAL="ARBURST" PHYSICAL="M01_AXI_arburst"/>
-            <PORTMAP LOGICAL="ARCACHE" PHYSICAL="M01_AXI_arcache"/>
-            <PORTMAP LOGICAL="ARLEN" PHYSICAL="M01_AXI_arlen"/>
-            <PORTMAP LOGICAL="ARLOCK" PHYSICAL="M01_AXI_arlock"/>
-            <PORTMAP LOGICAL="ARSIZE" PHYSICAL="M01_AXI_arsize"/>
-            <PORTMAP LOGICAL="AWBURST" PHYSICAL="M01_AXI_awburst"/>
-            <PORTMAP LOGICAL="AWCACHE" PHYSICAL="M01_AXI_awcache"/>
-            <PORTMAP LOGICAL="AWLEN" PHYSICAL="M01_AXI_awlen"/>
-            <PORTMAP LOGICAL="AWLOCK" PHYSICAL="M01_AXI_awlock"/>
-            <PORTMAP LOGICAL="AWSIZE" PHYSICAL="M01_AXI_awsize"/>
-            <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
-            <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="M02_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
@@ -9428,7 +10738,7 @@
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M05_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="M06_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+        <BUSINTERFACE BUSNAME="ps7_0_axi_periph_M06_AXI" DATAWIDTH="32" NAME="M06_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="AWADDR" PHYSICAL="M06_AXI_awaddr"/>
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M06_AXI_awprot"/>
@@ -9521,8 +10831,8 @@
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_i2s_receiver_0" PORT="s_axi_ctrl_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_L_FIFO" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_R_FIFO" PORT="s_axis_aresetn"/>
-            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="s_axis_aud_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_AXI_aud_interface_0_upgraded_ipi" PORT="s_axis_aud_aresetn"/>
+            <CONNECTION INSTANCE="Audio_controller_i2s_audio_stream_LR_Stream_2_AXI_I2S_0" PORT="s_axis_aud_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_audio_codec_ctrl_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="Audio_controller_clk_wiz_audio" PORT="resetn"/>
             <CONNECTION INSTANCE="Audio_controller_mux_sel" PORT="s_axi_aresetn"/>
@@ -9536,24 +10846,31 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M05_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M06_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M07_ARESETN"/>
-            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="s_axis_aud_aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_rgb2dvi_0" PORT="aRst_n"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_L" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_CTRL" PORT="s_axi_aresetn"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="aresetn"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_cordic_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_L" PORT="aresetn"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="aresetn"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_WINDOW_en" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_L" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_CORDIC_FIFO_R" PORT="s_axis_aresetn"/>
-            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_axi_bram_ctrl_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Packet_framer_R" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_Ext_Mod_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_R" PORT="aresetn"/>
             <CONNECTION INSTANCE="HDMI_FFT_LR_Windowing_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_DEMUX_R" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_FFT_BRAM_0" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_R" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_APPROX_LOG_MOD_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_FFT_OUTSCALER" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_R" PORT="aresetn"/>
+            <CONNECTION INSTANCE="HDMI_FFT_LR_AXI_MUX_L" PORT="aresetn"/>
+            <CONNECTION INSTANCE="Pulse_LED_controller_0" PORT="s_axis_aud_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

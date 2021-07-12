@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/synth_1/base_wrapper.tcl"
+  variable script "G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/synth_1/base_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -79,65 +78,69 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
-set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
+set_property webtalk.parent_dir G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/wt [current_project]
+set_property parent.project_path G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip [current_project]
+set_property ip_repo_paths g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip [current_project]
 update_ip_catalog
-set_property ip_output_repo g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
+set_property ip_output_repo g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/No_window_2048.mem
-  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/Hann_func_2048.mem
+  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/No_window_2048.mem
+  G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/Hann_func_2048.mem
 }
-read_verilog -library xil_defaultlib G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/hdl/base_wrapper.v
-add_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_xfft_0_0/base_xfft_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_cordic_0_0/base_cordic_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_0_0/base_axis_data_fifo_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_1_0/base_axis_data_fifo_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_L_0/base_FFT_L_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_cordic_L_0/base_cordic_L_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2_board.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_0_1/base_axis_data_fifo_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_CORDIC_FIFO_L_0/base_CORDIC_FIFO_L_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/base_axi_bram_ctrl_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc]
-set_property used_in_implementation false [get_files -all G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base_ooc.xdc]
+read_verilog -library xil_defaultlib G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/hdl/base_wrapper.v
+add_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base.bd
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_ps7_0_0/base_ps7_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_0/base_rst_ps7_0_fclk0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_0/base_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_clk_wiz_10MHz_1/base_clk_wiz_10MHz_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rst_ps7_0_fclk0_1/base_rst_ps7_0_fclk0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_xfft_0_0/base_xfft_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_i2s_receiver_0_0/base_i2s_receiver_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_i2s_transmitter_0_0/base_i2s_transmitter_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_cordic_0_0/base_cordic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_1/base_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_0_0/base_axis_data_fifo_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_1_0/base_axis_data_fifo_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_FFT_L_0/base_FFT_L_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_cordic_L_0/base_cordic_L_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_2/base_axi_gpio_0_2.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axis_data_fifo_0_1/base_axis_data_fifo_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_CORDIC_FIFO_L_0/base_CORDIC_FIFO_L_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_bram_ctrl_0_0/base_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_3/base_axi_gpio_0_3_board.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_3/base_axi_gpio_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_axi_gpio_0_3/base_axi_gpio_0_3.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/base_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -148,11 +151,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc
-set_property used_in_implementation false [get_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc]
+read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc
+set_property used_in_implementation false [get_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/imports/constraints/base.xdc]
 
-read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc
-set_property used_in_implementation false [get_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc]
+read_xdc G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc
+set_property used_in_implementation false [get_files G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/constrs_1/new/Timing.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

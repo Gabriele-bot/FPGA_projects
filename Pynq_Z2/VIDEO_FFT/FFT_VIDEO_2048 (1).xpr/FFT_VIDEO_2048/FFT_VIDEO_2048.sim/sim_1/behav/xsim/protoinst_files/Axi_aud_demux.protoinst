@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"Axi_aud_demux": {
-			"proto_instances": {
-			}
-		}
-	}
-}

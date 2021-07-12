@@ -1,6 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-
+// Creator: Gabriele Bortolato 
+// 
+// Create Date: 21.03.2021 15:06:23
+// Design Name: 
+// Module Name: AXI_AUD_DeMux
+// Project Name: 
+// Target Devices: PYNQ Z2
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// Data stream to DMA
 //////////////////////////////////////////////////////////////////////////////////
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Apr  9 19:23:52 2021
+| Date         : Mon Jul 12 20:25:25 2021
 | Host         : DESKTOP-4SFHT1M running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file base_wrapper_bus_skew_routed.rpt -pb base_wrapper_bus_skew_routed.pb -rpx base_wrapper_bus_skew_routed.rpx
 | Design       : base_wrapper
@@ -23,19 +23,19 @@ Id  Position  From                            To                              Co
 --  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
 1   16        [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]}]]
                                               [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]}]]
-                                                                              Slow             10.000       1.270      8.730
+                                                                              Slow             10.000       1.360      8.640
 2   18        [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]}]]
                                               [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]}]]
-                                                                              Slow             10.000       1.429      8.571
+                                                                              Slow             10.000       1.430      8.570
 3   24        [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]}]]
                                               [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]}]]
-                                                                              Slow             10.000       1.411      8.589
+                                                                              Slow             10.000       1.188      8.812
 4   26        [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]}]]
                                               [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]}]]
-                                                                              Slow             10.000       1.526      8.474
+                                                                              Slow             10.000       1.239      8.761
 5   28        [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[6]}]]
                                               [get_cells [list {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][0]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][2]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][3]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]} {base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][6]}]]
-                                                                              Slow             10.000       1.312      8.688
+                                                                              Slow             10.000       1.198      8.802
 
 
 2. Bus Skew Report Per Constraint
@@ -51,10 +51,10 @@ From Clock            To Clock              Endpoint Pin                    Refe
 clk_fpga_0            clk_12_288_base_clk_wiz_10MHz_1
                                             base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
                                                                             base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         1.270      8.730
+                                                                                                            Slow         1.360      8.640
 
 
-Slack (MET) :             8.730ns  (requirement - actual skew)
+Slack (MET) :             8.640ns  (requirement - actual skew)
   Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
@@ -65,11 +65,11 @@ Slack (MET) :             8.730ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    2.745ns
-  Reference Relative Delay:   1.645ns
-  Relative CRPR:              0.369ns
+  Endpoint Relative Delay:    2.854ns
+  Reference Relative Delay:   1.700ns
+  Relative CRPR:              0.333ns
   Uncertainty:                0.539ns
-  Actual Bus Skew:            1.270ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.360ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -79,31 +79,31 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.193     1.193    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.101     1.294 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.732     3.026    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X61Y47         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=23989, routed)       1.707     3.001    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X62Y65         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X61Y47         FDRE (Prop_fdre_C_Q)         0.419     3.445 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.593     4.038    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[5]
-    SLICE_X61Y48         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X62Y65         FDRE (Prop_fdre_C_Q)         0.478     3.479 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.638     4.117    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[5]
+    SLICE_X63Y66         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.873    -2.103 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.012    -0.091    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.557     1.557    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X61Y48         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000     1.557    
-    SLICE_X61Y48         FDRE (Setup_fdre_C_D)       -0.264     1.293    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=566, routed)         1.533     1.533    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X63Y66         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.000     1.533    
+    SLICE_X63Y66         FDRE (Setup_fdre_C_D)       -0.270     1.263    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
   -------------------------------------------------------------------
-                         data arrival                           4.038    
-                         clock arrival                          1.293    
+                         data arrival                           4.117    
+                         clock arrival                          1.263    
   -------------------------------------------------------------------
-                         relative delay                         2.745    
+                         relative delay                         2.854    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -113,31 +113,31 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.088     1.088    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.091     1.179 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.554     2.734    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X59Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=23989, routed)       1.536     2.715    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X64Y64         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X59Y46         FDRE (Prop_fdre_C_Q)         0.367     3.101 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.505     3.606    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[0]
-    SLICE_X62Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X64Y64         FDRE (Prop_fdre_C_Q)         0.367     3.082 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.494     3.576    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[0]
+    SLICE_X64Y66         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -4.287    -2.307 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.206    -0.101    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.731     1.731    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X62Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     1.731    
-    SLICE_X62Y46         FDRE (Hold_fdre_C_D)         0.230     1.961    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=566, routed)         1.707     1.707    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X64Y66         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     1.707    
+    SLICE_X64Y66         FDRE (Hold_fdre_C_D)         0.169     1.876    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           3.606    
-                         clock arrival                          1.961    
+                         data arrival                           3.576    
+                         clock arrival                          1.876    
   -------------------------------------------------------------------
-                         relative delay                         1.645    
+                         relative delay                         1.700    
 
 
 
@@ -149,27 +149,27 @@ Endpoints: 6
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_12_288_base_clk_wiz_10MHz_1
-                      clk_fpga_0            base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         1.429      8.571
+                      clk_fpga_0            base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
+                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         1.430      8.570
 
 
-Slack (MET) :             8.571ns  (requirement - actual skew)
-  Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+Slack (MET) :             8.570ns  (requirement - actual skew)
+  Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+  Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    0.232ns
-  Reference Relative Delay:  -0.923ns
-  Relative CRPR:              0.265ns
+  Endpoint Relative Delay:    0.352ns
+  Reference Relative Delay:  -0.907ns
+  Relative CRPR:              0.369ns
   Uncertainty:                0.539ns
-  Actual Bus Skew:            1.429ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.430ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -177,17 +177,17 @@ Endpoint path:
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -4.287    -2.307 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.206    -0.101    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.728     1.728    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X54Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=566, routed)         1.709     1.709    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X62Y64         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y46         FDRE (Prop_fdre_C_Q)         0.518     2.246 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.624     2.870    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[5]
-    SLICE_X55Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X62Y64         FDRE (Prop_fdre_C_Q)         0.478     2.187 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           0.616     2.803    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[3]
+    SLICE_X64Y64         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -195,15 +195,15 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.088     1.088    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.091     1.179 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.553     2.732    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X55Y46         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000     2.732    
-    SLICE_X55Y46         FDRE (Setup_fdre_C_D)       -0.095     2.637    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=23989, routed)       1.536     2.715    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X64Y64         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.000     2.715    
+    SLICE_X64Y64         FDRE (Setup_fdre_C_D)       -0.264     2.451    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           2.870    
-                         clock arrival                          2.637    
+                         data arrival                           2.803    
+                         clock arrival                          2.451    
   -------------------------------------------------------------------
-                         relative delay                         0.232    
+                         relative delay                         0.352    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -211,17 +211,17 @@ Reference path:
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.873    -2.103 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.012    -0.091    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.537     1.537    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X54Y50         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=566, routed)         1.533     1.533    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X63Y66         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y50         FDRE (Prop_fdre_C_Q)         0.418     1.955 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.377     2.331    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
-    SLICE_X54Y49         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X63Y66         FDRE (Prop_fdre_C_Q)         0.367     1.900 r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.365     2.265    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
+    SLICE_X63Y63         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -229,15 +229,15 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.193     1.193    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.101     1.294 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.729     3.023    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X54Y49         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     3.023    
-    SLICE_X54Y49         FDRE (Hold_fdre_C_D)         0.231     3.254    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=23989, routed)       1.709     3.003    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X63Y63         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     3.003    
+    SLICE_X63Y63         FDRE (Hold_fdre_C_D)         0.169     3.172    base_i/Audio_controller/i2s_audio_stream/i2s_receiver_0/inst/I2S_RX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
   -------------------------------------------------------------------
-                         data arrival                           2.331    
-                         clock arrival                          3.254    
+                         data arrival                           2.265    
+                         clock arrival                          3.172    
   -------------------------------------------------------------------
-                         relative delay                        -0.923    
+                         relative delay                        -0.907    
 
 
 
@@ -249,27 +249,27 @@ Endpoints: 6
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_12_288_base_clk_wiz_10MHz_1
-                      clk_fpga_0            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
-                                                                                                            Slow         1.411      8.589
+                      clk_fpga_0            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         1.188      8.812
 
 
-Slack (MET) :             8.589ns  (requirement - actual skew)
-  Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+Slack (MET) :             8.812ns  (requirement - actual skew)
+  Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    0.300ns
-  Reference Relative Delay:  -0.907ns
-  Relative CRPR:              0.334ns
+  Endpoint Relative Delay:    0.221ns
+  Reference Relative Delay:  -0.818ns
+  Relative CRPR:              0.391ns
   Uncertainty:                0.539ns
-  Actual Bus Skew:            1.411ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.188ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -277,17 +277,17 @@ Endpoint path:
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -4.287    -2.307 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.206    -0.101    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.739     1.739    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X88Y44         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=566, routed)         1.697     1.697    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X65Y73         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X88Y44         FDRE (Prop_fdre_C_Q)         0.456     2.195 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.753     2.948    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[4]
-    SLICE_X89Y44         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X65Y73         FDRE (Prop_fdre_C_Q)         0.419     2.116 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.540     2.656    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[1]
+    SLICE_X64Y74         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -295,15 +295,15 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.088     1.088    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.091     1.179 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.563     2.742    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X89Y44         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.000     2.742    
-    SLICE_X89Y44         FDRE (Setup_fdre_C_D)       -0.095     2.647    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=23989, routed)       1.524     2.703    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X64Y74         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     2.703    
+    SLICE_X64Y74         FDRE (Setup_fdre_C_D)       -0.268     2.435    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           2.948    
-                         clock arrival                          2.647    
+                         data arrival                           2.656    
+                         clock arrival                          2.435    
   -------------------------------------------------------------------
-                         relative delay                         0.300    
+                         relative delay                         0.221    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -311,17 +311,17 @@ Reference path:
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.873    -2.103 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.012    -0.091    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.622     1.622    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X90Y44         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                         net (fo=566, routed)         1.526     1.526    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X65Y73         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X90Y44         FDRE (Prop_fdre_C_Q)         0.418     2.040 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
-                         net (fo=1, routed)           0.380     2.420    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[2]
-    SLICE_X92Y45         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+    SLICE_X65Y73         FDRE (Prop_fdre_C_Q)         0.367     1.893 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.509     2.402    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[4]
+    SLICE_X66Y75         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -329,15 +329,15 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.193     1.193    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.101     1.294 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.800     3.094    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X92Y45         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
-                         clock pessimism              0.000     3.094    
-    SLICE_X92Y45         FDRE (Hold_fdre_C_D)         0.233     3.327    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+                         net (fo=23989, routed)       1.695     2.989    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X66Y75         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism              0.000     2.989    
+    SLICE_X66Y75         FDRE (Hold_fdre_C_D)         0.231     3.220    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                           2.420    
-                         clock arrival                          3.327    
+                         data arrival                           2.402    
+                         clock arrival                          3.220    
   -------------------------------------------------------------------
-                         relative delay                        -0.907    
+                         relative delay                        -0.818    
 
 
 
@@ -350,26 +350,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_fpga_0            clk_12_288_base_clk_wiz_10MHz_1
                                             base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
-                                                                                                            Slow         1.526      8.474
+                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                                                            Slow         1.239      8.761
 
 
-Slack (MET) :             8.474ns  (requirement - actual skew)
+Slack (MET) :             8.761ns  (requirement - actual skew)
   Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    2.930ns
-  Reference Relative Delay:   1.573ns
-  Relative CRPR:              0.370ns
+  Endpoint Relative Delay:    2.817ns
+  Reference Relative Delay:   1.714ns
+  Relative CRPR:              0.404ns
   Uncertainty:                0.539ns
-  Actual Bus Skew:            1.526ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.239ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -379,31 +379,31 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.193     1.193    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.101     1.294 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.739     3.033    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X89Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
+                         net (fo=23989, routed)       1.703     2.997    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X66Y69         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X89Y43         FDRE (Prop_fdre_C_Q)         0.419     3.452 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.777     4.229    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[5]
-    SLICE_X88Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X66Y69         FDRE (Prop_fdre_C_Q)         0.518     3.515 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.737     4.252    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[5]
+    SLICE_X65Y69         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.873    -2.103 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.012    -0.091    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.563     1.563    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X88Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000     1.563    
-    SLICE_X88Y43         FDRE (Setup_fdre_C_D)       -0.264     1.299    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=566, routed)         1.530     1.530    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X65Y69         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.000     1.530    
+    SLICE_X65Y69         FDRE (Setup_fdre_C_D)       -0.095     1.435    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]
   -------------------------------------------------------------------
-                         data arrival                           4.229    
-                         clock arrival                          1.299    
+                         data arrival                           4.252    
+                         clock arrival                          1.435    
   -------------------------------------------------------------------
-                         relative delay                         2.930    
+                         relative delay                         2.817    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -413,31 +413,31 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.088     1.088    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.091     1.179 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.563     2.742    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X87Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/C
+                         net (fo=23989, routed)       1.530     2.709    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X64Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X87Y43         FDRE (Prop_fdre_C_Q)         0.367     3.109 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]/Q
-                         net (fo=1, routed)           0.373     3.482    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[0]
-    SLICE_X85Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/D
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.367     3.076 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           0.510     3.586    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[2]
+    SLICE_X65Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -4.287    -2.307 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.206    -0.101    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.739     1.739    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X85Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C
-                         clock pessimism              0.000     1.739    
-    SLICE_X85Y43         FDRE (Hold_fdre_C_D)         0.170     1.909    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]
+                         net (fo=566, routed)         1.702     1.702    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X65Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     1.702    
+    SLICE_X65Y70         FDRE (Hold_fdre_C_D)         0.170     1.872    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
   -------------------------------------------------------------------
-                         data arrival                           3.482    
-                         clock arrival                          1.909    
+                         data arrival                           3.586    
+                         clock arrival                          1.872    
   -------------------------------------------------------------------
-                         relative delay                         1.573    
+                         relative delay                         1.714    
 
 
 
@@ -450,26 +450,26 @@ From Clock            To Clock              Endpoint Pin                    Refe
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_fpga_0            clk_12_288_base_clk_wiz_10MHz_1
                                             base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/D
-                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                                                            Slow         1.312      8.688
+                                                                            base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
+                                                                                                            Slow         1.198      8.802
 
 
-Slack (MET) :             8.688ns  (requirement - actual skew)
+Slack (MET) :             8.802ns  (requirement - actual skew)
   Endpoint Source:        base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
   Endpoint Destination:   base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/D
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
-  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+  Reference Source:       base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0)
-  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+  Reference Destination:  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
                             (rising edge-triggered cell FDRE clocked by clk_12_288_base_clk_wiz_10MHz_1)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            10.000ns
-  Endpoint Relative Delay:    2.756ns
-  Reference Relative Delay:   1.587ns
-  Relative CRPR:              0.395ns
+  Endpoint Relative Delay:    2.739ns
+  Reference Relative Delay:   1.677ns
+  Relative CRPR:              0.404ns
   Uncertainty:                0.539ns
-  Actual Bus Skew:            1.312ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+  Actual Bus Skew:            1.198ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -479,31 +479,31 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.193     1.193    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.101     1.294 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.739     3.033    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X87Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]/C
+                         net (fo=23989, routed)       1.702     2.996    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X64Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X87Y43         FDRE (Prop_fdre_C_Q)         0.419     3.452 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]/Q
-                         net (fo=1, routed)           0.598     4.050    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[5]
-    SLICE_X84Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/D
+    SLICE_X64Y70         FDRE (Prop_fdre_C_Q)         0.419     3.415 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[5]/Q
+                         net (fo=1, routed)           0.587     4.002    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[5]
+    SLICE_X65Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.770     1.770    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -3.873    -2.103 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.012    -0.091    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.562     1.562    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X84Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/C
-                         clock pessimism              0.000     1.562    
-    SLICE_X84Y43         FDRE (Setup_fdre_C_D)       -0.268     1.294    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]
+                         net (fo=566, routed)         1.530     1.530    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X65Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]/C
+                         clock pessimism              0.000     1.530    
+    SLICE_X65Y70         FDRE (Setup_fdre_C_D)       -0.267     1.263    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][5]
   -------------------------------------------------------------------
-                         data arrival                           4.050    
-                         clock arrival                          1.294    
+                         data arrival                           4.002    
+                         clock arrival                          1.263    
   -------------------------------------------------------------------
-                         relative delay                         2.756    
+                         relative delay                         2.739    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -513,31 +513,31 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  base_i/ps7_0/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.088     1.088    base_i/ps7_0/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y31       BUFG (Prop_bufg_I_O)         0.091     1.179 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.563     2.742    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
-    SLICE_X87Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/C
+                         net (fo=23989, routed)       1.529     2.708    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_clk
+    SLICE_X66Y71         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X87Y43         FDRE (Prop_fdre_C_Q)         0.367     3.109 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           0.385     3.494    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[4]
-    SLICE_X81Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X66Y71         FDRE (Prop_fdre_C_Q)         0.385     3.093 r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/src_gray_ff_reg[1]/Q
+                         net (fo=1, routed)           0.378     3.471    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/async_path[1]
+    SLICE_X66Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_12_288_base_clk_wiz_10MHz_1 rise edge)
                                                       0.000     0.000 r  
     BUFGCTRL_X0Y31       BUFG                         0.000     0.000 r  base_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=23083, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
+                         net (fo=23989, routed)       1.980     1.980    base_i/Audio_controller/clk_wiz_audio/inst/clk_in1
     MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
                                                      -4.287    -2.307 r  base_i/Audio_controller/clk_wiz_audio/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           2.206    -0.101    base_i/Audio_controller/clk_wiz_audio/inst/clk_12_288_base_clk_wiz_10MHz_1
     BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  base_i/Audio_controller/clk_wiz_audio/inst/clkout1_buf/O
-                         net (fo=566, routed)         1.738     1.738    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
-    SLICE_X81Y43         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.000     1.738    
-    SLICE_X81Y43         FDRE (Hold_fdre_C_D)         0.169     1.907    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=566, routed)         1.702     1.702    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_clk
+    SLICE_X66Y70         FDRE                                         r  base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]/C
+                         clock pessimism              0.000     1.702    
+    SLICE_X66Y70         FDRE (Hold_fdre_C_D)         0.092     1.794    base_i/Audio_controller/i2s_audio_stream/i2s_transmitter_0/inst/I2S_TX_V1_0_SYS_INST/AXIS_FIFO_INST/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst/dest_graysync_ff_reg[0][1]
   -------------------------------------------------------------------
-                         data arrival                           3.494    
-                         clock arrival                          1.907    
+                         data arrival                           3.471    
+                         clock arrival                          1.794    
   -------------------------------------------------------------------
-                         relative delay                         1.587    
+                         relative delay                         1.677    
 
 
 

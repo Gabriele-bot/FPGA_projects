@@ -1,8 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Creator: Gabriele Bortolato 
+//
 // Create Date: 30.03.2021 19:47:20
 // Design Name: 
 // Module Name: Windowing
@@ -16,7 +15,8 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// Module that take the axi audio packet and apply a window to reduce the spectral leakage.
+// Default window: Hann (can be modified from the jupyter notebook by rewriting the BRAM)
 //////////////////////////////////////////////////////////////////////////////////
 
 

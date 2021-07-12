@@ -12,7 +12,8 @@
       "AXI_aud_interface_0": "",
       "fir_compiler_0": "",
       "fir_compiler_1": "",
-      "LR_Stream2AXI_interf_0": ""
+      "LR_Stream2AXI_interf_0": "",
+      "AXI_aud_interface_0_upgraded_ipi": ""
     },
     "ports": {
       "rstn": {
@@ -504,6 +505,129 @@
             }
           }
         }
+      },
+      "AXI_aud_interface_0_upgraded_ipi": {
+        "vlnv": "xilinx.com:module_ref:AXI_aud_interface:1.0",
+        "xci_name": "Axi_aud_demux_AXI_aud_interface_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AXI_aud_interface",
+          "boundary_crc": "0x0"
+        },
+        "interface_ports": {
+          "s_axis_aud": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+            "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "auto"
+              },
+              "TDEST_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "TID_WIDTH": {
+                "value": "3",
+                "value_src": "constant"
+              },
+              "TUSER_WIDTH": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TREADY": {
+                "value": "1",
+                "value_src": "constant"
+              },
+              "HAS_TSTRB": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TKEEP": {
+                "value": "0",
+                "value_src": "constant"
+              },
+              "HAS_TLAST": {
+                "value": "0",
+                "value_src": "constant"
+              }
+            },
+            "port_maps": {
+              "TID": {
+                "physical_name": "s_axis_aud_tid",
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "TDATA": {
+                "physical_name": "s_axis_aud_tdata",
+                "direction": "I",
+                "left": "31",
+                "right": "0"
+              },
+              "TVALID": {
+                "physical_name": "s_axis_aud_tvalid",
+                "direction": "I"
+              },
+              "TREADY": {
+                "physical_name": "s_axis_aud_tready",
+                "direction": "O"
+              }
+            }
+          }
+        },
+        "ports": {
+          "s_axis_aud_aclk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "s_axis_aud",
+                "value_src": "constant"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "s_axis_aud_aresetn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "s_axis_aud_aresetn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "L_Data": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "R_Data": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "L_Data_valid": {
+            "direction": "O"
+          },
+          "R_Data_valid": {
+            "direction": "O"
+          },
+          "L_C_Data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "R_C_Data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
       }
     },
     "nets": {
@@ -522,17 +646,17 @@
       "clk_12MHz_1": {
         "ports": [
           "CLK_12MHZ",
-          "AXI_aud_interface_0/s_axis_aud_aclk",
           "fir_compiler_0/aclk",
           "fir_compiler_1/aclk",
-          "LR_Stream2AXI_interf_0/s_axis_aud_aclk"
+          "LR_Stream2AXI_interf_0/s_axis_aud_aclk",
+          "AXI_aud_interface_0_upgraded_ipi/s_axis_aud_aclk"
         ]
       },
       "rstn_1": {
         "ports": [
           "rstn",
-          "AXI_aud_interface_0/s_axis_aud_aresetn",
-          "LR_Stream2AXI_interf_0/s_axis_aud_aresetn"
+          "LR_Stream2AXI_interf_0/s_axis_aud_aresetn",
+          "AXI_aud_interface_0_upgraded_ipi/s_axis_aud_aresetn"
         ]
       },
       "LR_Stream2AXI_interf_0_m_axis_aud_tdata": {
@@ -574,19 +698,18 @@
       "s_axis_aud_tid_1": {
         "ports": [
           "s_axis_aud_tid",
-          "AXI_aud_interface_0/s_axis_aud_tid"
+          "AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tid"
         ]
       },
       "s_axis_aud_tdata_1": {
         "ports": [
           "s_axis_aud_tdata",
-          "AXI_aud_interface_0/s_axis_aud_tdata"
+          "AXI_aud_interface_0_upgraded_ipi/s_axis_aud_tdata"
         ]
       },
       "s_axis_aud_tready_1": {
         "ports": [
-          "s_axis_aud_tready",
-          "AXI_aud_interface_0/s_axis_aud_tready"
+          "s_axis_aud_tready"
         ]
       },
       "s_axis_aud_tvalid_1": {

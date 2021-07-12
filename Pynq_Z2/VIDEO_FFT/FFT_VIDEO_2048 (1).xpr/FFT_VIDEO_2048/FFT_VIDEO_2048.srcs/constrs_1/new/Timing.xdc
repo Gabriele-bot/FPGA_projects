@@ -1,1 +1,0 @@
-#create_clock -name Ser_clk -period 2.694 -waveform {0.000 1.347} [get_pins base_i/rgb2dvi_0/U0/SerialClk]

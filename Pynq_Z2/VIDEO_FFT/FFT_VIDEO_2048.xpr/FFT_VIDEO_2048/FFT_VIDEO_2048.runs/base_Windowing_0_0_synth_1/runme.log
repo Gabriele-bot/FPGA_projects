@@ -10,8 +10,9 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source base_Windowing_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1111.875 ; gain = 0.000
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO/FFT_VIDEO.ipdefs/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.ipdefs/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2020.2/data/ip'.
 Command: synth_design -top base_Windowing_0_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
@@ -22,12 +23,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16164
+INFO: [Synth 8-7075] Helper process launched with PID 2804
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.645 ; gain = 51.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1176.801 ; gain = 64.926
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'base_Windowing_0_0' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_Windowing_0_0/synth/base_Windowing_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'Windowing' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'base_Windowing_0_0' [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_Windowing_0_0/synth/base_Windowing_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Windowing' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:23]
 	Parameter AXIS_DATA_WIDTH_IN bound to: 24 - type: integer 
 	Parameter PACKET_LEGHT bound to: 16'b0000100000000000 
 	Parameter PACKET_LENGHT_WIDTH bound to: 11 - type: integer 
@@ -139,25 +140,25 @@ INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instruct
 INFO: [Synth 8-3876] $readmem data file 'Hann_func_2048.mem' is read successfully [D:/Vivado/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1104]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (1#1) [D:/Vivado/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (2#1) [D:/Vivado/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8404]
-INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:161]
-INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:188]
-WARNING: [Synth 8-567] referenced signal 'data_buffer' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:185]
-WARNING: [Synth 8-567] referenced signal 'factor' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:185]
-INFO: [Synth 8-6155] done synthesizing module 'Windowing' (3#1) [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'base_Windowing_0_0' (4#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_Windowing_0_0/synth/base_Windowing_0_0.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:161]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:188]
+WARNING: [Synth 8-567] referenced signal 'data_buffer' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:185]
+WARNING: [Synth 8-567] referenced signal 'factor' should be on the sensitivity list [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'Windowing' (3#1) [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'base_Windowing_0_0' (4#1) [g:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/bd/base/ip/base_Windowing_0_0/synth/base_Windowing_0_0.v:58]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1235.039 ; gain = 108.758
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1234.430 ; gain = 122.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1235.039 ; gain = 108.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1234.430 ; gain = 122.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1235.039 ; gain = 108.758
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1234.430 ; gain = 122.555
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1235.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1234.430 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -168,32 +169,32 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/base_Windowi
 INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.883 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1343.184 ; gain = 7.539
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1342.184 ; gain = 7.301
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.184 ; gain = 216.902
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1342.184 ; gain = 230.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.184 ; gain = 216.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1342.184 ; gain = 230.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_memory_sdpram_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1343.184 ; gain = 216.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1342.184 ; gain = 230.309
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'data_mult_reg' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:202]
-WARNING: [Synth 8-327] inferring latch for variable 'tlast_reg' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:197]
+WARNING: [Synth 8-327] inferring latch for variable 'data_mult_reg' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:202]
+WARNING: [Synth 8-327] inferring latch for variable 'tlast_reg' [G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.srcs/sources_1/imports/new/Windowing.v:197]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 1343.184 ; gain = 216.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 1342.184 ; gain = 230.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -236,7 +237,7 @@ DSP Report: Generating DSP inst/data_mult0, operation Mode is: A2*B.
 DSP Report: register inst/data_buffer_reg is absorbed into DSP inst/data_mult0.
 DSP Report: operator inst/data_mult0 is absorbed into DSP inst/data_mult0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 1343.184 ; gain = 216.902
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:40 . Memory (MB): peak = 1342.184 ; gain = 230.309
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -266,13 +267,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1373.406 ; gain = 247.125
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1373.293 ; gain = 261.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1373.555 ; gain = 247.273
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1373.367 ; gain = 261.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -293,7 +294,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance inst/xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -312,37 +313,37 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3295] tying undriven pin inst/xpm_memory_sdpram_inst:sleep to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -369,18 +370,18 @@ Report Cell Usage:
 |9     |LD       |    25|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 1402.164 ; gain = 167.738
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1402.164 ; gain = 275.883
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:48 . Memory (MB): peak = 1401.992 ; gain = 182.363
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1401.992 ; gain = 290.117
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1402.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1409.848 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.848 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 25 instances were transformed.
   LD => LDCE: 25 instances
@@ -388,10 +389,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 33 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 1402.164 ; gain = 275.883
-INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_Windowing_0_0_synth_1/base_Windowing_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 1409.848 ; gain = 297.973
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_Windowing_0_0_synth_1/base_Windowing_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_Windowing_0_0_synth_1/base_Windowing_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'G:/Vivado/FFT_VIDEO/FFT_VIDEO_2048.xpr/FFT_VIDEO_2048/FFT_VIDEO_2048.runs/base_Windowing_0_0_synth_1/base_Windowing_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file base_Windowing_0_0_utilization_synth.rpt -pb base_Windowing_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  9 18:04:24 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 10 21:15:50 2021...

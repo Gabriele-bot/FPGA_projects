@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Audio_test.ip_user_files/bd/Axi_aud_demux/ip/Axi_aud_demux_fir_compiler_0_0/sim/Axi_aud_demux_fir_compiler_0_0.vhd" \
-"../../../../Audio_test.ip_user_files/bd/Axi_aud_demux/ip/Axi_aud_demux_fir_compiler_0_1/sim/Axi_aud_demux_fir_compiler_0_1.vhd" \
-
-# Do not sort compile order
-nosort

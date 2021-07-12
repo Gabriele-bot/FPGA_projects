@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/Test/ip/Test_cordic_0_0/sim/Test_cordic_0_0.vhd" \
-
-nosort
