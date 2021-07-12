@@ -33,3 +33,16 @@ FFT parameters:
 - Video frame overlay to show the frequency axis (in the display)
 - Sync FFT output ($$\sim23$$Hz) with the monitor refresh rate (30Hz)
 - Find a better way to display the spectrum (now is linear in the frequencies)
+
+## Logarithmic output
+This is an example of a the logarithm result.
+<center>
+    <img src="LOG_MOD_example.png" alt="Drawing" style="width: 500px"/>
+</center>
+The red signa is the input and subsequently we have the Priority encoder output (yellow), I order approximation (orange), II order approximation (light blue), III order approximation (purple).
+
+## FFT output example
+Actual FFT output with a song in input.
+<center>
+    <img src="FFT_out.png" alt="Drawing" style="width: 500px"/>
+</center>
