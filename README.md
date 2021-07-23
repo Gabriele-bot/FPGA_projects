@@ -15,13 +15,9 @@ Same as the previous version with some tweaks. Only a real input is fed into the
 A windowing is added to lowering spectral leakage, by default no window is applied; to enable windowing it is necessary to set the selector to '1', it will multiply the input by a factor stored in a dual port RAM accessible from the notebook.  
 In the BRAM is initially stored an Hann-function, but is also selectable Hamming, Cosine, Gaussian and Rectangular windows or it is possible to define a custom function (via Python notebook).  
 
-It is possible to dispaly the $log_2$ of the output. The logarithm is computed in the following way:  
+It is possible to dispaly the log2 of the output. The logarithm is computed using a priority encoder and a III order taylor expasion.
 
-- Find the MSB via a priority encoder ($PE_{out}$)
-- Compute the taylor expasion of $log_2(x\times 2^{-PE_{out}})$ (III order implementation)
-- Result: $log_2(x)=PE+\frac{1}{ln(2)}(x\times 2^{-PE_{out}}-\frac{(x\times 2^{-PE_{out}})^2}{2}+\frac{(x\times 2^{-PE_{out}})^3}{3})$ 
-
-FFT parameters:
+FFT xilinx IP parameters:
 - 2048 N-point
 - Scaled (fixed point)
 - 24 bit input/output width
